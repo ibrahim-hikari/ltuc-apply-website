@@ -1,0 +1,289 @@
+@font-face {
+    font-family: "NizarCoconKurdish";
+    src: url("../assets/NizarCoconKurdishBold.otf") format("truetype");
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "NizarCoconKurdish";
+}
+
+header {
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    position: absolute;
+    top: 1vmax;
+    left: 1vmax;
+    width: 35vmax;
+}
+
+.contact-us {
+    /* border: solid; */
+    position: absolute;
+    right: -2vmax;
+    top: 1vmax;
+    width: 30vmax;
+}
+
+.contact-us .num img {
+    /* border: solid; */
+    margin: 0 0vmax;
+    width: 15vmax;
+}
+.contact-us span {
+    /* border: solid; */
+    margin: 0 0 0 3vmax;
+}
+.contact-us span a img {
+    margin: 0 0 0 0.5vmax;
+    width: 2.5vmax;
+}
+.section-one {
+    border-bottom: solid #fff 1px;
+    position: relative;
+    z-index: 0;
+}
+
+.section-one .slide-container .slick-list .slick-track .slick-slide:nth-child(1) .card {
+    background-color: #a2238e !important;
+}
+
+.section-one .slide-container .slick-list .slick-track .slick-slide:nth-child(2) .card {
+    background-color: #fda136 !important;
+}
+.section-one .slide-container .slick-list .slick-track .slick-slide:nth-child(3) .card {
+    background-color: #5c2d90 !important;
+}
+.section-one .slide-container .slick-list .slick-track .slick-slide:nth-child(4) .card {
+    background-color: #438c7f !important;
+}
+
+.section-one .card img:nth-child(1) {
+    /* border: solid; */
+    margin: 5vmax 0 0 50vmax;
+    width: 45vmax;
+}
+
+.section-one .slide-container .slick-list .slick-track .slick-slide:nth-child(1) .card img:nth-child(2) {
+    /* border: solid; */
+    margin: -8.4vmax 0 0vmax 0vmax;
+    padding: 2.5vmax;
+    width: 45vmax;
+}
+.section-one .slide-container .slick-list .slick-track .slick-slide:nth-child(2) .card img:nth-child(2) {
+    /* border: solid; */
+    margin: -8.5vmax 0 0vmax 0vmax;
+    padding: 2.55vmax;
+    width: 43vmax;
+}
+.section-one .slide-container .slick-list .slick-track .slick-slide:nth-child(3) .card img:nth-child(2) {
+    /* border: solid; */
+    margin: -8.5vmax 0 0vmax 0vmax;
+    padding: 2.6vmax;
+    width: 40vmax;
+}
+
+.section-one .slide-container .slick-list .slick-track .slick-slide:nth-child(4) .card img:nth-child(2) {
+    /* border: solid; */
+    margin: -8.5vmax 0 0vmax 0vmax;
+    padding: 2.56vmax;
+    width: 37vmax;
+}
+
+.section-one .card img:nth-child(3) {
+    /* border: solid; */
+    margin: 2vmax 0 0 8vmax;
+    width: 35vmax;
+}
+
+.section-one .slide-container .slick-list .slick-track .slick-slide:nth-child(1) .card img:nth-child(3) {
+    /* border: solid; */
+    margin: -8vmax 0vmax 0vmax 7vmax;
+    width: 34vmax;
+}
+.section-one .slide-container .slick-list .slick-track .slick-slide:nth-child(2) .card img:nth-child(3) {
+    /* border: solid; */
+    margin: -6vmax 0vmax 0vmax 13vmax;
+    width: 30vmax;
+}
+.section-one .slide-container .slick-list .slick-track .slick-slide:nth-child(3) .card img:nth-child(3) {
+    /* border: solid; */
+    margin: -6vmax 0vmax 0vmax 20vmax;
+    width: 26vmax;
+}
+.section-one .slide-container .slick-list .slick-track .slick-slide:nth-child(4) .card img:nth-child(3) {
+    /* border: solid; */
+    margin: -8vmax 0vmax 0vmax 11vmax;
+    width: 37vmax;
+}
+
+.section-one .chat {
+    /* border: solid; */
+    position: absolute;
+    right: 0;
+    top: 40vmax;
+    width: 12vmax;
+    z-index: 999999;
+}
+
+.section-one .touch {
+    background-color: #fff;
+    /* border: solid; */
+    border-radius: 5px;
+    color: #a2238e !important;
+    font-size: 4vmax;
+    left: 57vmax;
+    padding: 1vmax 2vmax;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 39vmax;
+    width: fit-content;
+    z-index: 9;
+}
+
+.section-two {
+    background-color: #fda136;
+    /* border: solid; */
+    direction: rtl;
+    font-size: 1.7vmax;
+    padding: 7vmax;
+    position: relative;
+    z-index: -1;
+}
+
+.section-two h4 {
+    color: #fff;
+    margin: 2vmax 0;
+}
+
+.section-two h4:nth-child(1) {
+    margin: -3vmax 0 2vmax 0;
+}
+
+.section-two h4:nth-child(2) {
+    margin: 3vmax 0 5vmax 0;
+}
+
+.section-two h3 {
+    color: #a2238e;
+    font-size: 2vmax;
+}
+
+.section-two a {
+    background-color: #a2238e;
+    border-radius: 5px;
+    bottom: 5%;
+    color: #fff;
+    left: 45%;
+    padding: 1vmax 1.5vmax;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 10%;
+}
+
+.section-three {
+    background-color: #a2238e;
+    direction: rtl;
+    font-size: 1.7vmax;
+    padding: 7vmax;
+    position: relative;
+    z-index: -1;
+}
+
+.section-three h4 {
+    color: #fff;
+    margin: 2vmax 0;
+}
+
+.section-three h3 {
+    color: #fda136;
+    font-size: 2vmax;
+}
+
+.section-three h3:nth-child(1) {
+    color: #fda136;
+    font-size: 2vmax;
+    margin-top: -3vmax;
+}
+
+.section-three a {
+    background-color: #fda136;
+    border-radius: 5px;
+    bottom: 5%;
+    color: #fff;
+    left: 45%;
+    padding: 1vmax 1.5vmax;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    width: 10%;
+}
+
+.section-four {
+    background-color: #438c7f;
+    direction: rtl;
+    font-size: 1.7vmax;
+    padding: 0 7vmax;
+    position: relative;
+    z-index: -1;
+}
+.section-four div {
+    display: inline-block;
+    padding: 5vmax 0;
+}
+
+.section-four .left {
+    /* border: solid; */
+    position: absolute;
+    left: 20vmax;
+    width: 25vmax;
+    height: 95vmax;
+}
+
+.section-four .right {
+    /* border: solid; */
+    width: 25vmax;
+    height: 95vmax;
+}
+
+.section-four h3 {
+    /* border: solid; */
+    color: #fda136;
+    font-size: 3vmax;
+    margin: 0 0 1vmax 0;
+    /* width: 200%; */
+}
+
+.section-four .right h3:nth-child(7){
+    /* border: solid; */
+    font-size: 2.8vmax;
+}
+
+.section-four ul li::before {
+    content: "\2022";
+    color: #fda136;
+    font-size: 3vmax;
+    position: relative;
+    margin-left: 0.25vw;
+    top: 1vh;
+
+    /* position: relative; */
+    /* top: 0.75vmax; */
+}
+
+.section-four a {
+    background-color: #5c2d90;
+    /* border: solid; */
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    margin: 1.5vmax 0;
+    padding: 1vmax 1.5vmax;
+    text-decoration: none;
+    width: fit-content;
+}
