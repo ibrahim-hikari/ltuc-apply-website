@@ -147,7 +147,7 @@ header {
 
 .section-two {
     background-color: #fda136;
-    /* border: solid; */
+    border-bottom: solid #fff 1px;
     direction: rtl;
     font-size: 1.7vmax;
     padding: 7vmax;
@@ -188,6 +188,7 @@ header {
 
 .section-three {
     background-color: #a2238e;
+    border-bottom: solid #fff 1px;
     direction: rtl;
     font-size: 1.7vmax;
     padding: 7vmax;
@@ -226,6 +227,7 @@ header {
 
 .section-four {
     background-color: #438c7f;
+    color: #fff;
     direction: rtl;
     font-size: 1.7vmax;
     padding: 0 7vmax;
