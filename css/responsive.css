@@ -1,0 +1,209 @@
+
+@media (min-width: 1023px){
+    .footer {
+        /* margin-top: 9vw; */
+        font-size: 1.2vw;
+    }
+    .complaints-section a {
+        color: #e3b5d6;
+        font-size: 1.4vw;
+    }
+    .ccomplaints-p{
+        font-size: 2vw;
+    }
+    
+}
+@media (min-width:590px) and (max-width: 1023px){
+    .contact-text{
+        width: 19vw;
+    }
+    .fa {
+        color: rgb(226, 205, 220);
+        font-size: 2vw !important;
+        margin: 0.5vw;
+    }
+    .facebook,
+    .instagram,
+    .twitter {
+        font-size: 3vw !important;
+        padding: 1vw;
+    }
+    .complaints-section a {
+        color: #e3b5d6;
+        font-size: 2.2vw;
+    }
+    .complaints-p{
+        font-size: 2vw;
+    }
+    
+}
+
+@media (max-width: 760px) and (min-width: 590px) {
+    .footer {
+        background-image:  linear-gradient(to bottom right, red, #5B358D);
+        background-size: cover;
+        width: 100%;
+        padding: 4vh;
+        background-repeat: no-repeat;
+        float: left;
+        display: grid;
+        /* margin-top: 5vw; */
+        grid-template-rows: 2fr;
+    }
+    .ifram-div {
+        grid-row: 2;
+        width: 100%;
+        margin: 2vw 5vw 0 0;
+        padding: 0;
+    }
+    .ifram-div .ifram {
+        margin: 0 0 ;
+        width: 85vw;
+        height: 55vw;
+    }
+    .footer-logo {
+        width: 30vw;
+        height: 20vh;
+        margin: 1vw auto 2vw 2vw;
+        display: block;
+    }
+    .contact-text {
+        margin: 0 auto 0 2vw;
+        display: block;
+        width: 34vw;
+        margin-top: 5vh;
+        line-height: 5vh;
+        color: rgb(233, 214, 227);
+    }
+    .contact-info {
+        margin: 0 auto 0 2vw;
+        display: block;
+        padding: 0;
+        font-size: .5vw;
+        width: 52vw;
+        color: rgb(233, 214, 227);
+    }
+    .fa {
+        color: rgb(226, 205, 220);
+        font-size: 2.5vw !important;
+        margin: 0.5vw;
+    }
+    .facebook,
+    .instagram,
+    .twitter {
+        font-size: 4vw !important;
+        padding: 2.5vw;
+    }
+    .complaints-section {
+        width: 52vw;
+        margin: 0 auto 0 2vw;
+        color: #e3b5d6;
+        font-size: 2.3vw;
+        line-height: 4vh;
+    }
+    .complaints-section a {
+        color: #e3b5d6;
+    }
+
+    .complaints-section a:hover,
+    .fa:hover,
+    .contact-info:hover {
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.938);
+    }
+    .social {
+        width: 100vw;
+        margin: 0 auto 0 auto;
+    }
+    .complaints-section a {
+        color: #e3b5d6;
+        font-size: 2.4vw;
+    }
+    .ccomplaints-p{
+        font-size: 2.5vw;
+    }
+    
+}
+
+@media (max-width:590px){
+    .footer {
+        background-image:  linear-gradient(to bottom right, red, #5B358D);
+        background-size: cover;
+        padding: 4vh;
+        background-repeat: no-repeat;
+        float: left;
+        display: grid;
+        /* margin-top: 5vw; */
+        grid-template-rows: 2fr;
+        font-size: 2.2vw;
+    }
+    .ifram-div {
+        grid-row: 2;
+        width: 100%;
+        margin: 2vw 5vw 0 0;
+        padding: 0;
+    }
+    .ifram-div .ifram {
+        margin: 0 auto 0 auto;
+        width: 85vw;
+        height: 55vw;
+    }
+    .footer-logo {
+        width: 40vw;
+        height: 20vh;
+        margin: 1vw auto 2vw auto;
+        display: block;
+    }
+    .contact-text {
+        margin: 0 auto 0 2vw;
+        display: block;
+        width: 40vw;
+        margin-top: 5vh;
+        line-height: 5vh;
+        color: rgb(233, 214, 227);
+    }
+    .contact-info {
+        margin: 0 auto 0 2vw;
+        display: block;
+        font-size: 4vw;
+        width: 52vw;
+        color: rgb(233, 214, 227);
+    }
+    .fa {
+        color: rgb(226, 205, 220);
+        font-size: 4vw;
+        margin: 0.5vw;
+    }
+    .facebook,
+    .instagram,
+    .twitter {
+        font-size: 6vw !important;
+        padding: 2.5vw;
+    }
+    .complaints-section {
+        width: 56vw;
+        margin: 0 auto 0 2vw;
+        color: #e3b5d6;
+        font-size: 3vw;
+        line-height: 6vh;
+    }
+    .complaints-section a {
+        color: #e3b5d6;
+        font-size: 3.5vw;
+    }
+    .complaints-p{
+        font-size: 3.5vw;
+    }
+
+    .complaints-section a:hover,
+    .fa:hover,
+    .contact-info:hover {
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.938);
+    }
+    .social {
+        width: 100vw;
+        margin: 0 auto 0 auto;
+    }
+}
+

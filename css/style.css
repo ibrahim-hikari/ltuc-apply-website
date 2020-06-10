@@ -3,9 +3,12 @@
     src: url("../assets/NizarCoconKurdishBold.otf") format("truetype");
 }
 
-body {
+html ,body {
     overflow-x: hidden;
     font-family: "NizarCoconKurdish";
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -289,4 +292,84 @@ header {
     padding: 1vmax 1.5vmax;
     text-decoration: none;
     width: fit-content;
+}
+
+.footer {
+    clear: both;
+    background-image:  linear-gradient(to bottom right, red, #5B358D);
+    background-repeat: no-repeat;
+    font-family: 'AlrightSans', sans-serif;
+    background-size: cover;
+    width: 100%;
+    padding: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.ifram-div {
+    padding: 2% 0%;
+    width: 60%;
+}
+
+.ifram-div .ifram {
+    width: 100%;
+    height: 96%;
+}
+.contact-div {
+    width: 30%;
+}
+.footer-logo {
+    width: 50%;
+}
+.contact-text {
+    display: block;
+    /* width: 18vw; */
+    margin-top: 2vh;
+    line-height: 1vh;
+    padding: 2vw;
+    color: #eacee2;
+    /* text-align: center; */
+    font-size: 3vw;
+    border-bottom: .05vw solid;
+    width: 18vw;
+}
+.contact-info {
+    padding: 0.5vw;
+    line-height: 35px;
+    display: block;
+    font-size: 1.9vw;
+    width: 28vw;
+    color: #e3b5d6;
+}
+.fa {
+    color: #e3b5d6;
+    font-size: 1.9vw;
+    margin: 0.5vw;
+}
+.facebook,
+.instagram,
+.twitter {
+    font-size: 3.5vw !important;
+    padding: 0.5vw;
+}
+.complaints-section {
+    width: 22vw;
+    color: #e3b5d6;
+    font-size: 1.9vw;
+    letter-spacing: 0.5px;
+    line-height: 4vh;
+}
+.complaints-section a {
+    color: #e3b5d6;
+    font-size: 1.7vw;
+}
+.ccomplaints-p{
+    font-size: 2.2vw;
+}
+
+.complaints-section a:hover,
+.fa:hover,
+.contact-info:hover {
+    cursor: pointer;
+    color: rgb(243, 236, 241);
 }
