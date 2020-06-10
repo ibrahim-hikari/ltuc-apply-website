@@ -4,7 +4,7 @@
 $(".slide-container").slick({
 	dots: true,
 	autoplay: true,
-	autoplaySpeed: 3500,
+	autoplaySpeed: 35000,
 	pauseOnDotsHover: false,
 	fade: true,
 });
