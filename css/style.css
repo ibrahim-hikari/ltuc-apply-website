@@ -431,7 +431,7 @@ header {
     padding: 2vw;
     color: #eacee2;
     /* text-align: center; */
-    font-size: 2.7vw;
+    font-size: 2.6vw;
     border-bottom: .05vw solid;
     width: 18vw;
 }
@@ -445,19 +445,19 @@ header {
 }
 .fa2 {
     color: #e3b5d6;
-    font-size: 1.9vw;
+    font-size: 1.8vw;
     margin: 0.5vw;
 }
 .facebook,
 .instagram,
 .twitter {
-    font-size: 3.5vw !important;
+    font-size: 2.8vw !important;
     padding: 0.5vw;
 }
 .complaints-section {
     width: 22vw;
     color: #e3b5d6;
-    font-size: 1.9vw;
+    font-size: 1.8vw;
     letter-spacing: 0.5px;
     line-height: 4vh;
 }

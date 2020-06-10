@@ -324,9 +324,6 @@
     }
 }
 @media (min-width: 1023px){
-    .complaints-p {
-        width: 33vw;
-    }
 .complaints-section .complaints-a {
     margin: 0 1vw;
 }
