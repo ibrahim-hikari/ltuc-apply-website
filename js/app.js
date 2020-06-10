@@ -8,3 +8,8 @@ $(".slide-container").slick({
 	pauseOnDotsHover: false,
 	fade: true,
 });
+
+$('.icon').click(function (e) { 
+	e.preventDefault();
+	$('.main_nav').toggle();
+});

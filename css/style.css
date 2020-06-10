@@ -30,6 +30,10 @@ header {
     width: 20vmax;
 }
 
+.icon {
+    display: none;
+}
+
 .main_nav {
     /* border: solid; */
     display: block;
@@ -119,6 +123,7 @@ header {
     width: 15vw !important;
     z-index: 1;
 }
+
 .dropdown-content a {
     border: none !important;
     border-left: 0.2vw solid #fda136 !important ;
@@ -131,10 +136,12 @@ header {
     text-decoration: none;
     text-align: center;
 }
+
 .dropdown-content a:hover {
     background-color: #fda136 !important;
     color: #fff !important;
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -193,12 +200,6 @@ header {
     width: 37vmax;
 }
 
-.section-one .card img:nth-child(3) {
-    /* border: solid; */
-    margin: 2vmax 0 0 8vmax;
-    width: 35vmax;
-}
-
 .section-one .slide-container .slick-list .slick-track .slick-slide:nth-child(1) .card img:nth-child(3) {
     /* border: solid; */
     margin: -8vmax 0vmax 0vmax 7vmax;
@@ -223,9 +224,9 @@ header {
 .section-one .chat {
     /* border: solid; */
     position: fixed;
-    right: 1vmax;
+    right: 0.25vmax;
     top: 40vmax;
-    width: 12vmax;
+    width: 10vmax;
     z-index: 999999;
 }
 
@@ -250,7 +251,7 @@ header {
     border-bottom: solid #fff 1px;
     direction: rtl;
     font-size: 1.7vmax;
-    padding: 7vmax;
+    padding: 7vmax 12vmax;
     position: relative;
     z-index: -1;
 }
@@ -289,7 +290,7 @@ header {
     border-bottom: solid #fff 1px;
     direction: rtl;
     font-size: 1.7vmax;
-    padding: 7vmax;
+    padding: 7vmax 12vmax;
     position: relative;
     z-index: -1;
 }
@@ -331,7 +332,7 @@ header {
     color: #fff;
     direction: rtl;
     font-size: 1.7vmax;
-    padding: 0 7vmax;
+    padding: 0 12vmax;
     position: relative;
     z-index: -1;
 }
@@ -387,4 +388,90 @@ header {
     padding: 1vmax 1.5vmax;
     text-decoration: none;
     width: fit-content;
+}
+
+.footer {
+    clear: both;
+    background-image: url('../assets/footer-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    z-index: 999999;
+}
+
+.ifram-div {
+    padding: 2% 0%;
+    width: 60%;
+}
+
+.ifram-div .ifram {
+    width: 100%;
+    height: 96%;
+}
+.contact-div {
+    width: 30%;
+}
+.footer-logo {
+    width: 50%;
+}
+.contact-text {
+    display: block;
+    /* width: 18vw; */
+    margin-top: 2vh;
+    line-height: 1vh;
+    padding: 2vw;
+    color: #eacee2;
+    /* text-align: center; */
+    font-size: 3vw;
+    border-bottom: .05vw solid;
+    width: 18vw;
+}
+.contact-info {
+    padding: 0.5vw;
+    line-height: 35px;
+    display: block;
+    font-size: 1.5vw;
+    width: 28vw;
+    color: #e3b5d6;
+}
+.fa2 {
+    color: #e3b5d6;
+    font-size: 1.9vw;
+    margin: 0.5vw;
+}
+.facebook,
+.instagram,
+.twitter {
+    font-size: 3.5vw !important;
+    padding: 0.5vw;
+}
+.complaints-section {
+    width: 22vw;
+    color: #e3b5d6;
+    font-size: 1.9vw;
+    letter-spacing: 0.5px;
+    line-height: 4vh;
+}
+.complaints-section a {
+    /* border: solid; */
+    color: #e3b5d6;
+    padding: 0.5vw;
+    font-size: 1.7vw;
+}
+
+.complaints-p{
+    direction: rtl;
+    font-size: 2.2vw;
+}
+
+.complaints-section a:hover,
+.fa2:hover,
+.contact-info:hover {
+    cursor: pointer;
+    color: rgb(243, 236, 241);
 }
