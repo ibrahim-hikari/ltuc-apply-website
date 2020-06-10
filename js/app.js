@@ -9,7 +9,14 @@ $(".slide-container").slick({
 	fade: true,
 });
 
-$('.icon').click(function (e) { 
-	e.preventDefault();
-	$('.main_nav').toggle(500);
+$(document).ready( function(){
+	$('.sub-dropdown-content').hide()
+	$('.main-nav-mobile').hide()
+$('.icon').click(function () { 
+	$('.main-nav-mobile').fadeToggle(200);
 });
+
+$(".sub-dropdown-btn").on("click" ,function(){
+	$('.sub-dropdown-content').fadeToggle(200);
+})
+})

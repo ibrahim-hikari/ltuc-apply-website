@@ -1,4 +1,7 @@
 @media (min-width: 1023px) {
+    .main-nav-mobile{
+        visibility: hidden;
+    }
     .footer {
         /* margin-top: 9vw; */
         font-size: 1.2vw;
@@ -21,17 +24,23 @@
     }
 }
 @media (max-width: 770px) {
+    .section-one{
+        margin-top: 5vw;
+    }
     header {
-        height: 6vmax;
+        height: 9vmax;
     }
     .logo {
-        width: 30vmax;
+        width: 37vmax;
+    height: 8vw;
+    margin-left: 3vw;
     }
-    .main_nav {
+    .main-nav {
         display: none;
     }
-    .main_nav {
+    .main-nav-mobile {
         /* border: solid; */
+        visibility: visible;
         display: block;
         height: 25vmax;
         left: 0;
@@ -39,18 +48,18 @@
         width: 100vw;
     }
 
-    .main_nav ul {
+    .main-nav-mobile ul {
         background-color: #fff;
         /* border: solid; */
         box-shadow: 0px 5px 7px #0000006b;
         position: absolute;
-        top: 22%;
+        top: 36%;
         left: 0%;
         width: 100%;
         z-index: 3;
     }
 
-    .main_nav div {
+    .main-nav-mobile div {
         background-color: #fda136;
         /* border: solid; */
         display: none;
@@ -61,26 +70,61 @@
         z-index: 1;
     }
 
-    .main_nav ul li {
+    .main-nav-mobile ul li {
         /* border: solid; */
         display: block;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 5vw;
+        font-size: 3.6vw;
         font-weight: bolder;
-        margin: 1% 0%;
+        margin: 2% 0%;
+        padding: 0 0 1vw 0;
+        border-bottom: .2vw solid #fda136;
     }
 
-    .main_nav ul li a {
+    .main-nav-mobile ul li a  , .sub-dropdown{
         border-right: none;
         color: #fda136;
         padding: 0% 1%;
         text-decoration: none;
+        margin-left: 2vw;
+        
+    }
+    .main-nav-mobile ul li .sub-dropdown-btn{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3.5vw;
+        margin-left: 2vw;
     }
 
-    .main_nav ul li:last-child a {
+    .main-nav-mobile ul .sub-dropdown{
+        margin-bottom: 0%;
+    }
+
+    .main-nav-mobile ul li:last-child a {
         border: none;
     }
+    .main-nav-mobile ul .sub-dropdown-content{
+        display: block;
+        margin-top: 0%;
+        background-color: rgb(240, 236, 236);
+    }
+    .main-nav-mobile ul li .a-sdc{
+        display: block;
+        margin: 2% 0% 1% 2%;
+        border-bottom: .2vw solid #fda136;
+        padding: .6vw 0;
 
+    }
+    .main-nav-mobile ul li .a-sdc:first-child{
+        margin: 0% 0% 2% 2%;
+        padding: .6vw 0 .8vw 0;
+    }
+    .main-nav-mobile ul li .a-sdc:last-child{
+        border: none;
+        margin: 1% 0% 0% 2%;
+    }
+    .main-nav-mobile ul li .a-sdc:hover{
+        cursor: pointer;
+    }
     .dropdown {
         /* border: none; */
         border-right: none;
@@ -121,18 +165,19 @@
     .icon {
         /* border: solid; */
         display: block;
-        right: 2.5vmax;
-        top: 1.75vmax;
+        right: 5.5vmax;
+        top: 2.75vmax;
         /* padding: 0.5em; */
         position: absolute;
         z-index: 5;
     }
 
     .icon div {
-        width: 4vmax;
-        height: 0.5vmax;
+        width: 5vmax;
+        height: 0.45vmax;
+        padding: 0.05vw;
         background-color: #fff;
-        margin: 0 0 0.75vmax 0;
+        margin: 0 0 0.95vmax 0
     }
 
     .section-one .card img:nth-child(1) {
@@ -146,10 +191,13 @@
         left: 60vmax;
         top: 39vmax;
     }
+    .contact-info{
+        font-size: 2.1vw;
+    }
 }
 
 @media (min-width: 590px) and (max-width: 1023px) {
-    .main_nav {
+    .main-nav {
         top: 0.5vmax;
     }
     .contact-text {
@@ -174,13 +222,21 @@
         font-size: 2vw;
     }
 }
+@media (min-width: 771px) and (max-width:1023px){
+    .main-nav-mobile{
+        visibility: hidden;
+    }
+    .contact-info{
+        font-size: 1.9vw;
+    }
+}
 
 @media (max-width: 760px) and (min-width: 590px) {
     .footer {
         background-image: url("../assets/footer-background.png");
         background-size: cover;
         width: 100%;
-        padding: 4vh;
+        padding: 3vh 2vh;
         background-repeat: no-repeat;
         float: left;
         display: grid;
@@ -216,7 +272,7 @@
         margin: 0 auto 0 2vw;
         display: block;
         padding: 0;
-        font-size: 0.5vw;
+        font-size: 2.5vw;
         width: 52vw;
         color: rgb(233, 214, 227);
     }
@@ -229,7 +285,7 @@
     .instagram,
     .twitter {
         font-size: 4vw !important;
-        padding: 2.5vw;
+        padding: 2.1vw;
     }
     .complaints-section {
         width: 52vw;
@@ -256,18 +312,37 @@
         color: #e3b5d6;
         font-size: 2.4vw;
     }
-    .ccomplaints-p {
+    .complaints-p {
+        direction: inherit;
         font-size: 2.5vw;
     }
 }
-
+@media (max-width: 1023px) and (min-width: 771px){
+    .complaints-p {
+        font-size: 1.7vw;
+        width: 25vw;
+    }
+}
+@media (min-width: 1023px){
+    .complaints-p {
+        width: 33vw;
+    }
+.complaints-section .complaints-a {
+    margin: 0 1vw;
+}
+}
 @media (max-width: 590px) {
-    .main_nav {
+    .main-nav {
         top: 0vmax;
     }
 
-    .main_nav ul li {
+    .main-nav ul li {
         margin-left: 1%;
+    }
+    .main-nav-mobile ul li .sub-dropdown-btn ,  .main-nav-mobile ul li {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 4.8vw;
+        /* font-weight: bolder; */
     }
 
     .section-one .card img:nth-child(1) {
@@ -332,6 +407,7 @@
         width: 25%;
     }
 
+
     .section-four {
         overflow-y: hidden;
         background-color: #fda136;
@@ -381,11 +457,10 @@
         text-decoration: none;
         width: fit-content;
     }
-
     .footer {
         background-image: url("../assets/footer-background.png");
         background-size: cover;
-        padding: 4vh;
+        padding: 3vh 2vh;
         background-repeat: no-repeat;
         float: left;
         display: grid;
@@ -414,6 +489,7 @@
         margin: 0 auto 0 2vw;
         display: block;
         width: 40vw;
+        font-size: 6vw;
         margin-top: 5vh;
         line-height: 5vh;
         color: rgb(233, 214, 227);
@@ -437,7 +513,7 @@
         padding: 2.5vw;
     }
     .complaints-section {
-        width: 56vw;
+        width: 57vw;
         margin: 0 auto 0 2vw;
         color: #e3b5d6;
         font-size: 3vw;

@@ -14,7 +14,7 @@ body {
 header {
     /* border: solid; */
     background-color: #fda136;
-    height: 4vmax;
+    height: 4.8vmax;
     position: fixed;
     transition: all 1s;
     box-shadow: 0px 1px 7px #0000006b;
@@ -27,33 +27,35 @@ header {
     position: absolute;
     top: 0.5vmax;
     left: 1vmax;
-    width: 20vmax;
+    width: 23vmax;
+    height: 4vmax;
+    margin-left: 1vw;
 }
 
 .icon {
     display: none;
 }
 
-.main_nav {
+.main-nav {
     /* border: solid; */
     display: block;
     top: 1.25vmax;
     height: 2vmax;
     right: 0;
     position: absolute;
-    width: 55vw;
+    width: 58vw;
 }
 
-.main_nav ul {
+.main-nav ul {
     /* border: solid; */
     position: absolute;
-    top: 20%;
+    top: 41%;
     left: -2%;
     width: 100%;
     z-index: 3;
 }
 
-.main_nav div {
+.main-nav div {
     background-color: #fda136;
     /* border: solid; */
     height: 100%;
@@ -63,7 +65,7 @@ header {
     z-index: 1;
 }
 
-.main_nav ul li {
+.main-nav ul li {
     display: inline;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1vw;
@@ -71,19 +73,20 @@ header {
     margin-left: 3%;
 }
 
-.main_nav ul li a {
+.main-nav ul li a {
     border-right: 0.2vw solid;
     color: #fff;
     padding: 0% 1%;
+    font-size: 1.1vw;
     text-decoration: none;
 }
 
-.main_nav ul li:last-child a {
+.main-nav ul li:last-child a {
     border: none;
 }
 
+
 .dropdown {
-    /* border: none; */
     border-right: 0.2vw solid #fff;
     color: #fda136;
     position: relative;
@@ -94,10 +97,10 @@ header {
     background-color: inherit;
     font-weight: bold;
     color: #fff;
-    padding-bottom: 2.5vh;
+    font-size: 1.1vw;
+    padding-bottom: 3.5vh;
 }
 .fa-caret-down {
-    /* border: solid; */
     margin: 0 0 0 1vw;
 }
 .dropdown:hover .dropbtn {
@@ -117,7 +120,7 @@ header {
     margin: 3px auto;
     opacity: 1 !important;
     right: 0;
-    top: 4.6vh;
+    top: 3.6vh;
     position: absolute;
     padding: 1vw;
     width: 15vw !important;
@@ -152,6 +155,7 @@ header {
     border-bottom: solid #fff 1px;
     position: relative;
     z-index: 0;
+    margin-top: 2vw;
 }
 
 .section-one .slide-container .slick-list .slick-track .slick-slide:nth-child(1) .card {
@@ -427,7 +431,7 @@ header {
     padding: 2vw;
     color: #eacee2;
     /* text-align: center; */
-    font-size: 3vw;
+    font-size: 2.7vw;
     border-bottom: .05vw solid;
     width: 18vw;
 }
