@@ -26,6 +26,7 @@
 @media (max-width: 770px) {
     .section-one{
         margin-top: 5vw;
+        width: 100vw;
     }
     header {
         height: 9vmax;
