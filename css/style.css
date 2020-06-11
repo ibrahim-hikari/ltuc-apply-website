@@ -11,6 +11,10 @@ body {
     scroll-behavior: smooth;
 }
 
+a:hover , .section-one a:hover , .section-two a:hover , .section-three a:hover{
+    cursor: pointer !important;
+}
+
 header {
     /* border: solid; */
     background-color: #fda136;
@@ -369,6 +373,7 @@ header {
     /* border: solid; */
     font-size: 2.9vmax;
 }
+
 
 .section-four ul li::before {
     content: "\2022";
