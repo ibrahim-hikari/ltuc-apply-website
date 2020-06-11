@@ -124,6 +124,7 @@
     }
     .main-nav-mobile ul li .a-sdc:hover{
         cursor: pointer;
+        opacity: .8;
     }
     .dropdown {
         /* border: none; */
@@ -391,7 +392,9 @@
         width: fit-content;
         z-index: 9;
     }
-
+    .section-two h3 , .section-two h3:first-child , .section-three h3{
+        font-size: 3vmax;
+    }
     .section-three a, .section-two a {
         border-radius: 5px;
         bottom: 2%;
@@ -410,7 +413,7 @@
         background-color: #fda136;
         color: #fff;
         direction: rtl;
-        font-size: 2.5vmax;
+        font-size: 2.8vmax;
         padding: 0 12vmax;
         position: relative;
         z-index: -1;
@@ -453,6 +456,12 @@
         padding: 1vmax 1.5vmax;
         text-decoration: none;
         width: fit-content;
+    }
+    .section-two{
+        font-size: 3.5vw;
+    }
+    .section-three{
+        font-size: 3.5vw;
     }
     .footer {
         background-image: url("../assets/footer-background.png");
