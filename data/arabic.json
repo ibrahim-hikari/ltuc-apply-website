@@ -126,8 +126,14 @@
         "logo": "./assets/footer-logo.png",
         "contactUs": {
             "header": ":تواصل معنا",
-            "phone": "+962 (6) 4000 700",
-            "email": "info@ltuc.com",
+            "phone":{
+                "number": "+962 (6) 4000 700",
+                "directPhone" : "tel:+962(6)4000700"
+            },
+            "info": {
+               "email":"info@ltuc.com",
+                "directEmail":"mailto:info@ltuc.com"
+                },
             "location": "طريق المطار | صندوق البريد 183334 عمان 11118.الأردن ",
             "facebook": "https://www.facebook.com/LTUC.JO/",
             "twitter": "https://www.instagram.com/ltuc.jo/",
