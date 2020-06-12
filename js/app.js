@@ -9,16 +9,6 @@ let aboutUsConId = document.getElementById("aboutUsCon")
 let aboutUsId = document.getElementById("aboutUs");
 $(document).ready(function () {
 	
-	console.log("hii")
-	$('.sub-dropdown-content').hide();
-	$('#icon').on("click",function () {
-		$('.main-nav-mobile').fadeToggle(200);
-	});
-
-	$(".sub-dropdown-btn").click(function () {
-		$('.sub-dropdown-content').fadeToggle(200);
-	})
-
 	let renderPageContent = (url, templateId, sectionId) => {
 		$.getJSON(url, (content) => {
 			let template = $(templateId).html();
@@ -33,29 +23,38 @@ $(document).ready(function () {
 			Handlebars.registerPartial('program', programSource);
 			Handlebars.registerPartial('aboutUs', aboutUsSource)
 			Handlebars.registerPartial('aboutUsCon', aboutUsConSource);
-			// Handlebars.registerHelper('include', function(source) {
-			// 	return new Handlebars.SafeString(source);
-			// })
 			let renderTemplate = Handlebars.compile(template)(content);
 			$(sectionId).append(renderTemplate);
 		})
 	}
 	
-	renderPageContent('/data/arabic.json', templateId, sectionId);
 	function showArabicVersion() {
 		console.log("helllloooo");
 		$(sectionId).html("");
+		renderPageContent('/data/arabic.json', templateId, sectionId);
 	}
 	function showEnglishVersion() {
 		$(sectionId).html("");
-		renderPageContent('data/english-version.json', templateId, sectionId)
+		renderPageContent('/data/english.json', templateId, sectionId)
 	}
+
+	showArabicVersion()
 	
-	// showArabicVersion();
-	// $("#arabic-buuton").on('click', showArabicVersion);
-	// $('#english-version').on('click', showEnglishVersion);
+	$("#arabic-button").on('click', showArabicVersion);
+	$('#english-button').on('click', showEnglishVersion);
+
+	console.log("hii")
+	$('.main-nav-mobile').hide();
+	$('.sub-dropdown-content').hide();
+	$('#icon').on("click",function () {
+		$('.main-nav-mobile').fadeToggle(200);
+	});
+
+	$(".sub-dropdown-btn").click(function () {
+		$('.sub-dropdown-content').fadeToggle(200);
+	})
 	
 
 	
 })
-	$('.main-nav-mobile').hide();
+
