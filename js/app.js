@@ -23,7 +23,7 @@ function carousel() {
   if (i === 4) {
 	  i = 0;
   }
-  setTimeout(carousel, 350000);
+  setTimeout(carousel, 3500);
 }
 
 $('.bar').on('click',function(e){
