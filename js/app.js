@@ -1,14 +1,6 @@
   
 'use strict';
 
-$(".slide-container").slick({
-	dots: true,
-	autoplay: true,
-	autoplaySpeed: 3500,
-	pauseOnDotsHover: false,
-	fade: true,
-});
-
 $(document).ready( function(){
 	$('.sub-dropdown-content').hide()
 	$('.main-nav-mobile').hide()
@@ -20,3 +12,22 @@ $(".sub-dropdown-btn").on("click" ,function(){
 	$('.sub-dropdown-content').fadeToggle(200);
 })
 })
+
+var i = 0;
+carousel();
+
+function carousel() {
+  let slide = document.getElementsByClassName("s1");
+  slide[0].style.marginLeft = -i*20 + '%';
+  i++;
+  if (i === 4) {
+	  i = 0;
+  }
+  setTimeout(carousel, 3500); // Change image every 2 seconds
+}
+
+$('.bar').on('click',function(e){
+	i = e.target.id - 1;
+	let slide = document.getElementsByClassName("s1");
+	slide[0].style.marginLeft = -i*20 + '%'
+});
