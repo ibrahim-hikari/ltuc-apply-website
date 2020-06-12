@@ -255,6 +255,7 @@ header {
 }
 
 .section-two {
+    margin-top: 5vw;
     background-color: #fda136;
     border-bottom: solid #fff 1px;
     direction: rtl;
@@ -410,6 +411,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     position: relative;
+    /* margin-top: 15vw; */
     z-index: 999999;
 }
 
@@ -483,4 +485,16 @@ header {
 .contact-info:hover {
     cursor: pointer;
     color: rgb(243, 236, 241);
+}
+
+.translation-button{
+    /* position: absolute; */
+    /* top: 20%; */
+    z-index: 99999999999999999999999999999999;
+}
+.translatation-dev{
+    position: fixed;
+    z-index: 99999999;
+    top: 2%;
+    right: 10%;
 }
