@@ -18,16 +18,16 @@ carousel();
 
 function carousel() {
   let slide = document.getElementsByClassName("s1");
-  slide[0].style.marginLeft = -i*20 + '%';
+  slide[0].style.marginLeft = -i*25 + '%';
   i++;
   if (i === 4) {
 	  i = 0;
   }
-  setTimeout(carousel, 3500); // Change image every 2 seconds
+  setTimeout(carousel, 350000);
 }
 
 $('.bar').on('click',function(e){
 	i = e.target.id - 1;
 	let slide = document.getElementsByClassName("s1");
-	slide[0].style.marginLeft = -i*20 + '%'
+	slide[0].style.marginLeft = -i*25 + '%'
 });
