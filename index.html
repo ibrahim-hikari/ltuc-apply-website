@@ -202,9 +202,9 @@
                   <div class="contact-div">
                       <img src="{{footer.logo}}" class="footer-logo" alt="">
                       <h4 class="contact-text">{{footer.contactUs.header}}</h4>
-                      <a class="contact-info" href="tel:+962(6)4000700"><i class="phone fa fa-phone">&nbsp;&nbsp;{{footer.contactUs.phone}}
+                      <a class="contact-info" href="{{footer.contactUs.phone.directPhone}}"><i class="phone fa fa-phone">&nbsp;&nbsp;{{footer.contactUs.phone.number}}
                               </i></a>
-                      <a class="contact-info" href="mailto:info@ltuc.com"><i class="send fa fa-send">&nbsp;&nbsp;{{footer.contactUs.email}}</i>
+                      <a class="contact-info" href="{{footer.contactUs.info.dirextEmail}}"><i class="send fa fa-send">&nbsp;&nbsp;{{footer.contactUs.info.email}}</i>
                           <a class="contact-info" href="#"><i class="map fa fa-map-marker">&nbsp;&nbsp;{{footer.contactUs.location}}
                                   <br>&nbsp;&nbsp;&nbsp;</i>
                           </a>
@@ -232,7 +232,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/asset.js"></script>
 </body>
 
 </html>
