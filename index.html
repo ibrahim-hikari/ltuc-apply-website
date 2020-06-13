@@ -4,256 +4,235 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>LTUC</title>
+    <title>LTUC apply</title>
+    <script id="ltucTemplate" type="text/x-handlebars-template">
+        {{> header}}
+        {{> slider}}
+        {{> aboutUs}}
+        {{> aboutUsCon}}
+        {{> program}}
+        {{> footer}}
+    </script>
+
+    <script id="header" type="text/x-handlebars-template">
+        <header>
+            <img class="logo" src="{{header.logo}}" alt="">
+            <a href="javascript:void(0);" class="icon">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+            <nav class="main-nav-mobile">
+                <ul>
+                    <li><a href="#section-one">{{header.nav.home}}</a></li>
+                    <li><a href="#section-two">{{header.nav.aboutUs}}</a> </li>
+                    <li><a href="#section-four">{{header.nav.programs}}</a></li>
+                    <li class="dropdown sub-dropdown">
+                        <button class="dropbtn sub-dropdown-btn" type="scall">{{header.nav.studentServicesHeader}}<i class="fa fa-caret-down"></i></button>
+                    </li>
+                    <li class="sub-dropdown-content">
+                        <a class="a-sdc" href="https://sisportal-100533.campusnexus.cloud/CMCPortal/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsisportal-100533.campusnexus.cloud%2fCMCPortal%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fCMCPortal%252fsecure%252fstaff%252fstaportal.aspx&wct=2020-05-07T13%3a03%3a17Z">{{header.nav.studentServices.selfServicePortal}}</a>
+                        <a class="a-sdc"  href="https://online.ltuc.com/d2l/home">{{header.nav.studentServices.desireToLearn}}</a>
+                        <a class="a-sdc" href="https://employmenthub.ltuc.com">{{header.nav.studentServices.EducationForEmployment}}</a>
+                    </li>
+                    <li><a href="#page-footer">{{header.nav.contactUs}}</a></li>
+                </ul>
+            </nav>
+                <div></div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#section-one">{{header.nav.home}}</a></li>
+                        <li><a href="#section-two">{{header.nav.aboutUs}}</a></li>
+                        <li><a href="#section-four">{{header.nav.programs}}</a></li>
+                        <li class="dropdown"><button class="dropbtn" type="scall">{{header.nav.studentServicesHeader}}<i
+                                    class="fa fa-caret-down"></i></button>
+                            <div class="dropdown-content">
+                                <a href="https://sisportal-100533.campusnexus.cloud/CMCPortal/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsisportal-100533.campusnexus.cloud%2fCMCPortal%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fCMCPortal%252fsecure%252fstaff%252fstaportal.aspx&wct=2020-05-07T13%3a03%3a17Z">{{header.nav.studentServices.selfServicePortal}}</a>
+                                <a href="https://online.ltuc.com/d2l/home">{{header.nav.studentServices.desireToLearn}}</a>
+                                <a href="https://employmenthub.ltuc.com">{{header.nav.studentServices.EducationForEmployment}}</a>
+                            </div>
+                        </li>
+                        <li><a href="#page-footer">{{header.nav.contactUs}}</a></li>
+                        <li>   <button id="arabic-buuton">Arabic</button></li>
+                        <li><button id="English-button">English</button></li>
+
+                    </ul>
+                    <div></div>
+               
+            </nav>
+        </header>
+    </script>
+
+    <script id="slider" type="text/x-handlebars-template">
+        <section id="section-one" class="section-one">
+            <div class="slidershow middle">
+    
+                <div class="slides">
+                    <input type="radio" name="r" id="r1">
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+                    <input type="radio" name="r" id="r4">
+                    <div class="slide s1">
+                        <div class="card">
+                            <img src="./assets/ready_orange.png" alt="">
+                            <img src="./assets/1.png" alt="">
+                            <img src="./assets/text1.png" alt="">
+                            <a class="touch"
+                                href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل
+                                معنا</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="card">
+                            <img src="./assets/ready_purple.png" alt="">
+                            <img src="./assets/2.png" alt="">
+                            <img src="./assets/text2.png" alt="">
+                            <a class="touch"
+                                href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل
+                                معنا</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="card">
+                            <img src="./assets/ready_orange.png" alt="">
+                            <img src="./assets/3.png" alt="">
+                            <img src="./assets/text3.png" alt="">
+                            <a class="touch"
+                                href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل
+                                معنا</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="card">
+                            <img src="./assets/ready_orange.png" alt="">
+                            <img src="./assets/4.png" alt="">
+                            <img src="./assets/4-1.png" alt="">
+                            <a class="touch"
+                                href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل
+                                معنا</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="navigation">
+                    <label for="r1" class="bar" id="1"></label>
+                    <label for="r2" class="bar" id="2"></label>
+                    <label for="r3" class="bar" id="3"></label>
+                    <label for="r4" class="bar" id="4"></label>
+                </div>
+            </div>
+    
+            <a href="https://m.me/LTUC.JO"><img class="chat" src="./assets/chat2-removebg-preview.png" alt=""></a>
+        </section>
+    </script>
+
+    <script id="aboutUs" type="text/x-handlebars-template">
+        <section id="section-two" class="section-two">
+            {{#each main.aboutUs.aboutUsFeatures}}
+            <h3>{{Feature}}</h3>
+            <h4>{{description}}</h4>
+            {{/each}}
+            <a href="{{main.aboutUs.aboutUsLink}}">تواصل معنا</a>
+        </section>
+
+        </script>
+
+    <script id="aboutUsCon" type="text/x-handlebars-template">
+    <section id="section-three" class="section-three">
+        {{#each main.aboutUsContant.aboutUsContantSections}}
+        <h3>{{Features}}</h3>
+        <h4>{{description}}</h4>
+        {{/each}}
+        <a href="{{main.aboutUsContant.aboutUsContantLink}}">تواصل معنا</a>
+    </section>
+</script>
+    <script id="program" type="text/x-handlebars-template">
+        <section id="section-four" class="section-four">
+            <div class="left">
+                <h3>{{main.program.firstProgram.InternationalDiploma}}</h3>
+                <ul>
+                    {{#each main.program.firstProgram.InternationalDiplomaSpecialties}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <a href="{{main.program.firstProgram.href}}">تواصل معنا</a>
+                <h3>{{main.program.secondProgram.TechnicalDiploma}}</h3>
+                <ul>
+                    {{#each main.program.secondProgram.TechnicalDiplomaSpecialties}}
+                    <li>{{this}}</li>
+                   {{/each}}
+                </ul>
+                <a href="{{main.program.secondProgram.href}}">تواصل معنا</a>
+            </div>
+    
+            <div class="right">
+                <h3>{{main.program.thirdprogram.bachelors}}</h3>
+                <ul>
+                    {{#each main.program.thirdprogram.bachelorsSpecialties}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <a href="{{main.program.thirdprogram.href}}">تواصل معنا</a>
+    
+                <h3>{{main.program.fourthProgram.LocalDiploma}}</h3>
+                <ul>
+                    {{#each main.program.fourthProgram.LocalDiplomaSpecialties}}
+                    <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+                <a href="{{main.program.thirdprogram.href}}">تواصل معنا</a>
+                <h3>
+                 {{main.program.fifthProgram.TrainingCourses}}
+                </h3>
+                <a href="{{main.program.fifthProgram.href}}">تواصل معنا</a>
+                </div>
+            </section>
+        </script>
+
+    <script id="footer" type="text/x-handlebars-template">
+            <footer  id="page-footer" class="footer">
+                  <div class="ifram-div">
+                      <iframe class="ifram" src="{{footer.iframe}}" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                  </div>
+  
+                  <div class="contact-div">
+                      <img src="{{footer.logo}}" class="footer-logo" alt="">
+                      <h4 class="contact-text">{{footer.contactUs.header}}</h4>
+                      <a class="contact-info" href="tel:+962(6)4000700"><i class="phone fa fa-phone">&nbsp;&nbsp;{{footer.contactUs.phone}}
+                              </i></a>
+                      <a class="contact-info" href="mailto:info@ltuc.com"><i class="send fa fa-send">&nbsp;&nbsp;{{footer.contactUs.email}}</i>
+                          <a class="contact-info" href="#"><i class="map fa fa-map-marker">&nbsp;&nbsp;{{footer.contactUs.location}}
+                                  <br>&nbsp;&nbsp;&nbsp;</i>
+                          </a>
+                          <div class="complaints-section">
+                              <div class="social">
+                                  <a href="{{footer.contatUs.facebook}}"><i class="facebook fa fa2 fa-facebook-f"></i></a>
+                                  <a href="{{footer.contatUs.twitter}}"><i class="instagram fa fa2 fa-instagram"></i></a>
+                                  <a href="{{footer.contatUs.instgram}}"><i class="twitter fa fa2 fa-twitter"></i></a>
+                              </div>
+                              <p class="complaints-p">{{footer.complaints.note}}</p>
+                              <a class="complaints-a" href="{{footer.complaints.email.href}}">{{footer.complaints.email.email}}</a>
+                          </div>
+                  </div>
+  
+              </footer>
+        </script>
 </head>
 
-<body>
-    <header>
-        <img class="logo" src="./assets/header-logo.png" alt="">
-        <a href="javascript:void(0);" class="icon">
-            <div></div>
-            <div></div>
-            <div></div>
-        </a>
-        <nav class="main-nav-mobile">
-            <ul>
-                <li><a href="#section-one">HOME</a></li>
-                <li><a href="#section-two">ABOUT US</a></li>
-                <li><a href="#section-four">PROGRAMS</a></li>
-                <li class="dropdown sub-dropdown"><button class="dropbtn sub-dropdown-btn" type="scall">STUDENT
-                        SERVICES<i class="fa fa-caret-down"></i></button>
-                </li>
-                <li class="sub-dropdown-content">
-                    <a class="a-sdc"
-                        href="https://sisportal-100533.campusnexus.cloud/CMCPortal/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsisportal-100533.campusnexus.cloud%2fCMCPortal%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fCMCPortal%252fsecure%252fstaff%252fstaportal.aspx&wct=2020-05-07T13%3a03%3a17Z">SSP</a>
-                    <a class="a-sdc" href="https://online.ltuc.com/d2l/home">D2L</a>
-                    <a class="a-sdc" href="https://employmenthub.ltuc.com">E4E</a>
-                </li>
-                <li><a href="#footer">CONTACT US</a></li>
-            </ul>
-        </nav>
-        <div></div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#section-one">HOME</a></li>
-                <li><a href="#section-two">ABOUT US</a></li>
-                <li><a href="#section-four">PROGRAMS</a></li>
-                <li class="dropdown"><button class="dropbtn" type="scall">STUDENT SERVICES<i
-                            class="fa fa-caret-down"></i></button>
-                    <div class="dropdown-content">
-                        <a
-                            href="https://sisportal-100533.campusnexus.cloud/CMCPortal/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsisportal-100533.campusnexus.cloud%2fCMCPortal%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fCMCPortal%252fsecure%252fstaff%252fstaportal.aspx&wct=2020-05-07T13%3a03%3a17Z">SSP</a>
-                        <a href="https://online.ltuc.com/d2l/home">D2L</a>
-                        <a href="https://employmenthub.ltuc.com">E4E</a>
-                    </div>
-                </li>
-                <li><a href="#footer">CONTACT US</a></li>
-            </ul>
-            <div></div>
-
-        </nav>
-    </header>
-    <section id="section-one" class="section-one">
-        <div class="slidershow middle">
-
-            <div class="slides">
-              <input type="radio" name="r" id="r1">
-              <input type="radio" name="r" id="r2">
-              <input type="radio" name="r" id="r3">
-              <input type="radio" name="r" id="r4">
-              <div class="slide s1">
-                <div class="card">
-                  <img src="./assets/ready_orange.png" alt="">
-                  <img src="./assets/1.png" alt="">
-                  <img src="./assets/text1.png" alt="">
-                  <a class="touch" href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل معنا</a>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="card">
-                  <img src="./assets/ready_purple.png" alt="">
-                  <img src="./assets/2.png" alt="">
-                  <img src="./assets/text2.png" alt="">
-                  <a class="touch" href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل معنا</a>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="card">
-                  <img src="./assets/ready_orange.png" alt="">
-                  <img src="./assets/3.png" alt="">
-                  <img src="./assets/text3.png" alt="">
-                  <a class="touch" href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل معنا</a>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="card">
-                  <img src="./assets/ready_orange.png" alt="">
-                  <img src="./assets/4.png" alt="">
-                  <img src="./assets/4-1.png" alt="">
-                  <a class="touch" href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل معنا</a>
-              </div>
-              </div>
-            </div>
-        
-            <div class="navigation">
-              <label for="r1" class="bar" id="1"></label>
-              <label for="r2" class="bar" id="2"></label>
-              <label for="r3" class="bar" id="3"></label>
-              <label for="r4" class="bar" id="4"></label>
-            </div>
-          </div>
-
-        <a href="https://m.me/LTUC.JO"><img class="chat" src="./assets/chat2-removebg-preview.png" alt=""></a>
-    </section>
-
-    <section id="section-two" class="section-two">
-        <h3>عن كلية لومينوس الجامعية التقنية</h3>
-        <h4>منذ أن انطلقنا عام 1980، كانت رسالتنا ولا زالت تتمثّل بمنحك تجربة تعليمية ترتقي بطموحاتك، تبني قدراتك، وتضعك
-            على الطريق الصحيح نحو تحقيق الأمان الوظيفي والمستقبل الذي تحلم به.</h4>
-        <h3>ادرس مع أكاديميات ومؤسسات عالمية واحصل على شهادات معتمدة دولياً</h3>
-        <h4>نتعاون مع جهات عالمية معروفة لتقديم تخصصات عملية وعصرية تحاكي بيئة العمل وتواكب أحدث التطورات، مثل أكاديمية
-            لافال للتجميل، المُصنِّع الألماني الأكبر لتكنولوجيا المركبات"Robert Bosch GmbH" ، أكاديمية "كود فيلوز "Code
-            Fellows الأمريكية للبرمجيات، وغيرها.</h4>
-        <h3>تجنَّب تحديات البطالة والتخصصات المشبعة واضمن وظيفتك بعد التخرج</h3>
-        <h4>قبل إطلاق أي تخصص أو برنامج دراسي، نتواصل مع كبرى الشركات والمؤسسات لمعرفة احتياجات السوق والمؤهلات
-            المطلوبة، لنبني وفقاً لذلك مناهجنا التعليمية بما يلبي هذه المتطلبات.</h4>
-        <h3>اختر التخصص الأنسب لقدراتك، مهاراتك، وشغفك</h3>
-        <h4>لدينا فريق كامل يساعدك في اختيار التخصص المناسب لشغفك ورغباتك، ويكشف أمامك الخيارات لتختار بذكاء.</h4>
-        <a href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل معنا</a>
-    </section>
-    <section id="section-three" class="section-three">
-        <h4>بعد مرحلة التوجيهي تنتظرك العديد من الفرص، الخيارات، والأبواب نحو المستقبل، لكن متابعة تعليمك هو أكثر الطرق
-            ضمانة نحو مستقبل ناجح وآمن ومستقر.</h4>
-        <h4>بمنحك تخصصات مطلوبة فعلياً في السوق المحلي والعالمي، وتجربة تعليمية تحاكي بيئة العمل، نجهزك بشكل عملي
-            للمستقبل، ونزودك بالمهارات والمعرفة التي تحتاجها لتضمن وظيفة مستدامة بنفس مجالك مباشرة بعد التخرج، وتدخل سوق
-            العمل بثقة وكفاءة عالية.
-        </h4>
-        <h3>تعليم للمستقبل</h3>
-        <h4>نمتلك الشغف والإرادة والالتزام الحقيقي لنمهد الطريق أمامك نحو بناء مسيرة مهنية متميزة تقودها لحاضر ومستقبل
-            ناجحين.</h4>
-        <h3>تعليم ذكي ومرن</h3>
-        <h4>نقدم لك تخصصات وبرامج تعليمية ذكية وعملية تستمر بالتجدد والتطور لمواكبة تغيرات سوق العمل محلياً وعالمياً.
-        </h4>
-        <h3>تعليم يبني القدرات</h3>
-        <h4>نوفر لك تعليماً يركز على تطوير مهاراتك وصقل مواهبك وقدراتك أكثر من تركيزه على الجانب النظري، لنمكنك من دخول
-            سوق العمل بثقة وجاهزية كاملة.</h4>
-        <h3>تعليم مُلهِم</h3>
-        <h4>نتيح لك عيش تجربة تعليمية محفزة وملهمة تفتح أمامك الأبواب لتستكشف طاقاتك وتتفاعل بإيجابية مع مجتمعك.</h4>
-        <a href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل معنا</a>
-    </section>
-    <section id="section-four" class="section-four">
-        <div class="left">
-            <h3>برامج الدبلوم الدولي</h3>
-            <ul>
-                <li>إدارة الموارد البشرية</li>
-                <li>المبيعات والتسويق</li>
-                <li>المحاسبة والإدارة المالية</li>
-                <li>إدارة الأعمال وأنظمة المكاتب</li>
-                <li>إدارة العمليات اللوجستية</li>
-                <li>إدارة الفنادق والفعاليات</li>
-                <li>إدارة الطعام والشراب</li>
-                <li>إدارة فنون الطهي</li>
-                <li>التصميم الداخلي</li>
-                <li>تصميم الأزياء</li>
-                <li>تصميم المنتجات الصناعية</li>
-                <li>هندسة الكهرباء والإلكترونيات</li>
-                <li>الهندسة الميكانيكية</li>
-                <li>هندسة صيانة المركبات المتقدمة</li>
-                <li>الهندسة المدنية</li>
-                <li>هندسة المساحة</li>
-                <li>هندسة البرمجيات</li>
-            </ul>
-            <a href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل معنا</a>
-            <h3>برامج الدبلوم الفني</h3>
-            <ul>
-                <li>إدارة فنادق</li>
-                <li>فنون الطهي</li>
-                <li>التصميم الداخلي</li>
-                <li>الأزياء وتكنولوجيا الألبسة</li>
-                <li>الصيانة الكهروميكانيكية العامة</li>
-                <li>نظم التكييف والتبريد</li>
-                <li>تكنولوجيا السيارات الهجينة</li>
-                <li>الهندسة المدنية</li>
-                <li>فن وعلوم التجميل</li>
-            </ul>
-            <a href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل معنا</a>
-        </div>
-
-        <div class="right">
-            <h3>برامج البكالوريوس</h3>
-            <ul>
-                <li>هندسة تكنولوجيا السيارات</li>
-                <li>صناعة الأفلام الرقمية</li>
-                <li>الواقع الإفتراضي والمعزز</li>
-                <li>فنون إنتاج الصوت</li>
-                <li>تصميم الميديا الرقمية</li>
-                <li>إدارة الفنادق والمطاعم والفعاليات</li>
-                <li>تقنيات صناعة الأسنان</li>
-                <li>التقنيات اللوجستية وسلسلة الإمداد</li>
-            </ul>
-            <a href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل معنا</a>
-            <h3>برامج الدبلوم المحلي</h3>
-            <ul>
-                <li>الصيدلة</li>
-                <li>فحص البصر وتجهيز النظارات الطبية</li>
-                <li>مختبرات الأسنان</li>
-                <li>الصيانة الكهروميكانيكية</li>
-                <li>التكييف والتبريد</li>
-                <li>صيانة المركبات الكهربائية والهجينة</li>
-                <li>هندسة العمارة والتصميم الداخلي</li>
-                <li>فن وعلوم التجميل</li>
-                <li>هندسة الصوت</li>
-                <li>صناعة الأفلام</li>
-                <li>الميديا الرقمية</li>
-                <li>الرسوم المتحركة</li>
-            </ul>
-            <a href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل معنا</a>
-            <h3>
-                دورات تدريبية متنوعة (أكثر من
-                150 دورة)مكثّفة من 6 أسابيع
-                إلى 8 شهور
-            </h3>
-            <a href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل معنا</a>
-        </div>
-    </section>
-    <footer id="footer" class="footer">
-        <div class="ifram-div">
-            <iframe class="ifram"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3387.3187220247373!2d35.86663101449337!3d31.897936535593477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca7e4aee722d5%3A0x8693a9183825010b!2z2YPZhNmK2Kkg2YTZiNmF2YrZhtmI2LMg2KfZhNis2KfZhdi52YrYqSDYp9mE2KrZgtmG2YrYqSAtIChMdW1pbnVzIFRlY2huaWNhbCBVbml2ZXJzaXR5IENvbGxlZ2UgKExUVUM!5e0!3m2!1sen!2sjo!4v1591309880460!5m2!1sen!2sjo"
-                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-
-        <div class="contact-div">
-            <img src="./assets/footer-logo.png" class="footer-logo" alt="">
-            <!-- <img src="./assets/contact-text.png" class="contact-text" alt=""> -->
-            <h4 class="contact-text">:تواصل معنا</h4>
-            <a class="contact-info" href="tel:+962(6)4000700"><i class="phone fa fa-phone">&nbsp;&nbsp;+962 (6) 4000
-                    700</i></a>
-            <a class="contact-info" href="mailto:info@ltuc.com"><i class="send fa fa-send">&nbsp;&nbsp;info@ltuc.com</i>
-                <a class="contact-info" href="#"><i class="map fa fa-map-marker">&nbsp;&nbsp;طريق المطار | صندوق البريد
-                        183334
-                        <br>&nbsp;&nbsp;&nbsp;عمان 11118.الأردن</i>
-                    <!-- <hr class="hr-length"> -->
-                </a>
-                <div class="complaints-section">
-                    <div class="social">
-                        <a href="https://www.facebook.com/LTUC.JO/"><i class="facebook fa fa2 fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/ltuc.jo/"><i class="instagram fa fa2 fa-instagram"></i></a>
-                        <a href="https://twitter.com/LTUCJO"><i class="twitter fa fa2 fa-twitter"></i></a>
-                    </div>
-                    <p class="complaints-p">لتوجيه اي ملاحظات يرجو التواصل على:</p>
-                    <a class="complaints-a" href="mailto:complaints@ltuc.com">complaints@ltuc.com</a>
-                </div>
-        </div>
-    </footer>
-
+<body id="showLTUCPageContent">
+    <!-- <div ></div> -->
+    <!-- <div class="translatation-dev"> -->
+    <button id="arabic-button" class="translation-button">Arabic</button>
+    <button id="english-button" class="translation-button">English</button>
+    <!-- </div> -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="./js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/asset.js"></script>
 </body>
 
 </html>

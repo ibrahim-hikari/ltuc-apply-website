@@ -1,0 +1,135 @@
+{
+    "header": {
+        "logo": "./assets/header-logo.png",
+        "nav": [
+            "HOME",
+            "ABOUT US",
+            "PROGRAMS",
+            {
+                "studentServices": [
+                    " self service portal",
+                    " desire to learn",
+                    "Education for Employment"
+                ]
+            },
+            "CONTACT US"
+        ]
+    },
+    "main": {
+        "aboutUs": {
+            "Features": ["" , "" , "" , ""],
+            "description": [ "" , "" , "" , ""],
+            "aboutUsLink ": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+        },
+
+        "aboutUsContant": {
+            "Features": ["", "" , "" , ""],
+            "description": [ "", "" , "" , "" ],
+            "aboutUsContantLink": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+        },
+
+        "program": [
+                {
+                    "InternationalDiploma": "",
+                    "InternationalDiplomaSpecialties": [
+                        " ",
+                        " ",
+                        " ",
+                        " ",
+                        " ",
+                        " ",
+                        " ",
+                        " ",
+                        " ",
+                        " ",
+                        " ",
+                        " ",
+                        " ",
+                        " ",
+                        " ",
+                        " ",
+                        " "
+    
+                    ],
+                    "href": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+                },
+                {
+                    "TechnicalDiploma": " ",
+                    "TechnicalDiplomaSpecialties": [
+                        " ",
+                        " ",
+                        " ",
+                        " ",
+                        " ",
+                        " ",
+                        " ",
+                        " ",
+                        " "
+                    ],
+                    "href": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+                },
+                {
+                "bachelors": " ",
+                "bachelorsSpecialties": [
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " "
+                ],
+                "href": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+            },
+            {
+                "LocalDiploma": " ",
+                "LocalDiplomaSpecialties": [
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " "
+                ],
+                "href": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+            },
+            {
+                "TrainingCourses": "",
+                "href": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+            }
+        ]
+    },
+    "footer": {
+        "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3387.3187220247373!2d35.86663101449337!3d31.897936535593477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca7e4aee722d5%3A0x8693a9183825010b!2z2YPZhNmK2Kkg2YTZiNmF2YrZhtmI2LMg2KfZhNis2KfZhdi52YrYqSDYp9mE2KrZgtmG2YrYqSAtIChMdW1pbnVzIFRlY2huaWNhbCBVbml2ZXJzaXR5IENvbGxlZ2UgKExUVUM!5e0!3m2!1sen!2sjo!4v1591309880460!5m2!1sen!2sjo",
+        "logo": "./assets/footer-logo.png",
+        "contactUs": {
+            "header": "Contact Us :",
+            "phone":{
+                "number": "+962 (6) 4000 700",
+                "directPhone" : "tel:+962(6)4000700"
+            },
+            "info": {
+               "email":"info@ltuc.com",
+                "directEmail":"mailto:info@ltuc.com"
+                },
+            "location": " ",
+            "facebook": "https://www.facebook.com/LTUC.JO/",
+            "twitter": "https://www.instagram.com/ltuc.jo/",
+            "instgram": "https://twitter.com/LTUCJO"
+        },
+        "complaints": {
+            "note": "",
+            "email": {
+                "email" :"complaints@ltuc.com",
+                 "href": "mailto:complaints@ltuc.com"
+                }
+        }
+    }
+}
