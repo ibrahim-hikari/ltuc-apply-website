@@ -6,7 +6,7 @@
 html,
 body {
     font-family: "NizarCoconKurdish";
-    letter-spacing: 0.1vw;
+    letter-spacing: 0.05vw;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -54,10 +54,11 @@ header {
 }
 
 .main-nav ul {
+    /* direction: rtl; */
     /* border: solid; */
     position: absolute;
     top: 41%;
-    left: -2%;
+    left: -5%;
     width: 100%;
     z-index: 3;
 }
@@ -88,10 +89,6 @@ header {
     text-decoration: none;
 }
 
-.main-nav ul li:last-child a {
-    border: none;
-}
-
 .dropdown {
     border-right: 0.2vw solid #fff;
     color: #fda136;
@@ -107,7 +104,7 @@ header {
     padding-bottom: 3.5vh;
 }
 .fa-caret-down {
-    margin: 0 0 0 1vw;
+    margin: 0 0vw 0 1vw;
 }
 .dropdown:hover .dropbtn {
     cursor: pointer;
@@ -281,13 +278,13 @@ input[name="r"] {
     margin-left: 0;
 }
 #r2:checked ~ .s1 {
-    margin-left: -20%;
+    margin-left: -25%;
 }
 #r3:checked ~ .s1 {
-    margin-left: -40%;
+    margin-left: -50%;
 }
 #r4:checked ~ .s1 {
-    margin-left: -60%;
+    margin-left: -75%;
 }
 
 .chat{
@@ -324,7 +321,7 @@ input[name="r"] {
     border-bottom: solid #fff 1px;
     direction: rtl;
     font-size: 1.7vmax;
-    padding: 7vmax 12vmax;
+    padding: 9vmax 12vmax;
     position: relative;
     z-index: -1;
 }
@@ -405,7 +402,7 @@ input[name="r"] {
     color: #fff;
     direction: rtl;
     font-size: 1.7vmax;
-    padding: 0 12vmax;
+    padding: 2vmax 12vmax;
     position: relative;
     z-index: -1;
 }

@@ -28,7 +28,7 @@ let renderPageContent = (url, templateId, sectionId) => {
     Handlebars.registerPartial('footer', footerSource);
     let renderTemplate = Handlebars.compile(template)(content);
     $(sectionId).append(renderTemplate);
-  })
+  });
 }
 
 function showArabicVersion() {

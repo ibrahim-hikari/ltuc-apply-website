@@ -1,74 +1,90 @@
 {
     "header": {
         "logo": "./assets/header-logo.png",
-        "nav": [
-            "HOME",
-            "ABOUT US",
-            "PROGRAMS",
-            {
-                "studentServices": [
-                    " self service portal",
-                    " desire to learn",
-                    "Education for Employment"
-                ]
+        "nav": {
+            "home": "HOME",
+            "aboutUs": "ABOUT US",
+            "programs": "PROGRAMS",
+            "studentServicesHeader": "STUDENT SERVICES",
+            "studentServices": {
+                "selfServicePortal": "self service portal",
+                "desireToLearn": "desire to learn",
+                "EducationForEmployment": "Education for Employment"
             },
-            "CONTACT US"
-        ]
+            "contactUs": "CONTACT US"
+        }
     },
     "main": {
         "aboutUs": {
-            "Features": ["" , "" , "" , ""],
-            "description": [ "" , "" , "" , ""],
+            "Features": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "description": [
+                "",
+                "",
+                "",
+                ""
+            ],
             "aboutUsLink ": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
         },
-
         "aboutUsContant": {
-            "Features": ["", "" , "" , ""],
-            "description": [ "", "" , "" , "" ],
+            "Features": [
+                "",
+                "",
+                "",
+                ""
+            ],
+            "description": [
+                "",
+                "",
+                "",
+                ""
+            ],
             "aboutUsContantLink": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
         },
-
         "program": [
-                {
-                    "InternationalDiploma": "",
-                    "InternationalDiplomaSpecialties": [
-                        " ",
-                        " ",
-                        " ",
-                        " ",
-                        " ",
-                        " ",
-                        " ",
-                        " ",
-                        " ",
-                        " ",
-                        " ",
-                        " ",
-                        " ",
-                        " ",
-                        " ",
-                        " ",
-                        " "
-    
-                    ],
-                    "href": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
-                },
-                {
-                    "TechnicalDiploma": " ",
-                    "TechnicalDiplomaSpecialties": [
-                        " ",
-                        " ",
-                        " ",
-                        " ",
-                        " ",
-                        " ",
-                        " ",
-                        " ",
-                        " "
-                    ],
-                    "href": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
-                },
-                {
+            {
+                "InternationalDiploma": "",
+                "InternationalDiplomaSpecialties": [
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " "
+                ],
+                "href": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+            },
+            {
+                "TechnicalDiploma": " ",
+                "TechnicalDiplomaSpecialties": [
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " ",
+                    " "
+                ],
+                "href": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+            },
+            {
                 "bachelors": " ",
                 "bachelorsSpecialties": [
                     " ",
@@ -111,14 +127,14 @@
         "logo": "./assets/footer-logo.png",
         "contactUs": {
             "header": "Contact Us :",
-            "phone":{
+            "phone": {
                 "number": "+962 (6) 4000 700",
-                "directPhone" : "tel:+962(6)4000700"
+                "directPhone": "tel:+962(6)4000700"
             },
             "info": {
-               "email":"info@ltuc.com",
-                "directEmail":"mailto:info@ltuc.com"
-                },
+                "email": "info@ltuc.com",
+                "directEmail": "mailto:info@ltuc.com"
+            },
             "location": " ",
             "facebook": "https://www.facebook.com/LTUC.JO/",
             "twitter": "https://www.instagram.com/ltuc.jo/",
@@ -127,9 +143,9 @@
         "complaints": {
             "note": "",
             "email": {
-                "email" :"complaints@ltuc.com",
-                 "href": "mailto:complaints@ltuc.com"
-                }
+                "email": "complaints@ltuc.com",
+                "href": "mailto:complaints@ltuc.com"
+            }
         }
     }
 }
