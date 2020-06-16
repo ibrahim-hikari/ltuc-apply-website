@@ -17,12 +17,10 @@ function Footer() {
 
             <div className="contact-div">
                 <img src={context.footerData.logo} className="footer-logo" alt="" />
-                {/* <!-- <img src="./assets/contact-text.png" className="contact-text" alt=""> --> */}
                 <h4 className="contact-text">{context.footerData.contactUs.header}</h4>
                 <a className="contact-info" href={context.footerData.contactUs.phone.directPhone}><i className="phone fa fa-phone">&nbsp;&nbsp;{context.footerData.contactUs.phone.number}</i></a>
                 <a className="contact-info" href={context.footerData.contactUs.info.directEmail}><i className="send fa fa-send">&nbsp;&nbsp;{context.footerData.contactUs.info.email}</i></a>
                 <a className="contact-info" href="#"><i className="map fa fa-map-marker">&nbsp;&nbsp;{context.footerData.contactUs.location}</i></a>
-                {/* <!-- <hr className="hr-length"> --> */}
                 <div className="complaints-section">
                     <div className="social">
                         <a href={context.footerData.contactUs.facebook}><i className="facebook fa fa2 fa-facebook-f"></i></a>

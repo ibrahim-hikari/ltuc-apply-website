@@ -24,7 +24,7 @@
     }
 }
 @media (max-width: 770px) {
-    .section-one {
+    .slideShow {
         width: 100vw;
     }
     header {
@@ -337,13 +337,13 @@
         /* font-weight: bolder; */
     }
 
-    .section-two h3,
-    .section-two h3:first-child,
-    .section-three h3 {
+    .aboutUs-section h3,
+    .aboutUs-section h3:first-child,
+    .aboutUs-part-2 h3 {
         font-size: 3vmax;
     }
-    .section-three a,
-    .section-two a {
+    .aboutUs-part-2 a,
+    .aboutUs-section a {
         border-radius: 5px;
         bottom: 2%;
         font-size: 3vmax;
@@ -355,7 +355,7 @@
         width: 25%;
     }
 
-    .section-four {
+    .programs {
         overflow-y: hidden;
         background-color: #fda136;
         color: #fff;
@@ -366,33 +366,33 @@
         z-index: -1;
     }
 
-    .section-four .left {
+    .programs .left {
         /* border: solid; */
         position: unset;
         width: 50vmax;
     }
 
-    .section-four .right {
+    .programs .right {
         /* border: solid; */
         margin-top: -10vmax;
         width: 50vmax;
     }
 
-    .section-four h3 {
+    .programs h3 {
         /* border: solid; */
         font-size: 5vmax;
     }
 
-    .section-four .right h3:nth-child(7) {
+    .programs .right h3:nth-child(7) {
         /* border: solid; */
         font-size: 4vmax;
     }
 
-    .section-four ul li::before {
+    .programs ul li::before {
         font-size: 5vmax;
     }
 
-    .section-four a {
+    .programs a {
         background-color: #a2238e;
         /* border: solid; */
         border-radius: 5px;
@@ -404,10 +404,10 @@
         text-decoration: none;
         width: fit-content;
     }
-    .section-two {
+    .aboutUs-section {
         font-size: 3.5vw;
     }
-    .section-three {
+    .aboutUs-part-2 {
         font-size: 3.5vw;
     }
     .footer {

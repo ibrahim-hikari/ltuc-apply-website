@@ -12,7 +12,7 @@ body {
 }
 
 a:hover,
-.section-one a:hover,
+.slideShow a:hover,
 .section-two a:hover,
 .section-three a:hover {
     cursor: pointer !important;
@@ -153,7 +153,7 @@ header {
     display: block;
 }
 
-.section-one {
+.slideShow {
     position: relative;
     margin-bottom: 4.7vmax;
 }
@@ -315,7 +315,7 @@ input[name="r"] {
 
 /*********/
 
-.section-two {
+.aboutUs-section {
     margin-top: 3vw;
     background-color: #fda136;
     border-bottom: solid #fff 1px;
@@ -326,23 +326,23 @@ input[name="r"] {
     z-index: 1;
 }
 
-.section-two h4 {
+.aboutUs-section h4 {
     color: #fff;
     margin: 2vmax 0;
 }
 
-.section-two h3 {
+.aboutUs-section h3 {
     color: #a2238e;
     font-size: 2vmax;
 }
 
-.section-two h3:nth-child(1) {
+.aboutUs-section h3:nth-child(1) {
     color: #a2238e;
     font-size: 2vmax;
     margin-top: -3vmax;
 }
 
-.section-two a {
+.aboutUs-section a {
     background-color: #a2238e;
     border-radius: 5px;
     bottom: 5%;
@@ -355,7 +355,7 @@ input[name="r"] {
     width: 10%;
 }
 
-.section-three {
+.aboutUs-part-2 {
     background-color: #a2238e;
     border-bottom: solid #fff 1px;
     direction: rtl;
@@ -365,25 +365,25 @@ input[name="r"] {
     z-index: 1;
 }
 
-.section-three h4 {
+.aboutUs-part-2 h4 {
     color: #fff;
     margin: 2vmax 0;
 }
 
-.section-three h4:nth-child(1) {
+.aboutUs-part-2 h4:nth-child(1) {
     margin: -3vmax 0 2vmax 0;
 }
 
-.section-three h4:nth-child(2) {
+.aboutUs-part-2 h4:nth-child(2) {
     margin: 3vmax 0 5vmax 0;
 }
 
-.section-three h3 {
+.aboutUs-part-2 h3 {
     color: #fda136;
     font-size: 2vmax;
 }
 
-.section-three a {
+.aboutUs-part-2 a {
     background-color: #fda136;
     border-radius: 5px;
     bottom: 5%;
@@ -396,7 +396,7 @@ input[name="r"] {
     width: 10%;
 }
 
-.section-four {
+.programs {
     overflow-y: hidden;
 
     background-color: #fda136;
@@ -412,7 +412,7 @@ input[name="r"] {
     z-index: 1;
 }
 
-.section-four div {
+.programs div {
     height: 100%;
     width: 40%;
     padding: 5vmax 0;
@@ -430,7 +430,7 @@ input[name="r"] {
 //     width: 30vmax;
 // }
 
-.section-four h3 {
+.programs h3 {
     /* border: solid; */
     color: #a2238e;
     font-size: 3vmax;
@@ -442,19 +442,16 @@ input[name="r"] {
 //     font-size: 2.9vmax;
 // }
 
-.section-four ul li::before {
+.programs ul li::before {
     content: "\2022";
     color: #a2238e;
     font-size: 3vmax;
     position: relative;
     margin-left: 0.25vw;
     top: 1vh;
-
-    /* position: relative; */
-    /* top: 0.75vmax; */
 }
 
-.section-four a {
+.programs a {
     background-color: #a2238e;
     /* border: solid; */
     border-radius: 5px;
@@ -563,4 +560,8 @@ input[name="r"] {
     z-index: 99999999;
     top: 2%;
     right: 10%;
+}
+
+.aboutUs-section a:hover , .aboutUs-part-2 a:hover , .programs a:hover{
+    cursor: pointer;
 }
