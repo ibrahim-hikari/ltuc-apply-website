@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useContext, useEffect } from 'react';
 import $ from 'jquery';
 import { ModelContext } from './context';
@@ -109,7 +110,7 @@ function Content() {
             </section>
             <section id="section-four" className="section-four">
 
-                {context.mainData.program.map(element => (
+                {/* {context.mainData.program.map(element => (
                     <div>
                         <h3>{element.header}</h3>
                         <ul>
@@ -121,11 +122,57 @@ function Content() {
                         </ul>
                         <a href={element.href.link}>{element.href.header}</a>
                     </div>
-                ))}
+                ))} */}
+                <div class="left">
+                    <h3>{context.mainData.program.firstProgram.InternationalDiploma}</h3>
+                    <ul>
+                        {context.mainData.program.firstProgram.InternationalDiplomaSpecialties.map((item) =>(
+                            <>
+                                <li>{item}</li>
+                            </>
+                        ))}
+                    </ul>
+                    <a href={context.mainData.program.fifthProgram.href.link}>{context.mainData.program.fifthProgram.href.header}</a>
+                    <h3>{context.mainData.program.scandProgram.TechnicalDiploma}</h3>
+                    <ul>
+                        {context.mainData.program.scandProgram.TechnicalDiplomaSpecialties.map(item => (
+                            <>
+                                <li>{item}</li>
+                            </>
+                        ))}
+                    </ul>
+                    <a href={context.mainData.program.scandProgram.href.link}>{context.mainData.program.scandProgram.href.header}</a>
+                </div>
+
+                <div class="right">
+                    <h3>{context.mainData.program.thirdprogram.bachelors}</h3>
+                    <ul>
+                        {context.mainData.program.thirdprogram.bachelorsSpecialties.map(item => (
+                            <>
+                                <li>{item}</li>
+                            </>
+                        ))}
+                    </ul>
+                    <a href={context.mainData.program.thirdprogram.href.link}>{context.mainData.program.thirdprogram.href.header}</a>
+
+                    <h3>{context.mainData.program.fourthProgram.LocalDiploma}</h3>
+                    <ul>
+                        {context.mainData.program.fourthProgram.LocalDiplomaSpecialties.map(item => (
+                            <>
+                                <li>{item}</li>
+                            </>
+                        ))}
+                    </ul>
+                    <a href={context.mainData.program.thirdprogram.href.link}>{context.mainData.program.thirdprogram.href.header}</a>
+                    <h3>
+                        {context.mainData.program.fifthProgram.TrainingCourses}
+                    </h3>
+                    <a href={context.mainData.program.fifthProgram.href.link}>{context.mainData.program.fifthProgram.href.header}</a>
+                </div>
             </section>
 
         </>
     );
-}
 
+}
 export default Content;

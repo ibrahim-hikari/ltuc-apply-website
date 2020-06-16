@@ -25,11 +25,13 @@
 }
 @media (max-width: 770px) {
     .section-one {
-        margin-top: 5vw;
         width: 100vw;
     }
     header {
         height: 10vmax;
+    }
+    .middle{
+        top: 8.5vmax;
     }
     .logo {
         height: 8vw;

@@ -7,7 +7,7 @@ function ModelProvider(props) {
     const [headerData, setHeaderData] = useState(data.header);
     const [mainData, setMainData] = useState(data.main);
     const [footerData, setFooterData] = useState(data.footer);
-    const [lang, setLang] = useState('english');
+    const [lang, setLang] = useState('English');
 
 
     const state = {

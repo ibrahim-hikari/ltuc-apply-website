@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useContext } from 'react';
 import $ from 'jquery';
 import { ModelContext } from './context.js';
@@ -57,11 +58,11 @@ function Header() {
                         <a className="a-sdc" href="https://employmenthub.ltuc.com">{context.headerData.nav.studentServices.EducationForEmployment}</a>
                     </li>
                     <li><a href="#footer">{context.headerData.nav.contactUs}</a></li>
+                    <li><a onClick={() => getData(context.lang)}>{context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
                 </ul>
             </nav>
             <nav className="main-nav">
                 <ul>
-                    <li><a onClick={() => getData(context.lang)}>{context.lang}<i className="fa fa-globe"></i></a></li>
                     <li><a href="#section-one">{context.headerData.nav.home}</a></li>
                     <li><a href="#section-two">{context.headerData.nav.aboutUs}</a></li>
                     <li><a href="#section-four">{context.headerData.nav.programs}</a></li>
@@ -73,6 +74,7 @@ function Header() {
                         </div>
                     </li>
                     <li><a href="#footer">{context.headerData.nav.contactUs}</a></li>
+                    <li><a onClick={() => getData(context.lang)}>{context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
                 </ul>
             </nav>
         </header>
