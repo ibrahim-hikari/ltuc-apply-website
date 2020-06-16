@@ -20,15 +20,16 @@ function Header() {
                 context.changeHeaderData(res.header);
                 context.changeMainData(res.main);
                 context.changeFooterData(res.footer);
+                context.changeLang(res.language);
             },
         });
+
     };
 
     useEffect(() => {
-        getData('arabic');
         $('.main-nav-mobile').hide();
         $('.sub-dropdown-content').hide();
-    }, []);
+    });
 
     const test = () => {
         console.log('hhh', context.headerData);
@@ -58,8 +59,9 @@ function Header() {
                     <li><a href="#footer">{context.headerData.nav.contactUs}</a></li>
                 </ul>
             </nav>
-            <nav onClick={() => getData('arabic')} className="main-nav">
+            <nav className="main-nav">
                 <ul>
+                    <li><a onClick={() => getData(context.lang)}>{context.lang}<i className="fa fa-globe"></i></a></li>
                     <li><a href="#section-one">{context.headerData.nav.home}</a></li>
                     <li><a href="#section-two">{context.headerData.nav.aboutUs}</a></li>
                     <li><a href="#section-four">{context.headerData.nav.programs}</a></li>

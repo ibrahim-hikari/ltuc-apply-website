@@ -6,7 +6,6 @@ function Content() {
     const context = useContext(ModelContext);
 
     useEffect(() => {
-
         var i = 0;
         carousel();
 
@@ -26,7 +25,7 @@ function Content() {
             slide[0].style.marginLeft = -i * 25 + '%';
         });
 
-    });
+    }, []);
 
     return (
         <>
@@ -97,8 +96,34 @@ function Content() {
                         <h4>{element.description}</h4>
                     </>
                 ))}
-                <a href='https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP'>{context.mainData.aboutUs.aboutUsLink.header}</a>
+                <a href={context.mainData.aboutUs.aboutUsLink.link}>{context.mainData.aboutUs.aboutUsLink.header}</a>
             </section>
+            <section id="section-three" className="section-three">
+                {context.mainData.aboutUsContant.aboutUsContantSections.map(element => (
+                    <>
+                        <h3>{element.Features ? element.Features : ' '}</h3>
+                        <h4>{element.description}</h4>
+                    </>
+                ))}
+                <a href={context.mainData.aboutUsContant.aboutUsContantLink.link}>{context.mainData.aboutUsContant.aboutUsContantLink.header}</a>
+            </section>
+            <section id="section-four" className="section-four">
+
+                {context.mainData.program.map(element => (
+                    <div>
+                        <h3>{element.header}</h3>
+                        <ul>
+                            {element.list ? element.list.map(item => (
+                                <>
+                                    <li>{item}</li>
+                                </>
+                            )) : ''}
+                        </ul>
+                        <a href={element.href.link}>{element.href.header}</a>
+                    </div>
+                ))}
+            </section>
+
         </>
     );
 }

@@ -322,7 +322,7 @@ input[name="r"] {
     font-size: 1.7vmax;
     padding: 9vmax 12vmax;
     position: relative;
-    z-index: -1;
+    z-index: 0;
 }
 
 .section-two h4 {
@@ -361,7 +361,7 @@ input[name="r"] {
     font-size: 1.7vmax;
     padding: 7vmax 12vmax;
     position: relative;
-    z-index: -1;
+    z-index: 0;
 }
 
 .section-three h4 {
@@ -396,10 +396,15 @@ input[name="r"] {
 }
 
 .section-four {
-    overflow-y: hidden;
+    border: solid;
+    // overflow-y: hidden;
     background-color: #fda136;
     color: #fff;
     direction: rtl;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     font-size: 1.7vmax;
     padding: 2vmax 12vmax;
     position: relative;
@@ -407,21 +412,23 @@ input[name="r"] {
 }
 
 .section-four div {
-    display: inline-block;
+    border: solid;
+    height: 100%;
+    width: 40%;
     padding: 5vmax 0;
 }
 
-.section-four .left {
-    /* border: solid; */
-    position: absolute;
-    left: 15vmax;
-    width: 30vmax;
-}
+// .section-four .left {
+//     /* border: solid; */
+//     position: absolute;
+//     left: 15vmax;
+//     width: 30vmax;
+// }
 
-.section-four .right {
-    /* border: solid; */
-    width: 30vmax;
-}
+// .section-four .right {
+//     /* border: solid; */
+//     width: 30vmax;
+// }
 
 .section-four h3 {
     /* border: solid; */
@@ -430,10 +437,10 @@ input[name="r"] {
     margin: 0 0 1vmax 0;
 }
 
-.section-four .right h3:nth-child(7) {
-    /* border: solid; */
-    font-size: 2.9vmax;
-}
+// .section-four .right h3:nth-child(7) {
+//     border: solid;
+//     font-size: 2.9vmax;
+// }
 
 .section-four ul li::before {
     content: "\2022";

@@ -1,4 +1,5 @@
 {
+    "language": "english",
     "header": {
         "logo": "../assets/header-logo.png",
         "nav": {
@@ -64,12 +65,15 @@
                     "description": "نتيح لك عيش تجربة تعليمية محفزة وملهمة تفتح أمامك الأبواب لتستكشف طاقاتك وتتفاعل بإيجابية مع مجتمعك."
                 }
             ],
-            "aboutUsContantLink": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+            "aboutUsContantLink": {
+                "header": "تواصل معنا",
+                "link": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+            }
         },
-        "program": {
-            "firstProgram": {
-                "InternationalDiploma": "برامج الدبلوم الدولي",
-                "InternationalDiplomaSpecialties": [
+        "program": [
+            {
+                "header": "برامج الدبلوم الدولي",
+                "list": [
                     "إدارة الموارد البشرية",
                     "المبيعات والتسويق",
                     "المحاسبة والإدارة المالية",
@@ -88,11 +92,14 @@
                     "هندسة المساحة",
                     "هندسة البرمجيات"
                 ],
-                "href": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+                "href": {
+                    "header": "تواصل معنا",
+                    "link": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+                }
             },
-            "secondProgram": {
-                "TechnicalDiploma": "برامج الدبلوم الفني",
-                "TechnicalDiplomaSpecialties": [
+            {
+                "header": "برامج الدبلوم الفني",
+                "list": [
                     "إدارة فنادق",
                     "فنون الطهي",
                     "التصميم الداخلي",
@@ -103,11 +110,14 @@
                     "الهندسة المدنية",
                     "فن وعلوم التجميل"
                 ],
-                "href": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+                "href": {
+                    "header": "تواصل معنا",
+                    "link": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+                }
             },
-            "thirdprogram": {
-                "bachelors": "برامج البكالوريوس",
-                "bachelorsSpecialties": [
+            {
+                "header": "برامج البكالوريوس",
+                "list": [
                     "هندسة تكنولوجيا السيارات",
                     "صناعة الأفلام الرقمية",
                     "الواقع الإفتراضي والمعزز",
@@ -117,11 +127,14 @@
                     "تقنيات صناعة الأسنان",
                     "التقنيات اللوجستية وسلسلة الإمداد"
                 ],
-                "href": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+                "href": {
+                    "header": "تواصل معنا",
+                    "link": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+                }
             },
-            "fourthProgram": {
-                "LocalDiploma": "برامج الدبلوم المحلي",
-                "LocalDiplomaSpecialties": [
+            {
+                "header": "برامج الدبلوم المحلي",
+                "list": [
                     "الصيدلة",
                     "فحص البصر وتجهيز النظارات الطبية",
                     "مختبرات الأسنان",
@@ -135,13 +148,19 @@
                     "الميديا الرقمية",
                     "الرسوم المتحركة"
                 ],
-                "href": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+                "href": {
+                    "header": "تواصل معنا",
+                    "link": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+                }
             },
-            "fifthProgram": {
-                "TrainingCourses": "دورات تدريبية متنوعة (أكثر من150 دورة)مكثّفة من 6 أسابيع إلى 8 شهور",
-                "href": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+            {
+                "header": "دورات تدريبية متنوعة (أكثر من150 دورة)مكثّفة من 6 أسابيع إلى 8 شهور",
+                "href": {
+                    "header": "تواصل معنا",
+                    "link": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+                }
             }
-        }
+        ]
     },
     "footer": {
         "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3387.3187220247373!2d35.86663101449337!3d31.897936535593477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca7e4aee722d5%3A0x8693a9183825010b!2z2YPZhNmK2Kkg2YTZiNmF2YrZhtmI2LMg2KfZhNis2KfZhdi52YrYqSDYp9mE2KrZgtmG2YrYqSAtIChMdW1pbnVzIFRlY2huaWNhbCBVbml2ZXJzaXR5IENvbGxlZ2UgKExUVUM!5e0!3m2!1sen!2sjo!4v1591309880460!5m2!1sen!2sjo",
