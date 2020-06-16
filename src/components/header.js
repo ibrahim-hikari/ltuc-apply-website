@@ -98,7 +98,7 @@ function Header() {
                             </div>
                         </li>
                         <li><a href="#footer">{context.headerData.nav.contactUs}</a></li>
-                        <li><a onClick={() => getData(context.lang)}>{context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
+                        <li  className="translation"><a  onClick={() => getData(context.lang)}>{context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
                     </ul>
                 </nav>
             </header>
