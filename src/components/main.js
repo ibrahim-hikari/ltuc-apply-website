@@ -1,11 +1,12 @@
 import React, { useContext, useEffect } from 'react';
 import $ from 'jquery';
-import ModelProvider from './context';
+import { ModelContext } from './context';
 
-function Contect() {
-    const context = useContext(ModelProvider);
+function Content() {
+    const context = useContext(ModelContext);
 
     useEffect(() => {
+
         var i = 0;
         carousel();
 
@@ -28,67 +29,78 @@ function Contect() {
     });
 
     return (
-        <section id="section-one" className="section-one">
-            <div className="slidershow middle">
+        <>
+            <section id="section-one" className="section-one">
+                <div className="slidershow middle">
 
-                <div className="slides">
-                    <input type="radio" name="r" id="r1" />
-                    <input type="radio" name="r" id="r2" />
-                    <input type="radio" name="r" id="r3" />
-                    <input type="radio" name="r" id="r4" />
-                    <div className="slide s1">
-                        <div className="card">
-                            <img src="../assets/ready_orange.png" alt="" />
-                            <img src="../assets/1.png" alt="" />
-                            <img src="../assets/text1.png" alt="" />
-                            <a className="touch"
-                                href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل
+                    <div className="slides">
+                        <input type="radio" name="r" id="r1" />
+                        <input type="radio" name="r" id="r2" />
+                        <input type="radio" name="r" id="r3" />
+                        <input type="radio" name="r" id="r4" />
+                        <div className="slide s1">
+                            <div className="card">
+                                <img src="../assets/ready_orange.png" alt="" />
+                                <img src="../assets/1.png" alt="" />
+                                <img src="../assets/text1.png" alt="" />
+                                <a className="touch"
+                                    href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل
                             معنا</a>
+                            </div>
+                        </div>
+                        <div className="slide">
+                            <div className="card">
+                                <img src="../assets/ready_purple.png" alt="" />
+                                <img src="../assets/2.png" alt="" />
+                                <img src="../assets/text2.png" alt="" />
+                                <a className="touch"
+                                    href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل
+                            معنا</a>
+                            </div>
+                        </div>
+                        <div className="slide">
+                            <div className="card">
+                                <img src="../assets/ready_orange.png" alt="" />
+                                <img src="../assets/3.png" alt="" />
+                                <img src="../assets/text3.png" alt="" />
+                                <a className="touch"
+                                    href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل
+                            معنا</a>
+                            </div>
+                        </div>
+                        <div className="slide">
+                            <div className="card">
+                                <img src="../assets/ready_orange.png" alt="" />
+                                <img src="../assets/4.png" alt="" />
+                                <img src="../assets/4-1.png" alt="" />
+                                <a className="touch"
+                                    href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل
+                            معنا</a>
+                            </div>
                         </div>
                     </div>
-                    <div className="slide">
-                        <div className="card">
-                            <img src="../assets/ready_purple.png" alt="" />
-                            <img src="../assets/2.png" alt="" />
-                            <img src="../assets/text2.png" alt="" />
-                            <a className="touch"
-                                href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل
-                            معنا</a>
-                        </div>
-                    </div>
-                    <div className="slide">
-                        <div className="card">
-                            <img src="../assets/ready_orange.png" alt="" />
-                            <img src="../assets/3.png" alt="" />
-                            <img src="../assets/text3.png" alt="" />
-                            <a className="touch"
-                                href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل
-                            معنا</a>
-                        </div>
-                    </div>
-                    <div className="slide">
-                        <div className="card">
-                            <img src="../assets/ready_orange.png" alt="" />
-                            <img src="../assets/4.png" alt="" />
-                            <img src="../assets/4-1.png" alt="" />
-                            <a className="touch"
-                                href="https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP">تواصل
-                            معنا</a>
-                        </div>
+
+                    <div className="navigation">
+                        <label htmlFor="r1" className="bar" id="1"></label>
+                        <label htmlFor="r2" className="bar" id="2"></label>
+                        <label htmlFor="r3" className="bar" id="3"></label>
+                        <label htmlFor="r4" className="bar" id="4"></label>
                     </div>
                 </div>
 
-                <div className="navigation">
-                    <label htmlFor="r1" className="bar" id="1"></label>
-                    <label htmlFor="r2" className="bar" id="2"></label>
-                    <label htmlFor="r3" className="bar" id="3"></label>
-                    <label htmlFor="r4" className="bar" id="4"></label>
-                </div>
-            </div>
-
-            <a href="https://m.me/LTUC.JO"><img className="chat" src="./assets/chat2-removebg-preview.png" alt="" /></a>
-        </section>
+                <a href="https://m.me/LTUC.JO"><img className="chat" src="./assets/chat2-removebg-preview.png" alt="" /></a>
+            </section>
+            <section id="section-two" className="section-two">
+                {context.mainData.aboutUs.aboutUsFeatures.map(element => (
+                    <>
+                        <h3>{element.Feature}</h3>
+                        <h4>{element.description}</h4>
+                    </>
+                ))}
+                <a href='https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP'>{context.mainData.aboutUs.aboutUsLink.header}</a>
+            </section>
+        </>
     );
 }
 
-export default Contect;
+export default Content;
