@@ -24,6 +24,7 @@
     }
 }
 @media (max-width: 770px) {
+
     .slideShow {
         width: 100vw;
     }
@@ -187,6 +188,18 @@
     }
     .contact-info {
         font-size: 2.1vw;
+    }
+    .aboutUs-section h4, .aboutUs-part-2 h4, .programs h4 {
+        font-size: 2.2vw;
+    
+    }
+    .aboutUs-section a, .aboutUs-part-2 a, .programs a {
+        font-size: 1.9vw;
+    
+    }
+    .aboutUs-section h3 , .aboutUs-part-2  h3, .programs h3{
+        font-size: 3vw;
+    
     }
 }
 
