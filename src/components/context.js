@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import data from '../data/arabic.json';
 export const ModelContext = React.createContext();
 
 function ModelProvider(props) {
 
-    const [headerData, setHeaderData] = useState({});
-    const [mainData, setMainData] = useState({});
-    const [footerData, setFooterData] = useState({});
+    const [headerData, setHeaderData] = useState(data.header);
+    const [mainData, setMainData] = useState(data.main);
+    const [footerData, setFooterData] = useState(data.footer);
 
 
     const state = {
