@@ -30,7 +30,7 @@ function Content() {
                 <div className="left">
                     <h3>{context.mainData.program.firstProgram.InternationalDiploma}</h3>
                     <ul>
-                        {context.mainData.program.firstProgram.InternationalDiplomaSpecialties.map((item) =>(
+                        {context.mainData.program.firstProgram.InternationalDiplomaSpecialties.map((item) => (
                             <>
                                 <li>{item}</li>
                             </>
