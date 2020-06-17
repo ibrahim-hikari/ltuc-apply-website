@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e471962c.chunk.css",
+    "main.js": "/static/js/main.98f8558c.chunk.js",
+    "main.js.map": "/static/js/main.98f8558c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.156c33a4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.156c33a4.js.map",
+    "static/js/2.780b7203.chunk.js": "/static/js/2.780b7203.chunk.js",
+    "static/js/2.780b7203.chunk.js.map": "/static/js/2.780b7203.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a5e8d47219b21a2656a0181eeb330bde.js": "/precache-manifest.a5e8d47219b21a2656a0181eeb330bde.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.e471962c.chunk.css.map": "/static/css/main.e471962c.chunk.css.map",
+    "static/js/2.780b7203.chunk.js.LICENSE.txt": "/static/js/2.780b7203.chunk.js.LICENSE.txt",
+    "static/media/app.scss": "/static/media/NizarCoconKurdishBold.095fc4ba.otf",
+    "static/media/responsive.scss": "/static/media/footer-background.f1c9ef93.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.156c33a4.js",
+    "static/js/2.780b7203.chunk.js",
+    "static/css/main.e471962c.chunk.css",
+    "static/js/main.98f8558c.chunk.js"
+  ]
+}
