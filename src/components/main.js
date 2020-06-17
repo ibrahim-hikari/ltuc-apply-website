@@ -27,7 +27,7 @@ function Content() {
                 <a href={context.mainData.aboutUsContant.aboutUsContantLink.link}>{context.mainData.aboutUsContant.aboutUsContantLink.header}</a>
             </section>
             <section id="programs" className="programs">
-                <div class="left">
+                <div className="left">
                     <h3>{context.mainData.program.firstProgram.InternationalDiploma}</h3>
                     <ul>
                         {context.mainData.program.firstProgram.InternationalDiplomaSpecialties.map((item) =>(
@@ -48,7 +48,7 @@ function Content() {
                     <a href={context.mainData.program.scandProgram.href.link}>{context.mainData.program.scandProgram.href.header}</a>
                 </div>
 
-                <div class="right">
+                <div className="right">
                     <h3>{context.mainData.program.thirdprogram.bachelors}</h3>
                     <ul>
                         {context.mainData.program.thirdprogram.bachelorsSpecialties.map(item => (
