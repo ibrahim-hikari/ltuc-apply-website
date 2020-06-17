@@ -11,7 +11,12 @@ function Header() {
     // };
 
     const getData = page => {
-        console.log('here');
+        console.log('here', context.lang);
+        if (context.lang === 'Arabic') {
+            $('.translation').addClass('arabic');
+        } else {
+            $('.translation').removeClass('arabic');
+        }
         $.ajax({
             type: 'get',
             url: `./data/${page}.json`,
@@ -82,7 +87,7 @@ function Header() {
                             <a className="a-sdc" href="https://employmenthub.ltuc.com">{context.headerData.nav.studentServices.EducationForEmployment}</a>
                         </li>
                         <li><a href="#footer">{context.headerData.nav.contactUs}</a></li>
-                        <li><a onClick={() => getData(context.lang)}>{context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
+                        <li className='arabic'><a onClick={() => getData(context.lang)}>{context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
                     </ul>
                 </nav>
                 <nav className="main-nav">
@@ -98,7 +103,7 @@ function Header() {
                             </div>
                         </li>
                         <li><a href="#footer">{context.headerData.nav.contactUs}</a></li>
-                        <li  className="translation"><a  onClick={() => getData(context.lang)}>{context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
+                        <li className="translation arabic"><a onClick={() => getData(context.lang)}>{context.lang === 'Arabic' ? 'العربية' : context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
                     </ul>
                 </nav>
             </header>

@@ -75,7 +75,6 @@ header {
 
 .main-nav ul li {
     display: inline;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1vw;
     font-weight: bolder;
     margin-left: 2%;
@@ -88,9 +87,15 @@ header {
     font-size: 1.1vw;
     text-decoration: none;
 }
+
 .translation a{
     font-weight: bolder;
     border: none !important;
+}
+
+.arabic a {
+    border: solid;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .dropdown {

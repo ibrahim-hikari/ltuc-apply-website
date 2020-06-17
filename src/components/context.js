@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import data from '../data/arabic.json';
+import data from '../data/Arabic.json';
 export const ModelContext = React.createContext();
 
 function ModelProvider(props) {
