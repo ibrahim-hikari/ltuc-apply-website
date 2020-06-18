@@ -28,7 +28,7 @@ function Footer() {
                         <a href='https://twitter.com/LTUCJO'><i className="twitter fa fa2 fa-twitter"></i></a>
                     </div>
                     <p className="complaints-p">{context.footerData.complaints.note}</p>
-                    <a className="complaints-a" href={context.footerData.complaints.email.href}>{context.footerData.complaints.email.email}</a>
+                    <a className="complaints-a" href='mailto:complaints@ltuc.com'>{context.footerData.complaints.email.email}</a>
                 </div>
             </div>
         </footer>
