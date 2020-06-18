@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.1c3fec50.chunk.css",
-    "main.js": "/static/js/main.223e20af.chunk.js",
-    "main.js.map": "/static/js/main.223e20af.chunk.js.map",
+    "main.css": "/static/css/main.ed3886e2.chunk.css",
+    "main.js": "/static/js/main.aae51659.chunk.js",
+    "main.js.map": "/static/js/main.aae51659.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.156c33a4.js",
     "runtime-main.js.map": "/static/js/runtime-main.156c33a4.js.map",
     "static/js/2.780b7203.chunk.js": "/static/js/2.780b7203.chunk.js",
     "static/js/2.780b7203.chunk.js.map": "/static/js/2.780b7203.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.32bfe797d3079261fa563f52a98ad341.js": "/precache-manifest.32bfe797d3079261fa563f52a98ad341.js",
+    "precache-manifest.669101cb09045ec08cbddfd08a8dffbc.js": "/precache-manifest.669101cb09045ec08cbddfd08a8dffbc.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.1c3fec50.chunk.css.map": "/static/css/main.1c3fec50.chunk.css.map",
+    "static/css/main.ed3886e2.chunk.css.map": "/static/css/main.ed3886e2.chunk.css.map",
     "static/js/2.780b7203.chunk.js.LICENSE.txt": "/static/js/2.780b7203.chunk.js.LICENSE.txt",
     "static/media/app.scss": "/static/media/NizarCoconKurdishBold.095fc4ba.otf",
     "static/media/responsive.scss": "/static/media/footer-background.f1c9ef93.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.156c33a4.js",
     "static/js/2.780b7203.chunk.js",
-    "static/css/main.1c3fec50.chunk.css",
-    "static/js/main.223e20af.chunk.js"
+    "static/css/main.ed3886e2.chunk.css",
+    "static/js/main.aae51659.chunk.js"
   ]
 }

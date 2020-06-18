@@ -24,18 +24,17 @@
     }
 }
 @media (max-width: 770px) {
-
     .slideShow {
         width: 100vw;
     }
     header {
         height: 10vmax;
     }
-    .middle{
+    .middle {
         top: 8.5vmax;
     }
     .logo {
-        height: 8vw;
+        height: 8vmax;
         top: 1vmax;
         width: 40vmax;
     }
@@ -94,7 +93,7 @@
     .main-nav-mobile ul li .sub-dropdown-btn {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 3.3vw;
-        margin-left: 2vw;
+        margin-left: 1vw;
     }
 
     .main-nav-mobile ul .sub-dropdown {
@@ -186,20 +185,29 @@
         /* border: solid; */
         font-size: 4vmax;
     }
+
+    .aboutUs-section{
+        // border: solid;
+        margin-top: 8.5vmax;
+    }
+
     .contact-info {
         font-size: 2.1vw;
     }
-    .aboutUs-section h4, .aboutUs-part-2 h4, .programs h4 {
+    .aboutUs-section h4,
+    .aboutUs-part-2 h4,
+    .programs h4 {
         font-size: 2.2vw;
-    
     }
-    .aboutUs-section a, .aboutUs-part-2 a, .programs a {
+    .aboutUs-section a,
+    .aboutUs-part-2 a,
+    .programs a {
         font-size: 1.9vw;
-    
     }
-    .aboutUs-section h3 , .aboutUs-part-2  h3, .programs h3{
+    .aboutUs-section h3,
+    .aboutUs-part-2 h3,
+    .programs h3 {
         font-size: 3vw;
-    
     }
 }
 
@@ -350,16 +358,27 @@
         /* font-weight: bolder; */
     }
 
+    .aboutUs-section,
+    .aboutUs-part-2 {
+        font-size: 3.5vw;
+    }
+
     .aboutUs-section h3,
     .aboutUs-section h3:first-child,
     .aboutUs-part-2 h3 {
+        font-size: 3.5vmax;
+    }
+
+    .aboutUs-section h4,
+    .aboutUs-part-2 h4{
         font-size: 3vmax;
+        line-height: 3.2vmax;
     }
     .aboutUs-part-2 a,
     .aboutUs-section a {
         border-radius: 5px;
         bottom: 2%;
-        font-size: 3vmax;
+        font-size: 2.5vmax;
         left: 37.5%;
         padding: 1vmax 1.5vmax;
         position: absolute;
@@ -376,7 +395,7 @@
         font-size: 2.8vmax;
         padding: 0 12vmax;
         position: relative;
-        z-index: -1;
+        z-index: 0;
     }
 
     .programs .left {
@@ -411,18 +430,13 @@
         border-radius: 5px;
         color: #fff;
         display: block;
-        font-size: 5vmax;
+        font-size: 3vmax;
         margin: 1.5vmax 0;
         padding: 1vmax 1.5vmax;
         text-decoration: none;
         width: fit-content;
     }
-    .aboutUs-section {
-        font-size: 3.5vw;
-    }
-    .aboutUs-part-2 {
-        font-size: 3.5vw;
-    }
+
     .footer {
         background-image: url("../assets/footer-background.png");
         background-size: cover;
@@ -509,6 +523,10 @@
 }
 
 @media (max-width: 500px) {
+    .logo{
+        // border: solid;
+        // width: 50vmax;
+    }
     .slide div img:nth-child(1) {
         /* border: solid; */
         width: 70%;
@@ -581,7 +599,7 @@
         top: 83%;
     }
     .navigation {
-        /* border: solid; */
+        // border: solid;
         bottom: -4vh;
         margin-bottom: 8%;
     }

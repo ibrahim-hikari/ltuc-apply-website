@@ -302,7 +302,7 @@ input[name="r"] {
     position: fixed;
     bottom: 0vmax;
     right: 0vmax;
-    width: 10vmax;
+    width: 12vmax;
     z-index: 99;
 }
 
@@ -338,17 +338,17 @@ input[name="r"] {
 
 .aboutUs-section h4 {
     color: #fff;
+    font-size: 2.2vmax;
     margin: 2vmax 0;
 }
 
 .aboutUs-section h3 {
     color: #a2238e;
-    font-size: 2vmax;
+    font-size: 2.5vmax;
 }
 
 .aboutUs-section h3:nth-child(1) {
     color: #a2238e;
-    font-size: 2vmax;
     margin-top: -3vmax;
 }
 
@@ -377,6 +377,7 @@ input[name="r"] {
 
 .aboutUs-part-2 h4 {
     color: #fff;
+    font-size: 2.2vmax;
     margin: 2vmax 0;
 }
 
@@ -390,7 +391,7 @@ input[name="r"] {
 
 .aboutUs-part-2 h3 {
     color: #fda136;
-    font-size: 2vmax;
+    font-size: 3vmax;
 }
 
 .aboutUs-part-2 a {
