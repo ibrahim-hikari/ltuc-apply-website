@@ -433,6 +433,9 @@
         /* margin-top: 5vw; */
         grid-template-rows: 2fr;
         font-size: 2.2vw;
+        position: relative;
+        /* margin-top: 15vw; */
+        z-index: 99;
     }
     .ifram-div {
         grid-row: 2;

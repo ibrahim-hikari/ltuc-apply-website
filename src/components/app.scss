@@ -136,10 +136,10 @@ header {
     position: absolute;
     padding: 1vw;
     width: 15vw !important;
-    z-index: 1;
 }
 
 .dropdown-content a {
+    z-index: 999 !important;
     border: none !important;
     border-left: 0.2vw solid #fda136 !important ;
     color: #fda136 !important;
@@ -482,9 +482,7 @@ input[name="r"] {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    position: relative;
-    /* margin-top: 15vw; */
-    z-index: 999999;
+  
 }
 
 .ifram-div {
@@ -569,6 +567,14 @@ input[name="r"] {
     z-index: 99999999;
     top: 2%;
     right: 10%;
+}
+.translation a{
+    position: absolute;
+    z-index: 99999;
+
+}
+.translation:hover{
+    cursor: pointer;
 }
 
 .aboutUs-section a:hover , .aboutUs-part-2 a:hover , .programs a:hover{
