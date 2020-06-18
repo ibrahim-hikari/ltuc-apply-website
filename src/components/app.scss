@@ -26,7 +26,7 @@ header {
     transition: all 1s;
     box-shadow: 0px 1px 7px #0000006b;
     width: 100%;
-    z-index: 2;
+    z-index: 10000000;
 }
 
 .logo {
@@ -83,19 +83,15 @@ header {
 .main-nav ul li a {
     border-right: 0.2vw solid;
     color: #fff;
+    font-size: 1.3vw;
     padding: 0% 1%;
-    font-size: 1.1vw;
+    position: relative;
     text-decoration: none;
+    outline: none;
 }
 
-.translation a{
-    font-weight: bolder;
-    border: none !important;
-}
-
-.arabic a {
-    border: solid;
-    font-family: Arial, Helvetica, sans-serif;
+.translation:hover {
+    cursor: pointer;
 }
 
 .dropdown {
@@ -110,11 +106,11 @@ header {
     background-color: inherit;
     font-weight: bold;
     color: #fff;
-    font-size: 1.1vw;
+    font-size: 1.3vw;
     padding-bottom: 3.5vh;
 }
 .fa-caret-down {
-    margin: 0 0vw 0 1vw;
+    margin: 0 0.5vw 0 1vw;
 }
 .dropdown:hover .dropbtn {
     cursor: pointer;
@@ -311,7 +307,7 @@ input[name="r"] {
     background-color: #fff;
     border-radius: 0.5vmax;
     color: #a2238e;
-    font-size: 3vmax;
+    font-size: 2.5vmax;
     left: 50%;
     transform: translateX(-50%);
     top: 75%;
@@ -484,7 +480,6 @@ input[name="r"] {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-  
 }
 
 .ifram-div {
@@ -559,26 +554,8 @@ input[name="r"] {
     color: rgb(243, 236, 241);
 }
 
-.translation-button {
-    /* position: absolute; */
-    /* top: 20%; */
-    z-index: 99999999999999999999999999999999;
-}
-.translatation-dev {
-    position: fixed;
-    z-index: 99999999;
-    top: 2%;
-    right: 10%;
-}
-.translation a{
-    position: absolute;
-    z-index: 99999;
-
-}
-.translation:hover{
-    cursor: pointer;
-}
-
-.aboutUs-section a:hover , .aboutUs-part-2 a:hover , .programs a:hover{
+.aboutUs-section a:hover,
+.aboutUs-part-2 a:hover,
+.programs a:hover {
     cursor: pointer;
 }

@@ -12,7 +12,10 @@
                 "desireToLearn": "D2L",
                 "EducationForEmployment": "تعلم الموظفين"
             },
-            "contactUs": "تواصل معنا"
+            "contactUs":{
+                "text":"تواصل معنا",
+                "link":"https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+            }
         }
     },
     "main": {
