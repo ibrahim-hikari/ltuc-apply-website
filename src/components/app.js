@@ -13,9 +13,9 @@ export default function App() {
     return (
         <>
             <ModelProvider>
-                <Header />
-                <Content />
-                <Footer />
+                <Header/>
+                <Content/>
+                <Footer/>
             </ModelProvider>
         </>
     );

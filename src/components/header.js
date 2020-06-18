@@ -70,7 +70,7 @@ function Header() {
         <>
             <header>
                 <img onClick={test} className="logo" src={context.headerData.logo} alt="" />
-                <a onClick={() => $('.main-nav-mobile').fadeToggle(200)} className="icon">
+                <a href="#/" onClick={() => $('.main-nav-mobile').fadeToggle(200)} className="icon">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -87,7 +87,7 @@ function Header() {
                             <a className="a-sdc" href="https://employmenthub.ltuc.com">{context.headerData.nav.studentServices.EducationForEmployment}</a>
                         </li>
                         <li><a href="#footer">{context.headerData.nav.contactUs}</a></li>
-                        <li className='arabic'><a onClick={() => getData(context.lang)}>{context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
+                        <li className='arabic'><a href="#/" onClick={() => getData(context.lang)}>{context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
                     </ul>
                 </nav>
                 <nav className="main-nav">
@@ -103,7 +103,7 @@ function Header() {
                             </div>
                         </li>
                         <li><a href="#footer">{context.headerData.nav.contactUs}</a></li>
-                        <li className="translation arabic"><a onClick={() => getData(context.lang)}>{context.lang === 'Arabic' ? 'العربية' : context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
+                        <li className="translation arabic"><a href="#/" onClick={() => getData(context.lang)}>{context.lang === 'Arabic' ? 'العربية' : context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
                     </ul>
                 </nav>
             </header>

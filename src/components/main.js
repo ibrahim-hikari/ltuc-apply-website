@@ -9,51 +9,51 @@ function Content() {
     return (
         <>
             <section id="aboutUs-section" className="aboutUs-section">
-                {context.mainData.aboutUs.aboutUsFeatures.map(element => (
-                    <>
-                        <h3>{element.Feature}</h3>
+                {context.mainData.aboutUs.aboutUsFeatures.map((element , i) => (
+                    <React.Fragment key={i}>
+                        <h3 >{element.Feature}</h3>
                         <h4>{element.description}</h4>
-                    </>
+                    </React.Fragment>
                 ))}
                 <a href={context.mainData.aboutUs.aboutUsLink.link}>{context.mainData.aboutUs.aboutUsLink.header}</a>
             </section>
             <section id="aboutUs-part-2" className="aboutUs-part-2">
-                {context.mainData.aboutUsContant.aboutUsContantSections.map(element => (
-                    <>
-                        <h3>{element.Features ? element.Features : ' '}</h3>
+                {context.mainData.aboutUsContant.aboutUsContantSections.map((element , i) => (
+                    <React.Fragment key={i}>
+                        <h3 >{element.Features ? element.Features : ' '}</h3>
                         <h4>{element.description}</h4>
-                    </>
+                    </React.Fragment>
                 ))}
                 <a href={context.mainData.aboutUsContant.aboutUsContantLink.link}>{context.mainData.aboutUsContant.aboutUsContantLink.header}</a>
             </section>
             <section id="programs" className="programs">
-                <div class="left">
+                <div className="left">
                     <h3>{context.mainData.program.firstProgram.InternationalDiploma}</h3>
                     <ul>
-                        {context.mainData.program.firstProgram.InternationalDiplomaSpecialties.map((item) =>(
+                        {context.mainData.program.firstProgram.InternationalDiplomaSpecialties.map((item , i) =>(
                             <>
-                                <li>{item}</li>
+                                <li key={i}>{item}</li>
                             </>
                         ))}
                     </ul>
                     <a href={context.mainData.program.fifthProgram.href.link}>{context.mainData.program.fifthProgram.href.header}</a>
                     <h3>{context.mainData.program.scandProgram.TechnicalDiploma}</h3>
                     <ul>
-                        {context.mainData.program.scandProgram.TechnicalDiplomaSpecialties.map(item => (
+                        {context.mainData.program.scandProgram.TechnicalDiplomaSpecialties.map((item , i) => (
                             <>
-                                <li>{item}</li>
+                                <li key={i}>{item}</li>
                             </>
                         ))}
                     </ul>
                     <a href={context.mainData.program.scandProgram.href.link}>{context.mainData.program.scandProgram.href.header}</a>
                 </div>
 
-                <div class="right">
+                <div className="right">
                     <h3>{context.mainData.program.thirdprogram.bachelors}</h3>
                     <ul>
-                        {context.mainData.program.thirdprogram.bachelorsSpecialties.map(item => (
+                        {context.mainData.program.thirdprogram.bachelorsSpecialties.map((item , i) => (
                             <>
-                                <li>{item}</li>
+                                <li key={i}>{item}</li>
                             </>
                         ))}
                     </ul>
@@ -61,9 +61,9 @@ function Content() {
 
                     <h3>{context.mainData.program.fourthProgram.LocalDiploma}</h3>
                     <ul>
-                        {context.mainData.program.fourthProgram.LocalDiplomaSpecialties.map(item => (
+                        {context.mainData.program.fourthProgram.LocalDiplomaSpecialties.map((item , i) => (
                             <>
-                                <li>{item}</li>
+                                <li key={i}>{item}</li>
                             </>
                         ))}
                     </ul>
