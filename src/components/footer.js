@@ -20,7 +20,7 @@ function Footer() {
                 <h4 className="contact-text">{context.footerData.contactUs.header}</h4>
                 <a className="contact-info" href='tel:+962(6)4000700'><i className="phone fa fa-phone">&nbsp;&nbsp;{context.footerData.contactUs.phone.number}</i></a>
                 <a className="contact-info" href='mailto:info@ltuc.com'><i className="send fa fa-send">&nbsp;&nbsp;{context.footerData.contactUs.info.email}</i></a>
-                <a className="contact-info" ><i className="map fa fa-map-marker">&nbsp;&nbsp;{context.footerData.contactUs.location}</i></a>
+                <a className="contact-info" href='#/'><i className="map fa fa-map-marker">&nbsp;&nbsp;{context.footerData.contactUs.location}</i></a>
                 <div className="complaints-section">
                     <div className="social">
                         <a href='https://www.facebook.com/LTUC.JO/'><i className="facebook fa fa2 fa-facebook-f"></i></a>
