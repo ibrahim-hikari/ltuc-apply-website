@@ -33,8 +33,16 @@
     header {
         height: 10vmax;
     }
+  
     .middle {
-        top: 8.5vmax;
+        top: 9.5vmax;
+        height: 75vh;
+    }
+    .touch{
+        top: 65%;
+    }
+    .navigation{
+        bottom: 8vh;
     }
     .logo {
         height: 8vmax;
@@ -341,16 +349,7 @@
         text-align: center;
         font-size: 2.5vw;
     }
-     .middle {
-            top: 9.5vmax;
-            height: 65vh;
-        }
-        .touch{
-            top: 65%;
-        }
-        .navigation{
-            bottom: 8vh;
-        }
+     
         .ifram-div .ifram {
             margin: 0 auto 0 auto;
             width: 85vw;
@@ -403,7 +402,19 @@
             margin: 0 auto 0 auto;
             font-size: 8vw !important;
         }
-}
+    }
+    @media (max-width: 700px) and (min-width: 590px) {
+                .middle {
+                    top: 9.5vmax;
+                    height: 68vh;
+                }
+                .touch{
+                    top: 65%;
+                }
+                .navigation{
+                    bottom: 8vh;
+                }
+            }
 @media (max-width: 1023px) and (min-width: 771px) {
     .complaints-p {
         font-size: 1.7vw;
@@ -615,7 +626,7 @@
     }
     .middle {
         top: 8.5vmax;
-        height: 56vh;
+        height: 60vh;
     }
     .touch {
         font-size: 5vmax;
@@ -698,11 +709,11 @@
     }
     .middle {
         top: 7.5vmax;
-        height: 96vh;
+        height: 100vh;
     }
     .touch {
         font-size: 5vmax;
-        top: 86%;
+        top: 84%;
     }
     .navigation {
         // border: solid;

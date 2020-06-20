@@ -87,7 +87,7 @@ function Header() {
                             <a className="a-sdc" href="https://employmenthub.ltuc.com">{context.headerData.nav.studentServices.EducationForEmployment}</a>
                         </li>
                         <li><a href="#footer">{context.headerData.nav.contactUs.text}</a></li>
-                        <li className='arabic'><a href="#/" onClick={() => getData(context.lang)}>{context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
+                        <li className='arabic'><a href="#/" onClick={() => getData(context.lang)}>{context.lang === 'Arabic' ? 'العربية' : context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
                     </ul>
                 </nav>
                 <nav className="main-nav">
