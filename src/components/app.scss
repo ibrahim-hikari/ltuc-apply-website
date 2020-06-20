@@ -293,7 +293,7 @@ input[name="r"] {
     margin-left: -75%;
 }
 
-.chat {
+.chat , .chat-icon {
     /* border: solid; */
     position: fixed;
     bottom: 0vmax;
@@ -335,7 +335,7 @@ input[name="r"] {
 .aboutUs-section h4 {
     color: #fff;
     font-size: 1.5vmax;
-    margin: 2vmax 0;
+    margin: 1.7vmax 0;
 }
 
 .aboutUs-section h3 {
@@ -373,7 +373,7 @@ input[name="r"] {
 
 .aboutUs-part-2 h4 {
     color: #fff;
-    font-size: 2vmax;
+    font-size: 1.7vmax;
     margin: 2vmax 0;
 }
 
@@ -438,16 +438,11 @@ input[name="r"] {
 // }
 
 .programs h3 {
-    /* border: solid; */
     color: #a2238e;
     font-size: 3vmax;
     margin: 0 0 1vmax 0;
 }
 
-// .section-four .right h3:nth-child(7) {
-//     border: solid;
-//     font-size: 2.9vmax;
-// }
 
 .programs ul li::before {
     content: "\2022";
@@ -472,7 +467,7 @@ input[name="r"] {
 
 .footer {
     clear: both;
-    background-image: url("../assets/footer-background.png");
+    background-image: url("../assets/footer-background.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
