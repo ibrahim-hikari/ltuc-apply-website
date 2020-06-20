@@ -87,7 +87,7 @@ function Header() {
                             <a className="a-sdc" href="https://employmenthub.ltuc.com">{context.headerData.nav.studentServices.EducationForEmployment}</a>
                         </li>
                         <li><a href="#footer">{context.headerData.nav.contactUs.text}</a></li>
-                        <li className='arabic'><a href="#/" onClick={() => getData(context.lang)}>{context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
+                        <li className='arabic'><a href="#/" onClick={() => getData(context.lang)}>{context.lang === 'Arabic' ? 'العربية' : context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
                     </ul>
                 </nav>
                 <nav className="main-nav">
@@ -117,33 +117,33 @@ function Header() {
                         <input type="radio" name="r" id="r4" />
                         <div className="slide s1">
                             <div className="card">
-                                <img src="../assets/ready_orange.png" alt="" />
-                                <img src="../assets/1.png" alt="" />
-                                <img src="../assets/text1.png" alt="" />
+                                <img src="../assets/ready_orange.jpeg" alt="" />
+                                <img src="../assets/1.jpeg" alt="" />
+                                <img src="../assets/text1.jpeg" alt="" />
                                 <a className="touch" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
                         <div className="slide">
                             <div className="card">
-                                <img src="../assets/ready_purple.png" alt="" />
-                                <img src="../assets/2.png" alt="" />
-                                <img src="../assets/text2.png" alt="" />
+                                <img src="../assets/ready_purple.jpeg" alt="" />
+                                <img src="../assets/2.jpeg" alt="" />
+                                <img src="../assets/text2.jpeg" alt="" />
                                 <a className="touch" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
                         <div className="slide">
                             <div className="card">
-                                <img src="../assets/ready_orange.png" alt="" />
-                                <img src="../assets/3.png" alt="" />
-                                <img src="../assets/text3.png" alt="" />
+                                <img src="../assets/ready_orange.jpeg" alt="" />
+                                <img src="../assets/3.jpeg" alt="" />
+                                <img src="../assets/text3.jpeg" alt="" />
                                 <a className="touch" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
                         <div className="slide">
                             <div className="card">
-                                <img src="../assets/ready_orange.png" alt="" />
-                                <img src="../assets/4.png" alt="" />
-                                <img src="../assets/4-1.png" alt="" />
+                                <img src="../assets/ready_orange.jpeg" alt="" />
+                                <img src="../assets/4.jpeg" alt="" />
+                                <img src="../assets/4-1.jpeg" alt="" />
                                 <a className="touch" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
@@ -157,7 +157,8 @@ function Header() {
                     </div>
                 </div>
 
-                <a href="https://m.me/LTUC.JO"><img className="chat" src="./assets/chat2-removebg-preview.png" alt="" /></a>
+                <a href="https://m.me/LTUC.JO"><img className="chat" src="./assets/chat2-removebg-preview.jpeg" alt="" /></a>
+                <a href="https://m.me/LTUC.JO"><img className="chat-icon" src="./assets/chat-icon.jpeg" alt="" /></a>
             </section>
         </>
     );
