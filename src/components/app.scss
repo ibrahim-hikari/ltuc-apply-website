@@ -480,6 +480,8 @@ input[name="r"] {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    position: relative;
+    z-index: 99;
 }
 
 .ifram-div {
