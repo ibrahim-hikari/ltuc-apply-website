@@ -94,7 +94,7 @@ function Header() {
                     <ul>
                         <li><a href="#slideShow">{context.headerData.nav.home}</a></li>
                         <li><a href="#aboutUs-section">{context.headerData.nav.aboutUs}&nbsp;</a></li>
-                        <li><a href="#aboutUs-part-2">{context.headerData.nav.programs}</a></li>
+                        <li><a href="#programs">{context.headerData.nav.programs}</a></li>
                         <li className="dropdown"><button className="dropbtn" type="scall">{context.headerData.nav.studentServicesHeader}<i className="fa fa-caret-down"></i></button>
                             <div className="dropdown-content">
                                 <a href="https://sisportal-100533.campusnexus.cloud/CMCPortal/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsisportal-100533.campusnexus.cloud%2fCMCPortal%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fCMCPortal%252fsecure%252fstaff%252fstaportal.aspx&wct=2020-05-07T13%3a03%3a17Z">{context.headerData.nav.studentServices.selfServicePortal}</a>
