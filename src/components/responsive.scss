@@ -427,6 +427,7 @@
     .aboutUs-section,
     .aboutUs-part-2 {
         font-size: 3.5vw;
+        padding-right: 6vmax;
     }
 
     .aboutUs-section h3,
@@ -444,7 +445,7 @@
     .aboutUs-part-2 a,
     .aboutUs-section a {
         border-radius: 5px;
-        bottom: 2%;
+        bottom: 1.5%;
         font-size: 2.5vmax;
         left: 37.5%;
         padding: 1vmax 1.5vmax;
@@ -460,7 +461,7 @@
         color: #fff;
         direction: rtl;
         font-size: 2.8vmax;
-        padding: 0 12vmax;
+        padding: 0 6vmax 0 10vmax;
         position: relative;
         z-index: 0;
     }
@@ -468,13 +469,13 @@
     .programs .left {
         /* border: solid; */
         position: unset;
-        width: 50vmax;
+        width: 100%;
     }
 
     .programs .right {
         /* border: solid; */
         margin-top: -10vmax;
-        width: 50vmax;
+        width: 100%;
     }
 
     .programs h3 {
@@ -531,9 +532,9 @@
     }
     .footer-logo {
         width: 40vw;
-    height: 15vh;
-    margin: 1vw auto 0vw auto;
-    display: block;
+        height: 15vh;
+        margin: 1vw auto 0vw auto;
+        display: block;
     }
     .contact-div {
         width: 100%;
@@ -606,7 +607,7 @@
         width: 70%;
         margin: 5vh 0vmax 0vmax 15%;
     }
-    .main-nav-mobile{
+    .main-nav-mobile {
         justify-content: space-between;
     }
     /* Slide #1 */
@@ -671,17 +672,26 @@
     }
 
     .touch {
-        font-size: 5vmax;
+        font-size: 3.5vmax;
         top: 83%;
     }
     .navigation {
         // border: solid;
-        bottom: -4vh;
+        bottom: -3.5vh;
         margin-bottom: 8%;
     }
     .logo {
         // height: 8vw;
         top: 1.6vw;
         width: 60vw;
+    }
+    .chat-icon {
+        width: 10vmax;
+    }
+}
+
+@media (max-width: 250px) {
+    .touch {
+        top: 82%;
     }
 }
