@@ -451,7 +451,7 @@ input[name="r"] {
     top: 1vh;
 }
 
-.programs a {
+.programs .program-button {
     background-color: #a2238e;
     /* border: solid; */
     border-radius: 5px;
@@ -463,6 +463,17 @@ input[name="r"] {
     width: fit-content;
 }
 
+.programs .program-link{
+    background-color: #a2238e00;
+    color: #fff;
+    text-decoration: none;
+    // width: fit-content;
+    cursor: pointer;
+}
+.program-link:hover{
+    // border: solid;
+
+}
 .footer {
     clear: both;
     background-image: url("../assets/footer-background.jpeg");
