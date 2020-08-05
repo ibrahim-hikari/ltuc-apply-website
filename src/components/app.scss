@@ -171,12 +171,13 @@ header {
     /* transform: translate(-50%, -50%); */
 }
 .navigation {
-    /* border: solid; */
+    // border: solid;
     position: absolute;
     bottom: 1vmax;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
+    justify-content: center;
 }
 .bar {
     background-color: #ffffff4d;
@@ -293,11 +294,20 @@ input[name="r"] {
     margin-left: -75%;
 }
 
-.chat , .chat-icon {
+.chat {
     /* border: solid; */
     position: fixed;
     bottom: 0vmax;
     right: 0vmax;
+    width: 12vmax;
+    z-index: 98;
+}
+
+.chat-icon {
+    /* border: solid; */
+    position: fixed;
+    bottom: 0vmax;
+    left: 0vmax;
     width: 12vmax;
     z-index: 98;
 }
