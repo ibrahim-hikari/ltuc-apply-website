@@ -49,9 +49,9 @@ function Header() {
 
         function carousel() {
             let slide = document.getElementsByClassName('s1');
-            slide[0].style.marginLeft = -i * 25 + '%';
+            slide[0].style.marginLeft = -i * (100 / 6) + '%';
             i++;
-            if (i === 4) {
+            if (i === 6) {
                 i = 0;
             }
             setTimeout(carousel, 5000);
@@ -60,7 +60,7 @@ function Header() {
         $('.bar').on('click', function (e) {
             i = e.target.id - 1;
             let slide = document.getElementsByClassName('s1');
-            slide[0].style.marginLeft = -i * 25 + '%';
+            slide[0].style.marginLeft = -i * (100 / 6) + '%';
         });
 
     }, []);
@@ -87,7 +87,7 @@ function Header() {
                             <a id='google-button' className="a-sdc" href="https://employmenthub.ltuc.com">{context.headerData.nav.studentServices.EducationForEmployment}</a>
                         </li>
                         <li><a href="#footer">{context.headerData.nav.contactUs.text}</a></li>
-                        <li className='arabic'><a href="#/" onClick={() => getData(context.lang)}>{context.lang === 'Arabic' ? 'العربية' : context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
+                        {/* <li className='arabic'><a href="#/" onClick={() => getData(context.lang)}>{context.lang === 'Arabic' ? 'العربية' : context.lang}&nbsp;<i className="fa fa-globe"></i></a></li> */}
                     </ul>
                 </nav>
                 <nav className="main-nav">
@@ -103,7 +103,7 @@ function Header() {
                             </div>
                         </li>
                         <li><a href="#footer">{context.headerData.nav.contactUs.text}</a></li>
-                        <li className="translation arabic"><a href="#/" onClick={() => getData(context.lang)}>{context.lang === 'Arabic' ? 'العربية' : context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
+                        {/* <li className="translation arabic"><a href="#/" onClick={() => getData(context.lang)}>{context.lang === 'Arabic' ? 'العربية' : context.lang}&nbsp;<i className="fa fa-globe"></i></a></li> */}
                     </ul>
                 </nav>
             </header>
@@ -115,38 +115,76 @@ function Header() {
                         <input type="radio" name="r" id="r2" />
                         <input type="radio" name="r" id="r3" />
                         <input type="radio" name="r" id="r4" />
+                        <input type="radio" name="r" id="r5" />
+                        <input type="radio" name="r" id="r6" />
+
                         <div className="slide s1">
                             <div className="card">
-                                <img src="../assets/ready_orange.jpeg" alt="" />
-                                <img src="../assets/1.jpeg" alt="" />
-                                <img src="../assets/text1.jpeg" alt="" />
-                                <a id='google-button' target='_blank' className="touch" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                                <div className='future'>
+                                    <span>لأنك</span>
+                                    <span>المستقبل</span>
+                                </div>
+                                <img src="../assets/Slide_1.png" alt="" />
+                                <span className='with-you'>إحنا معك</span>
+                                <a id='google-button' target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
-                        <div className="slide">
+                        <div className="slide s2">
                             <div className="card">
-                                <img src="../assets/ready_purple.jpeg" alt="" />
-                                <img src="../assets/2.jpeg" alt="" />
-                                <img src="../assets/text2.jpeg" alt="" />
-                                <a id='google-button' className="touch" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                                <div className='future'>
+                                    <span>لأنك</span>
+                                    <span>المستقبل</span>
+                                </div>
+                                <img src="../assets/Slide_1.png" alt="" />
+                                <span className='with-you'>إحنا معك</span>
+                                <a id='google-button' target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
-                        <div className="slide">
+                        <div className="slide s3">
                             <div className="card">
-                                <img src="../assets/ready_orange.jpeg" alt="" />
-                                <img src="../assets/3.jpeg" alt="" />
-                                <img src="../assets/text3.jpeg" alt="" />
-                                <a id='google-button' className="touch" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                                <div className='future'>
+                                    <span>لأنك</span>
+                                    <span>المستقبل</span>
+                                </div>
+                                <img src="../assets/Slide_1.png" alt="" />
+                                <span className='with-you'>إحنا معك</span>
+                                <a id='google-button' target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
-                        <div className="slide">
+                        <div className="slide s4">
                             <div className="card">
-                                <img src="../assets/ready_orange.jpeg" alt="" />
-                                <img src="../assets/4.jpeg" alt="" />
-                                <img src="../assets/4-1.jpeg" alt="" />
-                                <a id='google-button' className="touch" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                                <div className='future'>
+                                    <span>لأنك</span>
+                                    <span>المستقبل</span>
+                                </div>
+                                <img src="../assets/Slide_1.png" alt="" />
+                                <span className='with-you'>إحنا معك</span>
+                                <a id='google-button' target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
+                        <div className="slide s5">
+                            <div className="card">
+                                <div className='future'>
+                                    <span>لأنك</span>
+                                    <span>المستقبل</span>
+                                </div>
+                                <img src="../assets/Slide_1.png" alt="" />
+                                <span className='with-you'>إحنا معك</span>
+                                <a id='google-button' target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                            </div>
+                        </div>
+                        <div className="slide s6">
+                            <div className="card">
+                                <div className='future'>
+                                    <span>لأنك</span>
+                                    <span>المستقبل</span>
+                                </div>
+                                <img src="../assets/Slide_1.png" alt="" />
+                                <span className='with-you'>إحنا معك</span>
+                                <a id='google-button' target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                            </div>
+                        </div>
+
                     </div>
 
                     <div className="navigation">
@@ -154,6 +192,8 @@ function Header() {
                         <label htmlFor="r2" className="bar" id="2"></label>
                         <label htmlFor="r3" className="bar" id="3"></label>
                         <label htmlFor="r4" className="bar" id="4"></label>
+                        <label htmlFor="r5" className="bar" id="5"></label>
+                        <label htmlFor="r6" className="bar" id="6"></label>
                     </div>
                 </div>
 
