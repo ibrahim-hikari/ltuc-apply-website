@@ -77,14 +77,14 @@ function Header() {
                 </a>
                 <nav className="main-nav-mobile">
                     <ul>
-                        <li><a href="#slideShow">{context.headerData.nav.home}</a></li>
+                        <li><a id='google-button' href="#slideShow">{context.headerData.nav.home}</a></li>
                         <li><a href="#aboutUs-section">{context.headerData.nav.aboutUs}</a></li>
                         <li><a href="#programs">{context.headerData.nav.programs}</a></li>
                         <li className="dropdown sub-dropdown"><button onClick={() => $('.sub-dropdown-content').fadeToggle(200)} className="dropbtn sub-dropdown-btn" type="scall">{context.headerData.nav.studentServicesHeader}<i className="fa fa-caret-down"></i></button></li>
                         <li className="sub-dropdown-content" >
-                            <a className="a-sdc" href="https://sisportal-100533.campusnexus.cloud/CMCPortal/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsisportal-100533.campusnexus.cloud%2fCMCPortal%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fCMCPortal%252fsecure%252fstaff%252fstaportal.aspx&wct=2020-05-07T13%3a03%3a17Z">{context.headerData.nav.studentServices.selfServicePortal}</a>
-                            <a className="a-sdc" href="https://online.ltuc.com/d2l/home">{context.headerData.nav.studentServices.desireToLearn}</a>
-                            <a className="a-sdc" href="https://employmenthub.ltuc.com">{context.headerData.nav.studentServices.EducationForEmployment}</a>
+                            <a id='google-button' className="a-sdc" href="https://sisportal-100533.campusnexus.cloud/CMCPortal/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsisportal-100533.campusnexus.cloud%2fCMCPortal%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fCMCPortal%252fsecure%252fstaff%252fstaportal.aspx&wct=2020-05-07T13%3a03%3a17Z">{context.headerData.nav.studentServices.selfServicePortal}</a>
+                            <a id='google-button' className="a-sdc" href="https://online.ltuc.com/d2l/home">{context.headerData.nav.studentServices.desireToLearn}</a>
+                            <a id='google-button' className="a-sdc" href="https://employmenthub.ltuc.com">{context.headerData.nav.studentServices.EducationForEmployment}</a>
                         </li>
                         <li><a href="#footer">{context.headerData.nav.contactUs.text}</a></li>
                         <li className='arabic'><a href="#/" onClick={() => getData(context.lang)}>{context.lang === 'Arabic' ? 'العربية' : context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
@@ -97,9 +97,9 @@ function Header() {
                         <li><a href="#programs">{context.headerData.nav.programs}</a></li>
                         <li className="dropdown"><button className="dropbtn" type="scall">{context.headerData.nav.studentServicesHeader}<i className="fa fa-caret-down"></i></button>
                             <div className="dropdown-content">
-                                <a href="https://sisportal-100533.campusnexus.cloud/CMCPortal/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsisportal-100533.campusnexus.cloud%2fCMCPortal%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fCMCPortal%252fsecure%252fstaff%252fstaportal.aspx&wct=2020-05-07T13%3a03%3a17Z">{context.headerData.nav.studentServices.selfServicePortal}</a>
-                                <a href="https://online.ltuc.com/d2l/home">{context.headerData.nav.studentServices.desireToLearn}</a>
-                                <a href="https://employmenthub.ltuc.com">{context.headerData.nav.studentServices.EducationForEmployment}</a>
+                                <a id='google-button' href="https://sisportal-100533.campusnexus.cloud/CMCPortal/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsisportal-100533.campusnexus.cloud%2fCMCPortal%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fCMCPortal%252fsecure%252fstaff%252fstaportal.aspx&wct=2020-05-07T13%3a03%3a17Z">{context.headerData.nav.studentServices.selfServicePortal}</a>
+                                <a id='google-button' href="https://online.ltuc.com/d2l/home">{context.headerData.nav.studentServices.desireToLearn}</a>
+                                <a id='google-button' href="https://employmenthub.ltuc.com">{context.headerData.nav.studentServices.EducationForEmployment}</a>
                             </div>
                         </li>
                         <li><a href="#footer">{context.headerData.nav.contactUs.text}</a></li>
@@ -120,7 +120,7 @@ function Header() {
                                 <img src="../assets/ready_orange.jpeg" alt="" />
                                 <img src="../assets/1.jpeg" alt="" />
                                 <img src="../assets/text1.jpeg" alt="" />
-                                <a className="touch" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                                <a id='google-button' target='_blank' className="touch" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
                         <div className="slide">
@@ -128,7 +128,7 @@ function Header() {
                                 <img src="../assets/ready_purple.jpeg" alt="" />
                                 <img src="../assets/2.jpeg" alt="" />
                                 <img src="../assets/text2.jpeg" alt="" />
-                                <a className="touch" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                                <a id='google-button' className="touch" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
                         <div className="slide">
@@ -136,7 +136,7 @@ function Header() {
                                 <img src="../assets/ready_orange.jpeg" alt="" />
                                 <img src="../assets/3.jpeg" alt="" />
                                 <img src="../assets/text3.jpeg" alt="" />
-                                <a className="touch" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                                <a id='google-button' className="touch" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
                         <div className="slide">
@@ -144,7 +144,7 @@ function Header() {
                                 <img src="../assets/ready_orange.jpeg" alt="" />
                                 <img src="../assets/4.jpeg" alt="" />
                                 <img src="../assets/4-1.jpeg" alt="" />
-                                <a className="touch" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                                <a id='google-button' className="touch" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
                     </div>
@@ -157,8 +157,8 @@ function Header() {
                     </div>
                 </div>
 
-                <a href="https://m.me/LTUC.JO"><img className="chat" src="./assets/chat2-removebg-preview.jpeg" alt="" /></a>
-                <a href="https://m.me/LTUC.JO"><img className="chat-icon" src="./assets/chat-icon.jpeg" alt="" /></a>
+                <a id='google-button' href="https://m.me/LTUC.JO"><img className="chat" src="./assets/chat2-removebg-preview.jpeg" alt="" /></a>
+                <a id='google-button' href="https://m.me/LTUC.JO"><img className="chat-icon" src="./assets/chat-icon.jpeg" alt="" /></a>
             </section>
         </>
     );
