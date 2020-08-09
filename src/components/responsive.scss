@@ -2,9 +2,6 @@
     .main-nav-mobile {
         visibility: hidden;
     }
-    .chat-icon {
-        display: none;
-    }
     .footer {
         /* margin-top: 9vw; */
         font-size: 1.2vw;
@@ -26,9 +23,10 @@
         margin: 0 5vw;
     }
 }
+
 @media (max-width: 770px) {
     header {
-        height: 4.7vmax;
+        height: 8%;
     }
     .arabic {
         margin-bottom: 0 !important;
@@ -40,18 +38,26 @@
         top: 8.5vmax;
     }
     .logo {
-        height: 8vmax;
-        top: 1vmax;
-        width: 40vmax;
+        /* border: solid; */
+        display: table-cell;
+        height: 80%;
+        left: 1vmax;
+        position: absolute;
+        top: 0.5vmax;
+        vertical-align: middle;
+        width: fit-content;
     }
+
     .main-nav {
         display: none;
     }
     .main-nav-mobile {
-        /* border: solid; */
+        // border: solid;
         visibility: visible;
         display: block;
         height: 25vmax;
+        top: -20%;
+        // bottom: 0%;
         left: 0;
         position: absolute;
         width: 100vw;
@@ -95,6 +101,9 @@
         margin-left: 2vw;
     }
     .main-nav-mobile ul li .sub-dropdown-btn {
+        background: none;
+        border: 0;
+        font-family: "NizarCoconKurdish";
         font-size: 3.3vw;
         margin-left: 1vw;
     }
@@ -169,10 +178,10 @@
     }
 
     .icon {
-        /* border: solid; */
+        // border: solid;
         display: block;
         right: 5.5vmax;
-        top: 3vmax;
+        top: 30%;
         /* padding: 0.5em; */
         position: absolute;
         z-index: 5;
@@ -189,6 +198,24 @@
     .touch {
         /* border: solid; */
         font-size: 4vmax;
+    }
+
+    .chat {
+        background-color: #fff;
+        border-radius: 15px;
+        bottom: 0%;
+        // border: solid;
+        font-size: 4vmax;
+        padding: 1%;
+        position: fixed;
+        right: -5%;
+        transform: translate(-50%, -50%);
+        outline: none;
+        z-index: 10;
+
+        .fas {
+            vertical-align: middle;
+        }
     }
 
     .contact-info {
@@ -214,9 +241,6 @@
 @media (min-width: 590px) and (max-width: 1023px) {
     .main-nav {
         top: 0.5vmax;
-    }
-    .chat-icon {
-        display: none;
     }
     .contact-text {
         width: 19vw;
@@ -411,13 +435,7 @@
         /* font-weight: bolder; */
     }
 
-    .chat {
-        display: none;
-    }
 
-    .chat-icon {
-        visibility: visible;
-    }
 
     .aboutUs-section,
     .aboutUs-part-2 {
@@ -611,16 +629,18 @@
         }
 
         img {
-            left: 5%;
-            top: 40%;
-            transform: translateY(-50%);
-            width: 45%;
+            // border: solid;
+            left: 30%;
+            top: 43%;
+            transform: translate(-50%, -50%);
+            max-width: 45%;
+            // max-height: 50%;
         }
 
         .with-you {
             font-size: 3vmax;
             right: 10%;
-            top: 60%;
+            top: 55%;
             transform: translateY(-50%);
         }
 
@@ -628,7 +648,40 @@
             font-size: 2.5vmax;
             right: 10%;
             transform: translateY(-50%);
-            top: 70%;
+            top: 65%;
+        }
+    }
+
+    .s2 {
+        .card img {
+            top: 45%;
+            width: fit-content;
+        }
+    }
+    .s3 {
+        .card img {
+            top: 47%;
+        }
+    }
+    .s4 {
+        .card img {
+            top: 45%;
+            left: 30%;
+            max-height: 52%;
+            width: fit-content;
+        }
+    }
+    .s5 {
+        .card img {
+            top: 50%;
+            left: 30%;
+            width: fit-content;
+        }
+    }
+    .s6 {
+        .card img {
+            // border: solid;
+            top: 47%;
         }
     }
 
@@ -663,7 +716,7 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-            width: 60%;
+            max-width: 60%;
         }
 
         .with-you {
@@ -676,7 +729,7 @@
         .touch {
             font-size: 4vmax;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
             top: 72%;
         }
     }
@@ -690,9 +743,6 @@
         // height: 8vw;
         top: 1.6vw;
         width: 60vw;
-    }
-    .chat-icon {
-        width: 10vmax;
     }
 }
 

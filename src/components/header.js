@@ -10,31 +10,32 @@ function Header() {
     //     return props.condition ? props.children : null;
     // };
 
-    const getData = page => {
-        console.log('here', context.lang);
-        if (context.lang === 'Arabic') {
-            $('.translation').addClass('arabic');
-        } else {
-            $('.translation').removeClass('arabic');
-        }
-        $.ajax({
-            type: 'get',
-            url: `./data/${page}.json`,
-            data: 'data',
-            dataType: 'json',
-            success: function (res) {
-                context.changeHeaderData(res.header);
-                context.changeMainData(res.main);
-                context.changeFooterData(res.footer);
-                context.changeLang(res.language);
-            },
-        });
+    // const getData = page => {
+    //     console.log('here', context.lang);
+    //     if (context.lang === 'Arabic') {
+    //         $('.translation').addClass('arabic');
+    //     } else {
+    //         $('.translation').removeClass('arabic');
+    //     }
+    //     $.ajax({
+    //         type: 'get',
+    //         url: `./data/${page}.json`,
+    //         data: 'data',
+    //         dataType: 'json',
+    //         success: function (res) {
+    //             context.changeHeaderData(res.header);
+    //             context.changeMainData(res.main);
+    //             context.changeFooterData(res.footer);
+    //             context.changeLang(res.language);
+    //         },
+    //     });
 
-    };
+    // };
 
     useEffect(() => {
         $('.main-nav-mobile').hide();
         $('.sub-dropdown-content').hide();
+
     });
 
     const test = () => {
@@ -45,11 +46,15 @@ function Header() {
 
     useEffect(() => {
         var i = 0;
+        let colors = ['#154579', '#5E2F90', '#2E8178', '#E21F49', '#388BC5', '#A3258D'];
+        let chatIcon = document.querySelector('.chat').children[0];
         carousel();
+        console.log('chat', chatIcon.style.color);
 
         function carousel() {
             let slide = document.getElementsByClassName('s1');
             slide[0].style.marginLeft = -i * (100 / 6) + '%';
+            chatIcon.style.color = colors[i];
             i++;
             if (i === 6) {
                 i = 0;
@@ -95,7 +100,8 @@ function Header() {
                         <li><a href="#slideShow">{context.headerData.nav.home}</a></li>
                         <li><a href="#aboutUs-section">{context.headerData.nav.aboutUs}&nbsp;</a></li>
                         <li><a href="#programs">{context.headerData.nav.programs}</a></li>
-                        <li className="dropdown"><button className="dropbtn" type="scall">{context.headerData.nav.studentServicesHeader}<i className="fa fa-caret-down"></i></button>
+                        <li className="dropdown">
+                            <button className="dropbtn" type="scall">{context.headerData.nav.studentServicesHeader}<i className="fa fa-caret-down"></i></button>
                             <div className="dropdown-content">
                                 <a id='google-button' href="https://sisportal-100533.campusnexus.cloud/CMCPortal/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsisportal-100533.campusnexus.cloud%2fCMCPortal%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fCMCPortal%252fsecure%252fstaff%252fstaportal.aspx&wct=2020-05-07T13%3a03%3a17Z">{context.headerData.nav.studentServices.selfServicePortal}</a>
                                 <a id='google-button' href="https://online.ltuc.com/d2l/home">{context.headerData.nav.studentServices.desireToLearn}</a>
@@ -135,7 +141,7 @@ function Header() {
                                     <span>لأنك</span>
                                     <span>المستقبل</span>
                                 </div>
-                                <img src="../assets/Slide_1.png" alt="" />
+                                <img src="../assets/Slide_2.png" alt="" />
                                 <span className='with-you'>إحنا معك</span>
                                 <a id='google-button' target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
@@ -146,7 +152,7 @@ function Header() {
                                     <span>لأنك</span>
                                     <span>المستقبل</span>
                                 </div>
-                                <img src="../assets/Slide_1.png" alt="" />
+                                <img src="../assets/Slide_3.png" alt="" />
                                 <span className='with-you'>إحنا معك</span>
                                 <a id='google-button' target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
@@ -157,7 +163,7 @@ function Header() {
                                     <span>لأنك</span>
                                     <span>المستقبل</span>
                                 </div>
-                                <img src="../assets/Slide_1.png" alt="" />
+                                <img src="../assets/Slide_4.png" alt="" />
                                 <span className='with-you'>إحنا معك</span>
                                 <a id='google-button' target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
@@ -168,7 +174,7 @@ function Header() {
                                     <span>لأنك</span>
                                     <span>المستقبل</span>
                                 </div>
-                                <img src="../assets/Slide_1.png" alt="" />
+                                <img src="../assets/Slide_5.png" alt="" />
                                 <span className='with-you'>إحنا معك</span>
                                 <a id='google-button' target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
@@ -179,7 +185,7 @@ function Header() {
                                     <span>لأنك</span>
                                     <span>المستقبل</span>
                                 </div>
-                                <img src="../assets/Slide_1.png" alt="" />
+                                <img src="../assets/Slide_6.png" alt="" />
                                 <span className='with-you'>إحنا معك</span>
                                 <a id='google-button' target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
@@ -196,9 +202,8 @@ function Header() {
                         <label htmlFor="r6" className="bar" id="6"></label>
                     </div>
                 </div>
+                <a id='google-button' className='chat' href="https://m.me/LTUC.JO"><i className='fas fa-comment'></i></a>
 
-                <a id='google-button' href="https://m.me/LTUC.JO"><img className="chat" src="./assets/chat2-removebg-preview.jpeg" alt="" /></a>
-                <a id='google-button' href="https://m.me/LTUC.JO"><img className="chat-icon" src="./assets/chat-icon.jpeg" alt="" /></a>
             </section>
         </>
     );
