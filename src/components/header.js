@@ -54,7 +54,7 @@ function Header() {
         function carousel() {
             let slide = document.getElementsByClassName('s1');
             slide[0].style.marginLeft = -i * (100 / 6) + '%';
-            chatIcon.style.color = colors[i];
+            // chatIcon.style.color = colors[i];
             i++;
             if (i === 6) {
                 i = 0;
