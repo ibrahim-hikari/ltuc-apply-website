@@ -28,13 +28,13 @@
 }
 @media (max-width: 770px) {
     header {
-        height: 10vmax;
+        height: 4.7vmax;
     }
     .arabic {
         margin-bottom: 0 !important;
     }
     .slideShow {
-        width: 100vw;
+        width: 100%;
     }
     .middle {
         top: 8.5vmax;
@@ -189,11 +189,6 @@
     .touch {
         /* border: solid; */
         font-size: 4vmax;
-    }
-
-    .aboutUs-section {
-        // border: solid;
-        margin-top: 8.5vmax;
     }
 
     .contact-info {
@@ -600,85 +595,96 @@
         font-size: 7vw !important;
     }
 }
+@media (min-width: 500px) {
+    .card {
+        // border: solid;
+        position: relative;
+        width: 100%;
+        height: 100%;
 
-@media (max-width: 500px) {
-    .slide div img:nth-child(1) {
-        /* border: solid; */
-        width: 70%;
-        margin: 5vh 0vmax 0vmax 15%;
+        .future {
+            font-size: 9vmax;
+            right: 10%;
+            top: 35%;
+            transform: translateY(-50%);
+            width: 40%;
+        }
+
+        img {
+            left: 5%;
+            top: 40%;
+            transform: translateY(-50%);
+            width: 45%;
+        }
+
+        .with-you {
+            font-size: 3vmax;
+            right: 10%;
+            top: 60%;
+            transform: translateY(-50%);
+        }
+
+        .touch {
+            font-size: 2.5vmax;
+            right: 10%;
+            transform: translateY(-50%);
+            top: 70%;
+        }
     }
+
+    .navigation {
+        // border: solid;
+        bottom: 10%;
+        left: 50%;
+    }
+}
+@media (max-width: 500px) {
     .main-nav-mobile {
         justify-content: space-between;
     }
-    /* Slide #1 */
-    .slides .slide:nth-child(5) {
-        background-color: #a2238e;
-    }
-    .slides .slide:nth-child(5) div img:nth-child(2) {
-        /* border: solid; */
-        width: 60%;
-        margin: 0vmax 0vmax 1.2vmax 20%;
+    .card {
+        // border: solid;
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .future {
+            // border: solid;
+            font-size: 10vmax;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%, -50%);
+            width: fit-content;
+        }
+
+        img {
+            // border: solid #fff;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+        }
+
+        .with-you {
+            font-size: 5vmax;
+            left: 50%;
+            top: 65%;
+            transform: translate(-50%, -50%);
+        }
+
+        .touch {
+            font-size: 4vmax;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            top: 72%;
+        }
     }
 
-    .slides .slide:nth-child(5) div img:nth-child(3) {
-        /* border: solid; */
-        width: 50%;
-        margin: 0vmax 0vmax 0 25%;
-    }
-
-    /* Slide #2 */
-    .slides .slide:nth-child(6) {
-        background-color: #fda136;
-    }
-    .slides .slide:nth-child(6) div img:nth-child(2) {
-        /* border: solid; */
-        width: 60%;
-        margin: 0vmax 0vmax 1.2vmax 20%;
-    }
-    .slides .slide:nth-child(6) div img:nth-child(3) {
-        /* border: solid; */
-        width: 40%;
-        margin: 0vmax 0vmax 1.2vmax 30%;
-    }
-
-    /* Slide #3 */
-    .slides .slide:nth-child(7) {
-        background-color: #5c2d90;
-    }
-    .slides .slide:nth-child(7) div img:nth-child(2) {
-        /* border: solid; */
-        width: 50%;
-        margin: 0vmax 0vmax 1.2vmax 25%;
-    }
-    .slides .slide:nth-child(7) div img:nth-child(3) {
-        /* border: solid; */
-        width: 40%;
-        margin: 0vmax 0vmax 1.2vmax 30%;
-    }
-
-    /* Slide #4 */
-    .slides .slide:nth-child(8) {
-        background-color: #438c7f;
-    }
-    .slides .slide:nth-child(8) div img:nth-child(2) {
-        /* border: solid; */
-        width: 50%;
-        margin: 0vmax 0vmax 1.2vmax 25%;
-    }
-    .slides .slide:nth-child(8) div img:nth-child(3) {
-        /* border: solid; */
-        width: 60%;
-        margin: 0 0 25% 20%;
-    }
-
-    .touch {
-        font-size: 3.5vmax;
-        top: 83%;
-    }
     .navigation {
         // border: solid;
-        bottom: -3.5vh;
-        margin-bottom: 8%;
+        left: 50%;
+        bottom: 15%;
     }
     .logo {
         // height: 8vw;

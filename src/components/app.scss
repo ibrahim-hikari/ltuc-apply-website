@@ -21,7 +21,7 @@ a:hover,
 header {
     // border: solid;
     background-color: #fda136;
-    height: 7%;
+    height: 4.7vmax;
     position: fixed;
     transition: all 1s;
     box-shadow: 0px 1px 7px #0000006b;
@@ -159,25 +159,23 @@ header {
 }
 
 .slideShow {
-    border: solid;
+    // border: solid;
     position: relative;
     width: 100%;
     height: 100vh;
-    // margin-bottom: 4.7vmax;
+
     .middle {
         position: relative;
-        top: 4.5vmax;
-        /* left: 50%; */
-        /* transform: translate(-50%, -50%); */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .navigation {
         // border: solid;
-        position: absolute;
-        bottom: 10%;
-        left: 50%;
-        transform: translateX(-50%);
         display: flex;
         justify-content: center;
+        position: absolute;
+        transform: translate(-50%, -50%);
     }
     .bar {
         background-color: #ffffff4d;
@@ -192,26 +190,26 @@ header {
     .bar:hover {
         background: #fff;
     }
-    
+
     input[name="r"] {
         position: absolute;
         visibility: hidden;
     }
     .slides {
-        width: 600%;
-        height: 100%;
         display: flex;
+        height: 100%;
+        width: 600%;
     }
-    
+
     .slide {
         position: relative;
         height: 100vh;
         transition: 0.6s;
         width: calc(100% / 6);
-    }
-    .slide {
-        background-color: #154579;
-    
+
+        &.s1 {
+            background-color: #154579;
+        }
         &.s2 {
             background-color: #5e2f90;
         }
@@ -227,71 +225,53 @@ header {
         &.s6 {
             background-color: #a3258d;
         }
-    
         .card {
             // border: solid;
             position: relative;
             width: 100%;
             height: 100%;
-    
+
             .future {
                 // border: solid #fff;
                 color: #fda136;
-                font-size: 9vmax;
                 position: absolute;
-                right: 10%;
                 text-align: right;
-                top: 35%;
-                transform: translateY(-50%);
-                width: 40%;
-    
+
                 span {
                     // border: solid;
                     display: block;
                     line-height: 70%;
                 }
             }
-    
+
             img {
                 // border: solid #fff;
                 position: absolute;
-                left: 5%;
-                top: 40%;
-                transform: translateY(-50%);
-                width: 45%;
             }
-    
+
             .with-you {
                 // border: solid;
                 color: #fda136;
-                font-size: 3vmax;
                 position: absolute;
-                right: 10%;
-                top: 60%;
                 text-align: right;
-                transform: translateY(-50%);
                 width: fit-content;
             }
-    
+
             .touch {
                 /* border: solid; */
                 background-color: #fff;
                 border-radius: 1vmax;
                 color: #fda136;
-                font-size: 2.5vmax;
-                right: 10%;
-                transform: translateY(-50%);
-                top: 70%;
                 position: absolute;
+                padding: 1%;
                 text-align: center;
                 text-decoration: none;
-                padding: 1%;
                 width: fit-content;
                 z-index: 0;
             }
         }
     }
-    
+
     #r1:checked ~ .s1 {
         margin-left: 0;
     }
@@ -304,7 +284,7 @@ header {
     #r4:checked ~ .s1 {
         margin-left: -75%;
     }
-    
+
     .chat {
         /* border: solid; */
         position: fixed;
@@ -313,7 +293,7 @@ header {
         width: 12vmax;
         z-index: 98;
     }
-    
+
     .chat-icon {
         /* border: solid; */
         position: fixed;
@@ -324,46 +304,44 @@ header {
     }
 }
 
-
 /*********/
 
 .aboutUs-section {
-    margin-top: 3vw;
     background-color: #fda136;
+    border-top: solid #fff 1px;
     border-bottom: solid #fff 1px;
     direction: rtl;
     font-size: 1.7vmax;
     padding: 9vmax 12vmax;
     position: relative;
     z-index: 1;
-}
 
-.aboutUs-section h4 {
-    color: #fff;
-    margin: 1.7vmax 0;
-}
+    h4 {
+        color: #fff;
+        margin: 1.7vmax 0;
+    }
 
-.aboutUs-section h3 {
-    color: #a2238e;
-    font-size: 2vmax;
-}
+    h3 {
+        color: #a2238e;
+        font-size: 2vmax;
+    }
 
-.aboutUs-section h3:nth-child(1) {
-    color: #a2238e;
-    margin-top: -3vmax;
-}
-
-.aboutUs-section a {
-    background-color: #a2238e;
-    border-radius: 5px;
-    bottom: 5%;
-    color: #fff;
-    left: 45%;
-    padding: 1vmax 1.5vmax;
-    position: absolute;
-    text-align: center;
-    text-decoration: none;
-    width: 11%;
+    h3:nth-child(1) {
+        color: #a2238e;
+        margin-top: -3vmax;
+    }
+    a {
+        background-color: #a2238e;
+        border-radius: 5px;
+        bottom: 5%;
+        color: #fff;
+        left: 45%;
+        padding: 1vmax 1.5vmax;
+        position: absolute;
+        text-align: center;
+        text-decoration: none;
+        width: 11%;
+    }
 }
 
 .aboutUs-part-2 {
