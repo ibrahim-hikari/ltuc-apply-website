@@ -74,6 +74,7 @@
             }
         },
         "program": {
+            "id": "1",
             "firstProgram": {
                 "bachelors": "برامج البكالوريوس",
                 "bachelorsSpecialties": [
@@ -109,7 +110,7 @@
                         ]
                     },
                     {
-                        "collageName": "كية الهندسة المدنية والانشاءات",
+                        "collageName": "كلية الهندسة المدنية والانشاءات",
                         "collageList": [
                             {
                                 "name": "تصميم داخلي و ديكور",
@@ -127,7 +128,7 @@
                         ]
                     },
                     {
-                        "collageName": "  SAE كلية وسائل الإعلام الإبداعية",
+                        "collageName": "كلية وسائل الإعلام الإبداعية SAE",
                         "collageList": [
                             {
                                 "name": "فنون انتاج الصوت",
@@ -150,6 +151,7 @@
                 ]
             },
             "scandProgram": {
+                "id": "2",
                 "InternationalDiploma": "برامج الدبلوم الدولي",
                 "InternationalDiplomaSpecialties": [
                     {
@@ -258,6 +260,7 @@
                 ]
             },
             "thirdProgram": {
+                "id": "3",
                 "middleDiploma": "الدبلوم الجامعي المتوسط",
                 "middleDiplomaSpecialties": [
                     {
@@ -309,7 +312,7 @@
                         ]  
                     },
                     {
-                        "collageName": " SAE كلية وسائل الإعلام الإبداعية ",
+                        "collageName": "كلية وسائل الإعلام الإبداعية SAE",
                         "collageList": [
                             {
                                 "name": "فنون انتاج الصوت ",
@@ -332,6 +335,7 @@
                 ]
             },
             "fourthProgram": {
+                "id":"4",
                 "TechnicalDiploma": "تخصصات الدبلوم الفني",
                 "TechnicalDiplomaSpecialties":  [
                     {
