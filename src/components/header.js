@@ -6,10 +6,6 @@ import { ModelContext } from './context.js';
 function Header() {
     const context = useContext(ModelContext);
 
-    // const If = props => {
-    //     return props.condition ? props.children : null;
-    // };
-
     const getData = page => {
         console.log('here', context.lang);
         if (context.lang === 'Arabic') {
@@ -35,6 +31,7 @@ function Header() {
     useEffect(() => {
         $('.main-nav-mobile').hide();
         $('.sub-dropdown-content').hide();
+        $('.list-dropdown-content').hide();
     });
 
     const test = () => {
@@ -65,7 +62,6 @@ function Header() {
 
     }, []);
 
-
     return (
         <>
             <header>
@@ -77,17 +73,17 @@ function Header() {
                 </a>
                 <nav className="main-nav-mobile">
                     <ul>
-                        <li><a href="#slideShow">{context.headerData.nav.home}</a></li>
-                        <li><a href="#aboutUs-section">{context.headerData.nav.aboutUs}</a></li>
-                        <li><a href="#programs">{context.headerData.nav.programs}</a></li>
+                        <li><a href="#slideShow" onClick={() => $('.main-nav-mobile').hide()}>{context.headerData.nav.home}</a></li>
+                        <li><a href="#aboutUs-section" onClick={() => $('.main-nav-mobile').hide()}>{context.headerData.nav.aboutUs}</a></li>
+                        <li><a href="#programs"onClick={() => $('.main-nav-mobile').hide()}>{context.headerData.nav.programs}</a></li>
                         <li className="dropdown sub-dropdown"><button onClick={() => $('.sub-dropdown-content').fadeToggle(200)} className="dropbtn sub-dropdown-btn" type="scall">{context.headerData.nav.studentServicesHeader}<i className="fa fa-caret-down"></i></button></li>
-                        <li className="sub-dropdown-content" >
+                        <li className="sub-dropdown-content" onClick={() => $('.main-nav-mobile').hide()} >
                             <a className="a-sdc" href="https://sisportal-100533.campusnexus.cloud/CMCPortal/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsisportal-100533.campusnexus.cloud%2fCMCPortal%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fCMCPortal%252fsecure%252fstaff%252fstaportal.aspx&wct=2020-05-07T13%3a03%3a17Z">{context.headerData.nav.studentServices.selfServicePortal}</a>
                             <a className="a-sdc" href="https://online.ltuc.com/d2l/home">{context.headerData.nav.studentServices.desireToLearn}</a>
                             <a className="a-sdc" href="https://employmenthub.ltuc.com">{context.headerData.nav.studentServices.EducationForEmployment}</a>
                         </li>
-                        <li><a href="#footer">{context.headerData.nav.contactUs.text}</a></li>
-                        <li className='arabic'><a href="#/" onClick={() => getData(context.lang)}>{context.lang === 'Arabic' ? 'العربية' : context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
+                        <li><a href="#footer"onClick={() => $('.main-nav-mobile').hide()}>{context.headerData.nav.contactUs.text}</a></li>
+                        {/* <li className='arabic'><a href="#/" onClick={() => getData(context.lang)}>{context.lang === 'Arabic' ? 'العربية' : context.lang}&nbsp;<i className="fa fa-globe"></i></a></li> */}
                     </ul>
                 </nav>
                 <nav className="main-nav">
@@ -103,7 +99,7 @@ function Header() {
                             </div>
                         </li>
                         <li><a href="#footer">{context.headerData.nav.contactUs.text}</a></li>
-                        <li className="translation arabic"><a href="#/" onClick={() => getData(context.lang)}>{context.lang === 'Arabic' ? 'العربية' : context.lang}&nbsp;<i className="fa fa-globe"></i></a></li>
+                        {/* <li className="translation arabic"><a href="#/" onClick={() => getData(context.lang)}>{context.lang === 'Arabic' ? 'العربية' : context.lang}&nbsp;<i className="fa fa-globe"></i></a></li> */}
                     </ul>
                 </nav>
             </header>

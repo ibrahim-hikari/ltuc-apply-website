@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "NizarCoconKurdish";
+    font-family: footer;
     src: url("../assets/NizarCoconKurdishBold.otf") format("truetype");
 }
 
@@ -102,7 +102,7 @@ header {
 .dropdown .dropbtn {
     border: 0;
     outline: none;
-    font-family: "NizarCoconKurdish";
+    font-family: footer;
     background-color: inherit;
     font-weight: bold;
     color: #fff;
@@ -375,7 +375,7 @@ input[name="r"] {
     border-bottom: solid #fff 1px;
     direction: rtl;
     font-size: 1.7vmax;
-    padding: 7vmax 12vmax;
+    padding: 9vmax 6vmax;
     position: relative;
     z-index: 1;
 }
@@ -429,22 +429,13 @@ input[name="r"] {
 
 .programs div {
     height: 100%;
-    width: 40%;
-    padding: 5vmax 0;
+    width: 36vw;
+    padding: 1vmax 0;
 }
 
-// .section-four .left {
-//     /* border: solid; */
-//     position: absolute;
-//     left: 15vmax;
-//     width: 30vmax;
-// }
-
-// .section-four .right {
-//     /* border: solid; */
-//     width: 30vmax;
-// }
-
+.programs div ul {
+    margin-right: 2vw;
+}
 .programs h3 {
     color: #a2238e;
     font-size: 3vmax;
@@ -480,8 +471,9 @@ input[name="r"] {
     // width: fit-content;
     cursor: pointer;
 }
-.program-link:hover{
+.programs .program-link:hover{
     // border: solid;
+    text-decoration: underline;
 
 }
 .footer {
@@ -496,6 +488,9 @@ input[name="r"] {
     justify-content: space-around;
     position: relative;
     z-index: 99;
+    .contact-div .contact-info {
+      font-family: "NizarCoconKurdish";
+    }
 }
 
 .ifram-div {
@@ -519,22 +514,23 @@ input[name="r"] {
     margin-top: 2vh;
     line-height: 1vh;
     padding: 2vw;
-    color: #eacee2;
-    /* text-align: center; */
+    color: #fff;
+    text-align: center;
     font-size: 2.6vw;
     border-bottom: 0.05vw solid;
     width: 18vw;
 }
 .contact-info {
-    padding: 0.5vw;
+    padding: 0.2vw;
     line-height: 35px;
     display: block;
     font-size: 1.5vw;
+
     width: 28vw;
-    color: #e3b5d6;
+    color: #fff;
 }
 .fa2 {
-    color: #e3b5d6;
+    color: #fff;
     font-size: 1.8vw;
     margin: 0.5vw;
 }
@@ -546,14 +542,14 @@ input[name="r"] {
 }
 .complaints-section {
     width: 22vw;
-    color: #e3b5d6;
+    color: #fff;
     font-size: 1.8vw;
     letter-spacing: 0.5px;
     line-height: 4vh;
 }
 .complaints-section a {
     /* border: solid; */
-    color: #e3b5d6;
+    color: #fff;
     padding: 0.5vw;
     font-size: 1.7vw;
 }
@@ -575,3 +571,30 @@ input[name="r"] {
 .programs a:hover {
     cursor: pointer;
 }
+.aboutUs-section {
+    margin-top: 3vw;
+    background-color: #fda136;
+    border-bottom: solid #fff 1px;
+    direction: rtl;
+    font-size: 1.7vmax;
+    padding: 11vmax 7vmax 11vmax 6vmax;
+    line-height: 25px;
+    position: relative;
+    z-index: 1;
+}
+.aboutUs-section h4{
+    line-height: 2vw;
+}
+
+h5{
+    color: white;
+    font-size: 1.9vmax;
+}
+h5 i {
+    color: #a2238e;
+}
+h5:hover , h5:active{
+    text-decoration: underline;
+    cursor: pointer;
+}
+

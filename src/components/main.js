@@ -1,7 +1,10 @@
+/* eslint-disable no-unused-expressions */
 /* eslint-disable no-unused-vars */
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import $ from 'jquery';
 import { ModelContext } from './context';
+import Degree from './degree.js';
+
 
 function Content() {
     const context = useContext(ModelContext);
@@ -26,57 +29,7 @@ function Content() {
                 ))}
                 <a className='program-button' href={context.mainData.aboutUsContant.aboutUsContantLink.link}>{context.mainData.aboutUsContant.aboutUsContantLink.header}</a>
             </section>
-            <section id="programs" className="programs">
-                <div className="left">
-                    <h3>{context.mainData.program.firstProgram.InternationalDiploma}</h3>
-                    <ul>
-                        {context.mainData.program.firstProgram.InternationalDiplomaSpecialties.map((item, i) => (
-                            <>
-                                <a className="program-link" href={item.link}><li key={i}>{item.name}</li></a>
-                                {/* <li key={i}>{item}</li> */}
-
-
-                            </>
-                        ))}
-                    </ul>
-                    <a className='program-button' href={context.mainData.program.fifthProgram.href.link}>{context.mainData.program.fifthProgram.href.header}</a>
-                    <h3>{context.mainData.program.scandProgram.TechnicalDiploma}</h3>
-                    <ul>
-                        {context.mainData.program.scandProgram.TechnicalDiplomaSpecialties.map((item, i) => (
-                            <>
-                                <a className="program-link" href={item.link}><li key={i}>{item.name}</li></a>
-                            </>
-                        ))}
-                    </ul>
-                    <a className='program-button' href={context.mainData.program.scandProgram.href.link}>{context.mainData.program.scandProgram.href.header}</a>
-                </div>
-
-                <div className="right">
-                    <h3>{context.mainData.program.thirdprogram.bachelors}</h3>
-                    <ul>
-                        {context.mainData.program.thirdprogram.bachelorsSpecialties.map((item, i) => (
-                            <>
-                                <a className="program-link" href={item.link}><li key={i}>{item.name}</li></a>
-                            </>
-                        ))}
-                    </ul>
-                    <a className='program-button' href={context.mainData.program.thirdprogram.href.link}>{context.mainData.program.thirdprogram.href.header}</a>
-
-                    <h3>{context.mainData.program.fourthProgram.LocalDiploma}</h3>
-                    <ul>
-                        {context.mainData.program.fourthProgram.LocalDiplomaSpecialties.map((item, i) => (
-                            <>
-                                <a className="program-link" href={item.link}><li key={i}>{item.name}</li></a>                            </>
-                        ))}
-                    </ul>
-                    <a className='program-button' href={context.mainData.program.thirdprogram.href.link}>{context.mainData.program.thirdprogram.href.header}</a>
-                    <h3>
-                        {context.mainData.program.fifthProgram.TrainingCourses}
-                    </h3>
-                    <a className='program-button' href={context.mainData.program.fifthProgram.href.link}>{context.mainData.program.fifthProgram.href.header}</a>
-                </div>
-            </section>
-
+            <Degree />
         </>
     );
 

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "NizarCoconKurdish";
+    src: url("../assets/NizarCoconKurdishBold.otf") format("truetype");
+}
+
 @media (min-width: 1023px) {
     .main-nav-mobile {
         visibility: hidden;
@@ -37,12 +42,12 @@
         width: 100vw;
     }
     .middle {
-        top: 8.5vmax;
+        top: 9.5vmax;
     }
     .logo {
-        height: 8vmax;
+        height: 7vmax;
         top: 1vmax;
-        width: 40vmax;
+        width: 44vmax;
     }
     .main-nav {
         display: none;
@@ -214,6 +219,9 @@
     .programs h3 {
         font-size: 3vw;
     }
+    .programs h3 {
+        margin: 3vw 0;
+    }
 }
 
 @media (min-width: 590px) and (max-width: 1023px) {
@@ -230,6 +238,12 @@
         color: rgb(226, 205, 220);
         font-size: 2vw !important;
         margin: 0.5vw;
+    }
+    .programs h3 {
+        margin: 3vw 0;
+    }
+    .programs .list-dropdown-content a {
+        font-size: 1.9vmax;
     }
     .facebook,
     .instagram,
@@ -406,6 +420,10 @@
     .main-nav {
         top: 0vmax;
     }
+    h5{
+        color: white;
+        font-size: 2.3vmax;
+    }
 
     .main-nav ul li {
         margin-left: 1%;
@@ -427,20 +445,21 @@
     .aboutUs-section,
     .aboutUs-part-2 {
         font-size: 3.5vw;
-        padding-right: 6vmax;
+        // padding-right: 6vmax;
     }
 
     .aboutUs-section h3,
     .aboutUs-section h3:first-child,
     .aboutUs-part-2 h3 {
-        font-size: 3.5vmax;
+        font-size: 3.8vmax;
     }
 
-    .aboutUs-section h4,
-    .aboutUs-part-2 h4 {
-        font-size: 3vmax;
-        line-height: 3.2vmax;
-    }
+ 
+.aboutUs-section h4, .aboutUs-part-2 h4 {
+    font-size: 3vmax;
+    line-height: 4.2vmax;
+    letter-spacing: .08vw;
+}
 
     .aboutUs-part-2 a,
     .aboutUs-section a {
@@ -448,11 +467,11 @@
         bottom: 1.5%;
         font-size: 2.5vmax;
         left: 37.5%;
-        padding: 1vmax 1.5vmax;
+        padding: 1.3vmax 1.5vmax;
         position: absolute;
         text-align: center;
         text-decoration: none;
-        width: 25%;
+        width: fit-content;
     }
 
     .programs {
@@ -461,7 +480,7 @@
         color: #fff;
         direction: rtl;
         font-size: 2.8vmax;
-        padding: 0 6vmax 0 10vmax;
+        padding: 0 2vmax 0 2vmax;
         position: relative;
         z-index: 0;
     }
@@ -474,13 +493,16 @@
 
     .programs .right {
         /* border: solid; */
-        margin-top: -10vmax;
+        margin-top: -3vmax;
         width: 100%;
     }
 
     .programs h3 {
         /* border: solid; */
-        font-size: 5vmax;
+        font-size: 4.3vmax;
+         margin: 4vw 2vw;
+         width: 80%;
+         margin: 4vw auto;
     }
 
     .programs .right h3:nth-child(7) {
@@ -491,18 +513,40 @@
     .programs ul li::before {
         font-size: 5vmax;
     }
-
-    .programs a {
-        background-color: #a2238e;
-        /* border: solid; */
-        border-radius: 5px;
-        color: #fff;
-        display: block;
+    .programs div {
+        height: 100%;
+        width: fit-content;
+        width: 80%;
+        padding: 2vmax 1vmax;
+        margin: auto;
         font-size: 3vmax;
-        margin: 1.5vmax 0;
-        padding: 1vmax 1.5vmax;
+    }
+    .programs div ul {
+        margin-right: 3vw;
+    }
+
+
+.programs .program-button {
+    background-color: #a2238e;
+    /* border: solid; */
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 3vmax;
+    margin: 4vmax 0;
+    padding: 1.5vmax 1.5vmax;
+    text-decoration: none;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+    .programs .program-link{
+        background-color: #a2238e00;
+        color: #fff;
+        font-size: 3vmax;
+        margin: .5vmax 0;
         text-decoration: none;
         width: fit-content;
+        cursor: pointer;
     }
 
     .footer {
@@ -531,15 +575,17 @@
         height: 55vw;
     }
     .footer-logo {
-        width: 40vw;
-        height: 15vh;
+        width: 45vw;
+        height: 25vh;
         margin: 1vw auto 0vw auto;
         display: block;
     }
     .contact-div {
+        font-family: "NizarCoconKurdish";
         width: 100%;
     }
     .contact-text {
+        font-family: "NizarCoconKurdish";
         margin: 0 auto;
         display: block;
         width: 40vw;
@@ -547,20 +593,21 @@
         margin-top: 2vh;
         text-align: center;
         line-height: 5vh;
-        color: rgb(233, 214, 227);
+        color: #fff;
     }
     .contact-info {
         margin: 0 auto 0 2vw;
+        font-family: "NizarCoconKurdish";
         display: block;
         font-size: 4vw;
         width: 52vw;
         margin: 0 auto;
         padding: 1% 0;
         text-align: center;
-        color: rgb(233, 214, 227);
+        color: #fff;
     }
     .fa2 {
-        color: rgb(226, 205, 220);
+        color: #fff;
         font-size: 4vw;
         margin: 0.5vw;
     }
@@ -573,12 +620,12 @@
     .complaints-section {
         width: 60vw;
         margin: 0 auto;
-        color: #e3b5d6;
+        color: #fff;
         font-size: 3vw;
         line-height: 6vh;
     }
     .complaints-section a {
-        color: #e3b5d6;
+        color: #fff;
         font-size: 3.5vw;
     }
     .complaints-a {
@@ -682,7 +729,7 @@
     }
     .logo {
         // height: 8vw;
-        top: 1.6vw;
+        top: 2vw;
         width: 60vw;
     }
     .chat-icon {
