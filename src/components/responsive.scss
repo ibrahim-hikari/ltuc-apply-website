@@ -109,7 +109,7 @@
         outline: none;
         width: 50%;
 
-        .fa-caret-down{
+        .fa-caret-down {
             // border: solid;
             display: inline;
             margin-left: 3%;
@@ -128,7 +128,7 @@
         display: block;
         background-color: #fda036ed;
     }
-    
+
     .sub-dropdown-content {
         a {
             width: 85%;
@@ -224,6 +224,7 @@
     .contact-info {
         font-size: 2.1vw;
     }
+
     .aboutUs-section h4,
     .aboutUs-part-2 h4,
     .programs h4 {
@@ -241,9 +242,9 @@
     }
 }
 
-@media(min-width: 700px) and (max-width: 770px){
-    header{
-        height: 10%;
+@media (min-width: 700px) and (max-width: 770px) {
+    header {
+        height: 8%;
     }
 }
 @media (min-width: 590px) and (max-width: 1023px) {
@@ -443,8 +444,6 @@
         /* font-weight: bolder; */
     }
 
-
-
     .aboutUs-section,
     .aboutUs-part-2 {
         font-size: 3.5vw;
@@ -622,6 +621,11 @@
     }
 }
 @media (min-width: 500px) {
+    .slide {
+        position: relative;
+        height: 100vh;
+    }
+
     .card {
         // border: solid;
         position: relative;
@@ -646,22 +650,22 @@
         }
 
         .with-you {
-            font-size: 3vmax;
-            letter-spacing: 2px;
-            padding: 0% 0% 0 2%;
-            right: 10%;
+            font-size: 2.8vmax;
+            // letter-spacing: 3px;
+            padding: 0% 0% 0 0%;
+            right: 5%;
             top: 65%;
-            transform: translateY(-50%);
-            width: 15%;
+            transform: translate(-50%, -50%);
+            width: fit-content;
         }
 
         .touch {
             font-size: 2.5vmax;
-            padding: 1% 0;
-            right: 10%;
+            padding: 1% 1%;
+            right: 10.5%;
             transform: translateY(-50%);
             top: 74%;
-            width: 15%;
+            width: fit-content;
         }
     }
 
@@ -703,10 +707,24 @@
         bottom: 0%;
         left: 50%;
     }
+
+    .aboutUs-section {
+        border: solid;
+        padding: 4vmax 6vmax 5.5vmax 6vmax;
+    }
 }
 @media (max-width: 500px) {
+    .logo {
+        height: 4.75vh;
+        top: 1vh;
+        width: 60vw;
+    }
     .main-nav-mobile {
         justify-content: space-between;
+    }
+    .slide {
+        top: 0;
+        height: 90vh;
     }
     .card {
         // border: solid;
@@ -746,9 +764,9 @@
         .touch {
             font-size: 3.5vmax;
             left: 50%;
-            padding: 2.5%;
+            padding: 2.5% 5%;
             transform: translate(-50%, -50%);
-            top: 71%;
+            top: 72%;
             width: fit-content;
         }
     }
@@ -758,10 +776,22 @@
         left: 50%;
         bottom: 15%;
     }
-    .logo {
-        // height: 8vw;
-        top: 1.6vw;
-        width: 60vw;
+
+    .aboutUs-section {
+        // border: solid;
+        padding: 4vmax 6vmax 6.5vmax 6vmax;
+
+        a {
+            bottom: 2%;
+        }
+    }
+
+    .aboutUs-part-2 {
+        // border: solid;
+        padding: 2vmax 6vmax 7.5vmax 6vmax;
+        a {
+            bottom: 2%;
+        }
     }
 }
 

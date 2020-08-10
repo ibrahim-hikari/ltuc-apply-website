@@ -4,9 +4,9 @@
 }
 
 @font-face {
-    font-family: 'GESSTwoBold-Bold';
-    src: url("../assets/GESSTwoBold-Bold.otf") format("truetype");
-  }
+    font-family: "GESSTwoMedium-Medium";
+    src: url("../assets/GESSTwoMedium-Medium.otf") format("truetype");
+}
 
 html,
 body {
@@ -99,12 +99,13 @@ header {
                 border-right: solid;
                 position: absolute;
                 left: -15%;
+                bottom: 0;
                 height: 20px;
             }
         }
         .main-nav ul li:last-child .main-link {
             &::after {
-                right: -10%;
+                right: -8%;
             }
         }
 
@@ -151,7 +152,7 @@ header {
                 a {
                     z-index: 999 !important;
                     border: none !important;
-                    border-left: 0.2vw solid #fda136 !important ;
+                    border-right: 0.2vw solid #fda136 !important ;
                     color: #fda136 !important;
                     display: block;
                     font-size: 1.5vmax;
@@ -267,18 +268,19 @@ header {
             .with-you {
                 // border: solid;
                 color: #fda136;
-                font-family: 'GESSTwoBold-Bold';
+                font-family: "GESSTwoMedium-Medium";
                 position: absolute;
                 text-align: right;
-
             }
 
             .touch {
                 // border: solid;
                 background-color: #fff;
                 border-radius: 0.5vmax;
-                color: #fda136;
-                font-family: 'GESSTwoBold-Bold';
+                box-shadow: 10px 10px 20px #00000057;
+                color: #a6a152;
+                font-family: "NizarCoconKurdish";
+                outline: none;
                 position: absolute;
                 text-align: center;
                 text-decoration: none;
@@ -327,7 +329,6 @@ header {
     border-bottom: solid #fff 1px;
     direction: rtl;
     font-size: 1.7vmax;
-    padding: 3vmax 6vmax 5vmax 6vmax;
     position: relative;
     z-index: 1;
 
@@ -348,6 +349,7 @@ header {
     a {
         background-color: #a2238e;
         border-radius: 5px;
+        box-shadow: 1px 1px 10px #00000057;
         bottom: 5%;
         color: #fff;
         left: 45%;
@@ -364,7 +366,7 @@ header {
     border-bottom: solid #fff 1px;
     direction: rtl;
     font-size: 1.7vmax;
-    padding: 2vmax 6vmax 5vmax 6vmax;
+    padding: 2vmax 6vmax 6vmax 6vmax;
     position: relative;
     z-index: 1;
 }
@@ -390,7 +392,8 @@ header {
 .aboutUs-part-2 a {
     background-color: #fda136;
     border-radius: 5px;
-    bottom: 4%;
+    bottom: 4.5%;
+    box-shadow: 1px 1px 10px #00000057;
     color: #fff;
     left: 45%;
     padding: 1vmax 1.5vmax;
@@ -455,7 +458,7 @@ header {
     border-radius: 5px;
     color: #fff;
     display: block;
-    margin: 1.5vmax ;
+    margin: 1.5vmax;
     padding: 1vmax 1.5vmax;
     text-decoration: none;
     width: fit-content;
