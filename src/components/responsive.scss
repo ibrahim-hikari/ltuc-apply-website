@@ -290,8 +290,9 @@
     }
     .ifram-div {
         grid-row: 2;
-        width: 100%;
+        width: 85%;
         // margin: 2vw 5vw 0 0;
+        margin: 0 auto;
         padding: 0;
     }
     .location i{
@@ -304,8 +305,6 @@
         height: 55vw;
     }
     .footer-logo {
-        width: 30vw;
-        height: 20vh;
         margin: 1vw auto 2vw 2vw;
         display: block;
     }
@@ -339,12 +338,12 @@
     .complaints-section {
         width: 52vw;
         margin: 0 auto 0 2vw;
-        color: #e3b5d6;
+        color: white;
         font-size: 2.3vw;
         line-height: 4vh;
     }
     .complaints-section a {
-        color: #e3b5d6;
+        color: white;
     }
     .complaints-section a:hover,
     .fa2:hover,
@@ -357,12 +356,25 @@
         margin: 0 auto 0 auto;
     }
     .complaints-section a {
-        color: #e3b5d6;
+        color: white;
         font-size: 2.4vw;
     }
     .complaints-p {
+        color: white;
         text-align: center;
-        font-size: 2.5vw;
+        font-size: 2.7vw;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+    }
+    .complaints-a{
+        margin-bottom: 3vw;
+        padding: 2vw;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
     }
     .ifram-div .ifram {
         margin: 0 auto 0 auto;
@@ -370,8 +382,7 @@
         height: 55vw;
     }
     .footer-logo {
-        width: 30vw;
-        height: 15vh;
+        width: 37%;
         margin: 1vw auto 2vw auto;
         display: block;
     }
@@ -391,7 +402,7 @@
     .contact-info {
         margin: 0 auto 0 2vw;
         display: block;
-        font-size: 3vw;
+        font-size: 3.7vw;
         width: 52vw;
         margin: 2vw auto;
         text-align: center;
@@ -476,6 +487,7 @@
     h5{
         color: white;
         font-size: 3.5vmax;
+        line-height: 8vw;
     }
 
     .main-nav ul li {
@@ -551,32 +563,26 @@
     }
     .programs h3 {
         /* border: solid; */
-        font-size: 5.3vmax;
+        font-size: 4.4vmax;
         width: 86vw;
         margin: 9vw 0vw 4vw 0;
         padding: 0;
     }
 
     .programs .right h3:nth-child(7) {
-        /* border: solid; */
         font-size: 4vmax;
     }
 
-    // .programs ul li::before {
-    //     font-size: 5vmax;
-    // }
     .programs div {
         height: 100%;
-        // width: fit-content;
-        // width: 80%;
-        // padding: 2vmax 1vmax;
-        // margin: auto;
         width: 86vw;
         font-size: 3vmax;
     }
-    // .programs div ul {
-    //     margin-right: 3vw;
-    // }
+
+    .programs div ul {
+        width: 87vw;
+        margin-right: 1.5vw;
+    }
 
 
 .programs .program-button {
@@ -644,18 +650,16 @@
         background-repeat: no-repeat;
         float: left;
         display: grid;
-        /* margin-top: 5vw; */
         grid-template-rows: 2fr;
         font-size: 2.2vw;
         position: relative;
-        /* margin-top: 15vw; */
         z-index: 99;
     }
     .ifram-div {
         grid-row: 2;
-        width: 100%;
-        // margin: 2vw 5vw 0 0;
+        width: 85%;
         padding: 0;
+        margin: auto;
     }
     .ifram-div .ifram {
         margin: 0 auto 0 auto;
@@ -720,7 +724,7 @@
     }
     .complaints-p {
         font-size: 3.5vw;
-        width: 54vw;
+        width: 56vw;
     }
     .complaints-a {
         color: #fff !important;
