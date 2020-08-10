@@ -52,7 +52,7 @@
         display: none;
     }
     .main-nav-mobile {
-        // border: solid;
+        // border: solid ;
         visibility: visible;
         display: block;
         height: 25vmax;
@@ -65,17 +65,18 @@
 
     .main-nav-mobile ul {
         background-color: #fff;
-        /* border: solid; */
+        // border: solid #ff0000;
         box-shadow: 0px 5px 7px #0000006b;
         position: absolute;
-        top: 38%;
+        text-align: right;
+        top: 35%;
         left: 0%;
         width: 100%;
     }
 
     .main-nav-mobile div {
         background-color: #fda136;
-        /* border: solid; */
+        // border: solid;
         display: none;
         height: 100%;
         opacity: 0.8;
@@ -84,17 +85,17 @@
     }
 
     .main-nav-mobile ul li {
-        /* border: solid; */
+        // border: solid;
         display: block;
         font-size: 3.3vw;
         font-weight: bolder;
-        margin: 2% 0%;
-        padding: 0 0 1vw 0;
+        padding: 2% 2%;
         border-bottom: 0.2vw solid #fda136;
     }
 
     .main-nav-mobile ul li a,
     .sub-dropdown {
+        // border: solid;
         color: #fda136;
         padding: 0% 1%;
         text-decoration: none;
@@ -105,7 +106,15 @@
         border: 0;
         font-family: "NizarCoconKurdish";
         font-size: 3.3vw;
-        margin-left: 1vw;
+        outline: none;
+        width: 50%;
+
+        .fa-caret-down{
+            // border: solid;
+            display: inline;
+            margin-left: 3%;
+            margin-right: -25%;
+        }
     }
 
     .main-nav-mobile ul .sub-dropdown {
@@ -117,12 +126,12 @@
     }
     .main-nav-mobile ul .sub-dropdown-content {
         display: block;
-        margin-top: 0%;
         background-color: #fda036ed;
     }
+    
     .sub-dropdown-content {
         a {
-            width: 58%;
+            width: 85%;
         }
     }
     .main-nav-mobile ul li .a-sdc {
@@ -180,7 +189,7 @@
     .icon {
         // border: solid;
         display: block;
-        right: 5.5vmax;
+        right: 5%;
         top: 30%;
         /* padding: 0.5em; */
         position: absolute;
@@ -195,16 +204,10 @@
         margin: 0 0 0.95vmax 0;
     }
 
-    .touch {
-        /* border: solid; */
-        font-size: 4vmax;
-    }
-
     .chat {
-        background-color: #fff;
-        // border-radius: 15px;
+        background-color: #ffffffb3;
         bottom: 0%;
-        // border: solid;
+        color: #fda136;
         font-size: 3.5vmax;
         padding: 1%;
         position: fixed;
@@ -644,16 +647,21 @@
 
         .with-you {
             font-size: 3vmax;
+            letter-spacing: 2px;
+            padding: 0% 0% 0 2%;
             right: 10%;
-            top: 64%;
+            top: 65%;
             transform: translateY(-50%);
+            width: 15%;
         }
 
         .touch {
             font-size: 2.5vmax;
+            padding: 1% 0;
             right: 10%;
             transform: translateY(-50%);
-            top: 72%;
+            top: 74%;
+            width: 15%;
         }
     }
 
@@ -710,7 +718,7 @@
             // border: solid;
             font-size: 10vmax;
             left: 50%;
-            top: 30%;
+            top: 20%;
             transform: translate(-50%, -50%);
             width: fit-content;
         }
@@ -719,23 +727,29 @@
             // border: solid #fff;
             position: absolute;
             left: 50%;
-            top: 50%;
+            top: 45%;
             transform: translate(-50%, -50%);
-            max-width: 60%;
+            max-width: 75%;
         }
 
         .with-you {
-            font-size: 5vmax;
+            // border: solid;
+            font-size: 4.5vmax;
             left: 50%;
+            letter-spacing: 1.3px;
+            padding: 1%;
             top: 65%;
             transform: translate(-50%, -50%);
+            width: fit-content;
         }
 
         .touch {
-            font-size: 4vmax;
+            font-size: 3.5vmax;
             left: 50%;
+            padding: 2.5%;
             transform: translate(-50%, -50%);
-            top: 72%;
+            top: 71%;
+            width: fit-content;
         }
     }
 

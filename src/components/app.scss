@@ -3,6 +3,11 @@
     src: url("../assets/NizarCoconKurdishBold.otf") format("truetype");
 }
 
+@font-face {
+    font-family: 'GESSTwoBold-Bold';
+    src: url("../assets/GESSTwoBold-Bold.otf") format("truetype");
+  }
+
 html,
 body {
     font-family: "NizarCoconKurdish";
@@ -80,21 +85,34 @@ header {
             margin-left: 2%;
         }
 
-        .main-nav ul li a {
-            border-right: 0.2vw solid;
+        .main-nav ul li .main-link {
+            // border-right: 0.2vw solid;
             color: #fff;
             font-size: 1.3vw;
             padding: 0% 1%;
             position: relative;
             text-decoration: none;
             outline: none;
+
+            &::after {
+                content: "";
+                border-right: solid;
+                position: absolute;
+                left: -15%;
+                height: 20px;
+            }
+        }
+        .main-nav ul li:last-child .main-link {
+            &::after {
+                right: -10%;
+            }
         }
 
         .translation:hover {
             cursor: pointer;
         }
         .dropdown {
-            border-right: 0.2vw solid #fff;
+            // border-right: 0.2vw solid #fff;
             color: #fda136;
             // cursor: pointer;
             position: relative;
@@ -249,32 +267,30 @@ header {
             .with-you {
                 // border: solid;
                 color: #fda136;
+                font-family: 'GESSTwoBold-Bold';
                 position: absolute;
                 text-align: right;
-                width: fit-content;
+
             }
 
             .touch {
-                /* border: solid; */
+                // border: solid;
                 background-color: #fff;
-                border-radius: 1vmax;
+                border-radius: 0.5vmax;
                 color: #fda136;
+                font-family: 'GESSTwoBold-Bold';
                 position: absolute;
-                padding: 1%;
                 text-align: center;
                 text-decoration: none;
-                width: fit-content;
                 z-index: 0;
             }
         }
     }
     @media (min-width: 770px) {
         .chat {
-            background-color: rgba(255, 255, 255, 0.7);
-            // border-radius: 5px;
+            background-color: #ffffffb3;
             bottom: 0%;
             color: #fda136;
-            // border: solid;
             font-size: 3vmax;
             padding: 0.5% 0.5% 0.5% 1%;
             position: fixed;
@@ -311,7 +327,7 @@ header {
     border-bottom: solid #fff 1px;
     direction: rtl;
     font-size: 1.7vmax;
-    padding: 7vmax 6vmax;
+    padding: 3vmax 6vmax 5vmax 6vmax;
     position: relative;
     z-index: 1;
 
@@ -327,7 +343,7 @@ header {
 
     h3:nth-child(1) {
         color: #a2238e;
-        margin-top: -3vmax;
+        // margin-top: -3vmax;
     }
     a {
         background-color: #a2238e;
@@ -348,7 +364,7 @@ header {
     border-bottom: solid #fff 1px;
     direction: rtl;
     font-size: 1.7vmax;
-    padding: 2vmax 6vmax 7vmax 6vmax;
+    padding: 2vmax 6vmax 5vmax 6vmax;
     position: relative;
     z-index: 1;
 }
@@ -374,7 +390,7 @@ header {
 .aboutUs-part-2 a {
     background-color: #fda136;
     border-radius: 5px;
-    bottom: 5%;
+    bottom: 4%;
     color: #fff;
     left: 45%;
     padding: 1vmax 1.5vmax;
@@ -439,7 +455,7 @@ header {
     border-radius: 5px;
     color: #fff;
     display: block;
-    margin: 1.5vmax 0;
+    margin: 1.5vmax ;
     padding: 1vmax 1.5vmax;
     text-decoration: none;
     width: fit-content;
