@@ -79,7 +79,7 @@ function Degree() {
                         ))}
                     </ul>
                 </div>
-                <a className='program-button' href={context.mainData.aboutUsContant.aboutUsContantLink.link}>{context.mainData.aboutUsContant.aboutUsContantLink.header}</a>
+                {/* <a className='program-button' href={context.mainData.aboutUsContant.aboutUsContantLink.link}>{context.mainData.aboutUsContant.aboutUsContantLink.header}</a> */}
 
             </section>
         </>

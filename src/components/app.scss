@@ -422,7 +422,7 @@ input[name="r"] {
     flex-wrap: wrap;
     justify-content: space-around;
     font-size: 1.7vmax;
-    padding: 2vmax 12vmax;
+    padding: 2vmax 6vmax;
     position: relative;
     z-index: 1;
 }
@@ -440,7 +440,7 @@ input[name="r"] {
 }
 .programs h3 {
     color: #a2238e;
-    font-size: 3vmax;
+    font-size: 2.8vmax;
     margin: 0 0 1vmax 0;
 }
 
@@ -513,6 +513,7 @@ input[name="r"] {
     text-align: center;
     margin: 0 auto;
     padding: 0 4vw;
+    margin-top: 2vw;
 }
 .contact-text {
     display: block;
@@ -564,16 +565,29 @@ input[name="r"] {
 .complaints-p {
     direction: rtl;
     font-size: 2.2vw;
-    width: 19vw;
+    width: 20vw;
     // padding: 0 4vw 0 0 ;
     // margin: 0 4vw 0 0;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
 }
 .complaints-a{
-    color: #e3b5d6;
+    color: #fff;
     font-size: 2.2vw;
     text-align: center;
     margin: 0 auto;
-    padding: 0 2vw;
+    padding: 0 3.6vw;
+    text-decoration: none;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.complaints-section a {
+    color: #fff !important;
+    font-size: 3.5vw;
 }
 .facebook,
 .instagram,
@@ -591,6 +605,10 @@ input[name="r"] {
     cursor: pointer;
     color: rgb(243, 236, 241);
 }
+.location i{
+    line-height: 2vw;
+}
+
 
 .aboutUs-section a:hover,
 .aboutUs-part-2 a:hover,
@@ -620,6 +638,11 @@ h5{
     display: block;
     
 }
+.contact-info .contact-info-email:hover  ,.complaints-a:hover{
+    cursor: pointer !important;
+    text-decoration: underline;
+}
+
 h5 i , .a-sdc-2 {
     color: #a2238e;
 }
@@ -644,8 +667,8 @@ h5:checked{
     line-height: 3vw;
     margin: .5vw 0;
     opacity: 1 !important;
-    padding: .5vw 0;
-    width: 65%;
+    padding: .2vw 0;
+    width: 76%;
 }
 .list-dropdown-content a {
     z-index: 999 !important;
@@ -654,7 +677,7 @@ h5:checked{
     color: #fda136 !important;
     display: block;
     width: 80%;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     // letter-spacing: 1px;
     letter-spacing: 0;
     // padding: 1vw 0.5vw;

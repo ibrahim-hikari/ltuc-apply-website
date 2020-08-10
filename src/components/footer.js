@@ -19,7 +19,7 @@ function Footer() {
                 <img src={context.footerData.logo} className="footer-logo" alt="" />
                 <h4 className="contact-text">{context.footerData.contactUs.header}</h4>
                 <a className="contact-info" href={context.footerData.contactUs.phone.directPhone}><i className="phone fa fa-phone">&nbsp;&nbsp;{context.footerData.contactUs.phone.number}</i></a>
-                <a className="contact-info" href={context.footerData.contactUs.info.directEmail}><i className="send fa fa-send">&nbsp;&nbsp;{context.footerData.contactUs.info.email}</i></a>
+                <a className="contact-info" href={context.footerData.contactUs.info.directEmail}><i className="send fa fa-send contact-info-email">&nbsp;&nbsp;{context.footerData.contactUs.info.email}</i></a>
                 <a className="contact-info location" href="#/"><i className="map fa fa-map-marker">&nbsp;&nbsp;{context.footerData.contactUs.location.map((string , i) => (
                     <>
                         <span key={i}>{string}</span><br/>
