@@ -283,6 +283,11 @@
         /* margin-top: 15vw; */
         z-index: 99;
     }
+    .complaints-p {
+        direction: rtl;
+        font-size: 2.2vw;
+        width: 59vw;
+    }
     .ifram-div {
         grid-row: 2;
         width: 100%;
@@ -325,7 +330,7 @@
     .instagram,
     .twitter {
         font-size: 6vw !important;
-        padding: 1.1vw;
+        padding: 2.1vw;
     }
     .complaints-section {
         width: 52vw;
@@ -634,6 +639,7 @@
     }
     .complaints-p {
         font-size: 3.5vw;
+        width: 54vw;
     }
     .complaints-section a:hover,
     .fa2:hover,

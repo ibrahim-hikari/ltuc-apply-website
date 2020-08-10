@@ -294,7 +294,7 @@
                         ]  
                     },
                     {
-                        "collageName": "كلية الهندسة المدنية و الانشاءات",
+                        "collageName": "كلية الهندسة المدنية والانشاءات",
                         "collageList": [
                             {
                                 "name": "هندسة العمارة والتصميم الداخلي",
@@ -303,7 +303,7 @@
                         ]  
                     },
                     {
-                        "collageName": "(كلية فنون وعلوم التجميل (لافال",
+                        "collageName": "كلية الفنون وعلوم التجميل (لاڤال)",
                         "collageList": [
                             {
                                 "name": "فن وعلوم والتجميل",
@@ -339,7 +339,7 @@
                 "TechnicalDiploma": "تخصصات الدبلوم الفني",
                 "TechnicalDiplomaSpecialties":  [
                     {
-                        "collageName": "كلية الهندسة المدنية ولانشاءات",
+                        "collageName": "كلية الهندسة المدنية والانشاءات",
                         "collageList": [
                             {
                                 "name": "الهندسة المدنية",
@@ -357,7 +357,7 @@
                         ]
                     },
                     {
-                        "collageName": "كلية الهندسة الميكانيكية و الكهربائية",
+                        "collageName": "كلية الهندسة الميكانيكية والكهربائية",
                         "collageList": [
                             {
                                 "name": "الصيانة الكهروميكانيكية العامة",
@@ -390,13 +390,13 @@
                                 "link": "#"
                             },
                             {
-                                "name": "الأزياء و تكنولوجيا الألبسة",
+                                "name": "الأزياء وتكنولوجيا الألبسة",
                                 "link": "#"
                             }
                         ]
                     },
                     {
-                        "collageName": "(كلية فنون وعلوم التجميل (لافال",
+                        "collageName": "كلية الفنون وعلوم التجميل (لاڤال)",
                         "collageList": [
                             {
                                 "name": "فن و علوم و التجميل",
@@ -405,7 +405,7 @@
                         ]
                     },
                     {
-                        "collageName": "SAE كلية وسائل الإعلام الإبداعية ",
+                        "collageName": "كلية وسائل الإعلام الابداعية SAE",
                         "collageList": [
                             {
                                 "name": "فنون انتاج الصوت",
@@ -442,7 +442,11 @@
                         "email": "info@ltuc.com",
                         "directEmail": "mailto:info@ltuc.com"
                     },
-                    "location": "طريق المطار | صندوق البريد 183334 عمان 11118.الأردن ",
+                    "location": [
+                         "طريق المطار" ,
+                         "صندوق البريد 183334",
+                         "عمان 11118 الأردن"
+                    ] ,
                     "facebook": "https://www.facebook.com/LTUC.JO/",
                     "instagram": "https://www.instagram.com/ltuc.jo/",
                     "twitter": "https://twitter.com/LTUCJO"

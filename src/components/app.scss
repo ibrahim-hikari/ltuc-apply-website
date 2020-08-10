@@ -434,7 +434,9 @@ input[name="r"] {
 }
 
 .programs div ul {
-    margin-right: 2vw;
+    margin-right: 1.5vw;
+    // width: inherit;
+    // width: auto;
 }
 .programs h3 {
     color: #a2238e;
@@ -443,14 +445,16 @@ input[name="r"] {
 }
 
 
-.programs ul li::before {
-    content: "\2022";
-    color: #a2238e;
-    font-size: 3vmax;
-    position: relative;
-    margin-left: 0.25vw;
-    top: 1vh;
-}
+// .programs ul li::before {
+//     content: "\2022";
+//     color: #a2238e;
+//     list-style: none;
+//     text-decoration: none;
+//     font-size: 2vmax;
+//     position: relative;
+//     margin-left: 0.25vw;
+//     top: 1vh;
+// }
 
 .programs .program-button {
     background-color: #a2238e;
@@ -483,14 +487,13 @@ input[name="r"] {
     background-size: cover;
     width: 100%;
     padding: 4vh;
+    font: normal ;
+    font-size: inherit;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     position: relative;
     z-index: 99;
-    .contact-div .contact-info {
-      font-family: "NizarCoconKurdish";
-    }
 }
 
 .ifram-div {
@@ -507,6 +510,9 @@ input[name="r"] {
 }
 .footer-logo {
     width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 4vw;
 }
 .contact-text {
     display: block;
@@ -516,12 +522,12 @@ input[name="r"] {
     padding: 2vw;
     color: #fff;
     text-align: center;
-    font-size: 2.6vw;
+    font-size: 2.3vw;
     border-bottom: 0.05vw solid;
-    width: 18vw;
+    width: 20vw;
 }
 .contact-info {
-    padding: 0.2vw;
+    padding: .5vw 4.2vw;
     line-height: 35px;
     display: block;
     font-size: 1.5vw;
@@ -534,29 +540,49 @@ input[name="r"] {
     font-size: 1.8vw;
     margin: 0.5vw;
 }
-.facebook,
-.instagram,
-.twitter {
-    font-size: 2.8vw !important;
-    padding: 0.5vw;
+.social{
+    margin-left: 4vw;
 }
+
 .complaints-section {
     width: 22vw;
+    font-family: none;
     color: #fff;
     font-size: 1.8vw;
     letter-spacing: 0.5px;
     line-height: 4vh;
 }
-.complaints-section a {
+.complaints-section .contact-info {
     /* border: solid; */
     color: #fff;
     padding: 0.5vw;
     font-size: 1.7vw;
+    margin: auto 0 auto 4vw;
+    
 }
 
 .complaints-p {
     direction: rtl;
     font-size: 2.2vw;
+    width: 19vw;
+    // padding: 0 4vw 0 0 ;
+    // margin: 0 4vw 0 0;
+}
+.complaints-a{
+    color: #e3b5d6;
+    font-size: 2.2vw;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 2vw;
+}
+.facebook,
+.instagram,
+.twitter {
+    font-size: 2.8vw !important;
+    padding: 0.6vw;
+}
+.location i{
+    line-height: 2vw;
 }
 
 .complaints-section a:hover,
@@ -589,12 +615,58 @@ input[name="r"] {
 h5{
     color: white;
     font-size: 1.7vmax;
+    padding: .5vw .5vw;
+    width: max-content;
+    display: block;
+    
 }
-h5 i {
+h5 i , .a-sdc-2 {
     color: #a2238e;
 }
-h5:hover , h5:active{
+h5:hover {
     text-decoration: underline;
     cursor: pointer;
 }
+h5:checked{
+    box-shadow: 0px 26px 15px -13px #00000036;
 
+}
+.list-dropdown-content{
+    background-color: #fff !important;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: solid #fda136 1px;
+    border-top: none;
+    border-radius: 3px;
+    bottom: 1;
+    // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: none;
+    height: auto !important;
+    line-height: 3vw;
+    margin: .5vw 0;
+    opacity: 1 !important;
+    padding: .5vw 0;
+    width: 65%;
+}
+.list-dropdown-content a {
+    z-index: 999 !important;
+    border: none !important;
+    border-right: 0.2vw solid #fda136 !important ;
+    color: #fda136 !important;
+    display: block;
+    width: 80%;
+    font-size: 1.2vw;
+    // letter-spacing: 1px;
+    letter-spacing: 0;
+    // padding: 1vw 0.5vw;
+    margin: 0.3vw auto;
+    text-decoration: none;
+    text-align: center;
+    .a-sdc-2 , .a-sdc{
+        text-decoration: none;
+    }
+}
+
+.list-dropdown-content a:hover {
+    background-color: #fda136 !important;
+    color: #fff !important;
+}
