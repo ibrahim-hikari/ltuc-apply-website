@@ -46,14 +46,18 @@ function Header() {
 
     useEffect(() => {
         var i = 0;
-        let colors = ['#154579', '#5E2F90', '#2E8178', '#E21F49', '#388BC5', '#A3258D'];
+        // let colors = ['#154579', '#5E2F90', '#2E8178', '#E21F49', '#388BC5', '#A3258D'];
         let chatIcon = document.querySelector('.chat').children[0];
         carousel();
-        console.log('chat', chatIcon.style.color);
+        // console.log('chat', chatIcon.style.color);
 
         function carousel() {
             let slide = document.getElementsByClassName('s1');
+            let dot = document.querySelector(`#r${i+1}`);
             slide[0].style.marginLeft = -i * (100 / 6) + '%';
+            console.log('dot navigation', dot);
+            dot.style.background = '#ffffff';
+            // console.log('dot navigation', dot.style.background);
             // chatIcon.style.color = colors[i];
             i++;
             if (i === 6) {
@@ -67,6 +71,16 @@ function Header() {
             let slide = document.getElementsByClassName('s1');
             slide[0].style.marginLeft = -i * (100 / 6) + '%';
         });
+
+        function calcVH() {
+            var vH = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+            document.querySelector('.slideShow').setAttribute('style', 'height:' + vH + 'px;');
+            // console.log('vh', vH);
+        }
+
+        calcVH();
+        window.addEventListener('onorientationchange', calcVH, true);
+
 
     }, []);
 
@@ -87,9 +101,9 @@ function Header() {
                         <li><a href="#programs">{context.headerData.nav.programs}</a></li>
                         <li className="dropdown sub-dropdown"><button onClick={() => $('.sub-dropdown-content').fadeToggle(200)} className="dropbtn sub-dropdown-btn" type="scall">{context.headerData.nav.studentServicesHeader}<i className="fa fa-caret-down"></i></button></li>
                         <li className="sub-dropdown-content" >
-                            <a id='google-button' className="a-sdc" href="https://sisportal-100533.campusnexus.cloud/CMCPortal/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsisportal-100533.campusnexus.cloud%2fCMCPortal%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fCMCPortal%252fsecure%252fstaff%252fstaportal.aspx&wct=2020-05-07T13%3a03%3a17Z">{context.headerData.nav.studentServices.selfServicePortal}</a>
-                            <a id='google-button' className="a-sdc" href="https://online.ltuc.com/d2l/home">{context.headerData.nav.studentServices.desireToLearn}</a>
-                            <a id='google-button' className="a-sdc" href="https://employmenthub.ltuc.com">{context.headerData.nav.studentServices.EducationForEmployment}</a>
+                            <a id='google-button' target='_blank' rel="noopener noreferrer" className="a-sdc" href="https://sisportal-100533.campusnexus.cloud/CMCPortal/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsisportal-100533.campusnexus.cloud%2fCMCPortal%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fCMCPortal%252fsecure%252fstaff%252fstaportal.aspx&wct=2020-05-07T13%3a03%3a17Z">{context.headerData.nav.studentServices.selfServicePortal}</a>
+                            <a id='google-button' target='_blank' rel="noopener noreferrer" className="a-sdc" href="https://online.ltuc.com/d2l/home">{context.headerData.nav.studentServices.desireToLearn}</a>
+                            <a id='google-button' target='_blank' rel="noopener noreferrer" className="a-sdc" href="https://employmenthub.ltuc.com">{context.headerData.nav.studentServices.EducationForEmployment}</a>
                         </li>
                         <li><a href="#footer">{context.headerData.nav.contactUs.text}</a></li>
                         {/* <li className='arabic'><a href="#/" onClick={() => getData(context.lang)}>{context.lang === 'Arabic' ? 'العربية' : context.lang}&nbsp;<i className="fa fa-globe"></i></a></li> */}
@@ -103,9 +117,9 @@ function Header() {
                         <li className="dropdown">
                             <button className="dropbtn" type="scall"><i className="fa fa-caret-down"></i>{context.headerData.nav.studentServicesHeader}</button>
                             <div className="dropdown-content">
-                                <a id='google-button' href="https://sisportal-100533.campusnexus.cloud/CMCPortal/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsisportal-100533.campusnexus.cloud%2fCMCPortal%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fCMCPortal%252fsecure%252fstaff%252fstaportal.aspx&wct=2020-05-07T13%3a03%3a17Z">{context.headerData.nav.studentServices.selfServicePortal}</a>
-                                <a id='google-button' href="https://online.ltuc.com/d2l/home">{context.headerData.nav.studentServices.desireToLearn}</a>
-                                <a id='google-button' href="https://employmenthub.ltuc.com">{context.headerData.nav.studentServices.EducationForEmployment}</a>
+                                <a id='google-button' target='_blank' rel="noopener noreferrer" href="https://sisportal-100533.campusnexus.cloud/CMCPortal/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsisportal-100533.campusnexus.cloud%2fCMCPortal%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fCMCPortal%252fsecure%252fstaff%252fstaportal.aspx&wct=2020-05-07T13%3a03%3a17Z">{context.headerData.nav.studentServices.selfServicePortal}</a>
+                                <a id='google-button' target='_blank' rel="noopener noreferrer" href="https://online.ltuc.com/d2l/home">{context.headerData.nav.studentServices.desireToLearn}</a>
+                                <a id='google-button' target='_blank' rel="noopener noreferrer" href="https://employmenthub.ltuc.com">{context.headerData.nav.studentServices.EducationForEmployment}</a>
                             </div>
                         </li>
                         <li><a className='main-link' href="#footer">{context.headerData.nav.contactUs.text}</a></li>
@@ -202,7 +216,7 @@ function Header() {
                         <label htmlFor="r6" className="bar" id="6"></label>
                     </div>
                 </div>
-                <a id='google-button' className='chat' href="https://m.me/LTUC.JO"><i className='fas fa-comment'></i></a>
+                <a id='google-button' target='_blank' rel="noopener noreferrer" className='chat' href="https://m.me/LTUC.JO"><i className='fas fa-comment'></i></a>
 
             </section>
         </>

@@ -621,11 +621,6 @@
     }
 }
 @media (min-width: 500px) {
-    .slide {
-        position: relative;
-        height: 100vh;
-    }
-
     .card {
         // border: solid;
         position: relative;
@@ -709,7 +704,7 @@
     }
 
     .aboutUs-section {
-        border: solid;
+        // border: solid;
         padding: 4vmax 6vmax 5.5vmax 6vmax;
     }
 }
@@ -722,10 +717,6 @@
     .main-nav-mobile {
         justify-content: space-between;
     }
-    .slide {
-        top: 0;
-        height: 90vh;
-    }
     .card {
         // border: solid;
         position: relative;
@@ -736,7 +727,7 @@
             // border: solid;
             font-size: 10vmax;
             left: 50%;
-            top: 20%;
+            top: 22%;
             transform: translate(-50%, -50%);
             width: fit-content;
         }
@@ -745,9 +736,9 @@
             // border: solid #fff;
             position: absolute;
             left: 50%;
-            top: 45%;
+            top: 52%;
             transform: translate(-50%, -50%);
-            max-width: 75%;
+            max-width: 85%;
         }
 
         .with-you {
@@ -756,7 +747,7 @@
             left: 50%;
             letter-spacing: 1.3px;
             padding: 1%;
-            top: 65%;
+            top: 75%;
             transform: translate(-50%, -50%);
             width: fit-content;
         }
@@ -766,7 +757,7 @@
             left: 50%;
             padding: 2.5% 5%;
             transform: translate(-50%, -50%);
-            top: 72%;
+            top: 82%;
             width: fit-content;
         }
     }
@@ -774,7 +765,7 @@
     .navigation {
         // border: solid;
         left: 50%;
-        bottom: 15%;
+        bottom: 1%;
     }
 
     .aboutUs-section {
