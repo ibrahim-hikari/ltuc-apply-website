@@ -46,6 +46,7 @@ header {
         }
         .icon {
             display: none;
+            outline: none;
         }
 
         .main-nav {
@@ -157,7 +158,7 @@ header {
                     outline: none;
                     padding: 5%;
                     text-decoration: none;
-                    text-align: center;
+                    text-align: right;
                     width: 80%;
 
                     &:hover {
@@ -346,33 +347,30 @@ header {
         // margin-top: -3vmax;
     }
     a {
-        // background-color: #a2238e;
+        $purple: #a2238e;
+
+        background: lighten($purple, 3%);
+        border: 1px solid darken($purple, 4%);
         border-radius: 5px;
-        // box-shadow: 1px 1px 10px #00000057;
         bottom: 5%;
+        box-shadow: 3px 3px 5px darken(#000000bc, 2%);
         color: #fff;
         left: 45%;
+        outline: none;
         padding: 1vmax 1.5vmax;
         position: absolute;
         text-align: center;
         text-decoration: none;
-        width: 11%;
-        $red: #a2238e;
-        $white: #fff;
-
-        background: lighten($red, 3%);
-        border: 1px solid darken($red, 4%);
-        box-shadow: 2px 2px 5px darken(#000, 2%);
-
         transition: all 150ms linear;
+        width: 11%;
 
         &:hover {
-            background: darken($red, 1.5%);
+            background: darken($purple, 1.5%);
             // border: 1px solid rgba(#000, 0.05);
-            box-shadow: 1px 1px 2px rgba(#fff, 0.2);
-            color: lighten($red, 50%);
+            box-shadow: 1px 1px 2px rgba(#000000, 0.2);
+            color: lighten($purple, 50%);
             text-decoration: none;
-            text-shadow: -1px -1px 0 darken($red, 9.5%);
+            text-shadow: -1px -1px 0 darken($purple, 9.5%);
             transition: all 250ms linear;
         }
     }
@@ -386,40 +384,52 @@ header {
     padding: 2vmax 6vmax 6vmax 6vmax;
     position: relative;
     z-index: 1;
-}
+    h4 {
+        color: #fff;
+        margin: 1vmax 0 3vmax 0;
+    }
 
-.aboutUs-part-2 h4 {
-    color: #fff;
-    margin: 1vmax 0 3vmax 0;
-}
+    h4:nth-child(1) {
+        margin: -3vmax 0 2vmax 0;
+    }
 
-.aboutUs-part-2 h4:nth-child(1) {
-    margin: -3vmax 0 2vmax 0;
-}
+    h4:nth-child(2) {
+        margin: 3vmax 0 2vmax 0;
+    }
 
-.aboutUs-part-2 h4:nth-child(2) {
-    margin: 3vmax 0 2vmax 0;
-}
+    h3 {
+        color: #fda136;
+        font-size: 2.5vmax;
+    }
 
-.aboutUs-part-2 h3 {
-    color: #fda136;
-    font-size: 2.5vmax;
-}
+    a {
+        $orange: #fda136;
 
-.aboutUs-part-2 a {
-    background-color: #fda136;
-    border-radius: 5px;
-    bottom: 4.5%;
-    box-shadow: 1px 1px 10px #00000057;
-    color: #fff;
-    left: 45%;
-    padding: 1vmax 1.5vmax;
-    position: absolute;
-    text-align: center;
-    text-decoration: none;
-    width: 11%;
-}
+        background: lighten($orange, 3%);
+        border: 1px solid darken($orange, 4%);
+        border-radius: 5px;
+        bottom: 4.5%;
+        box-shadow: 3px 3px 5px darken(#000000bc, 2%);
+        color: #fff;
+        left: 45%;
+        outline: none;
+        padding: 1vmax 1.5vmax;
+        position: absolute;
+        text-align: center;
+        transition: all 150ms linear;
+        text-decoration: none;
+        width: 11%;
 
+        &:hover {
+            background: darken($orange, 1.5%);
+            box-shadow: 1px 1px 2px rgba(#000, 0.2);
+            color: lighten($orange, 50%);
+            text-decoration: none;
+            text-shadow: -1px -1px 0 darken($orange, 9.5%);
+            transition: all 250ms linear;
+        }
+    }
+}
 .programs {
     overflow-y: hidden;
 

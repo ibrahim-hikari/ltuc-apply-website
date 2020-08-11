@@ -53,7 +53,7 @@ function Header() {
 
         function carousel() {
             let slide = document.getElementsByClassName('s1');
-            let dot = document.querySelector(`#r${i+1}`);
+            let dot = document.querySelector(`#r${i + 1}`);
             slide[0].style.marginLeft = -i * (100 / 6) + '%';
             console.log('dot navigation', dot);
             dot.style.background = '#ffffff';
@@ -96,16 +96,16 @@ function Header() {
                 </a>
                 <nav className="main-nav-mobile">
                     <ul>
-                        <li><a id='google-button' href="#slideShow">{context.headerData.nav.home}</a></li>
-                        <li><a href="#aboutUs-section">{context.headerData.nav.aboutUs}</a></li>
-                        <li><a href="#programs">{context.headerData.nav.programs}</a></li>
+                        <li><a onClick={() => $('.main-nav-mobile').fadeOut(200)} href="#slideShow">{context.headerData.nav.home}</a></li>
+                        <li><a onClick={() => $('.main-nav-mobile').fadeOut(200)} href="#aboutUs-section">{context.headerData.nav.aboutUs}</a></li>
+                        <li><a onClick={() => $('.main-nav-mobile').fadeOut(200)} href="#programs">{context.headerData.nav.programs}</a></li>
                         <li className="dropdown sub-dropdown"><button onClick={() => $('.sub-dropdown-content').fadeToggle(200)} className="dropbtn sub-dropdown-btn" type="scall">{context.headerData.nav.studentServicesHeader}<i className="fa fa-caret-down"></i></button></li>
                         <li className="sub-dropdown-content" >
                             <a id='google-button' target='_blank' rel="noopener noreferrer" className="a-sdc" href="https://sisportal-100533.campusnexus.cloud/CMCPortal/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsisportal-100533.campusnexus.cloud%2fCMCPortal%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fCMCPortal%252fsecure%252fstaff%252fstaportal.aspx&wct=2020-05-07T13%3a03%3a17Z">{context.headerData.nav.studentServices.selfServicePortal}</a>
                             <a id='google-button' target='_blank' rel="noopener noreferrer" className="a-sdc" href="https://online.ltuc.com/d2l/home">{context.headerData.nav.studentServices.desireToLearn}</a>
                             <a id='google-button' target='_blank' rel="noopener noreferrer" className="a-sdc" href="https://employmenthub.ltuc.com">{context.headerData.nav.studentServices.EducationForEmployment}</a>
                         </li>
-                        <li><a href="#footer">{context.headerData.nav.contactUs.text}</a></li>
+                        <li><a onClick={() => $('.main-nav-mobile').fadeOut(200)} className='click-close' href="#footer">{context.headerData.nav.contactUs.text}</a></li>
                         {/* <li className='arabic'><a href="#/" onClick={() => getData(context.lang)}>{context.lang === 'Arabic' ? 'العربية' : context.lang}&nbsp;<i className="fa fa-globe"></i></a></li> */}
                     </ul>
                 </nav>
