@@ -413,7 +413,6 @@ input[name="r"] {
 
 .programs {
     overflow-y: hidden;
-
     background-color: #fda136;
     color: #fff;
     direction: rtl;
@@ -441,6 +440,7 @@ input[name="r"] {
 }
 .programs h3 {
     color: #a2238e;
+    // width: 4vw;
     font-size: 2.5vmax;
     margin: 0 0 1vmax 0;
 }
@@ -458,22 +458,25 @@ input[name="r"] {
 // }
 
 .programs .program-button {
-    background-color: #a2238e;
-    /* border: solid; */
+    background-color: #A2238E;
     border-radius: 5px;
+    box-shadow: 1px 1px 10px #00000057;
+    bottom: 5%;
     color: #fff;
-    display: block;
-    margin: 1.5vmax 0;
+    left: 45%;
     padding: 1vmax 1.5vmax;
+    // position: absolute;
+    margin-bottom: 3vw;
+    text-align: center;
     text-decoration: none;
-    width: fit-content;
+    width: 11%;
+    outline: none;
 }
 
 .programs .program-link{
     background-color: #a2238e00;
     color: #fff;
     text-decoration: none;
-    // width: fit-content;
     cursor: pointer;
 }
 .programs .program-link:hover{
