@@ -9,7 +9,6 @@ function ModelProvider(props) {
     const [footerData, setFooterData] = useState(data.footer);
     const [lang, setLang] = useState('English');
 
-
     const state = {
         headerData,
         mainData,

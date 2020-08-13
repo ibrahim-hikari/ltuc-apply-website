@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "NizarCoconKurdish";
+    src: url("../assets/NizarCoconKurdishBold.otf") format("truetype");
+}
+
 @media (min-width: 1023px) {
     .main-nav-mobile {
         visibility: hidden;
@@ -35,7 +40,7 @@
         width: 100%;
     }
     .middle {
-        top: 8.5vmax;
+        top: 9.5vmax;
     }
     .logo {
         /* border: solid; */
@@ -238,6 +243,9 @@
     .programs h3 {
         font-size: 3vw;
     }
+    .programs h3 {
+        margin: 3vw 0;
+    }
 }
 
 @media (min-width: 700px) and (max-width: 770px) {
@@ -256,6 +264,12 @@
         color: rgb(226, 205, 220);
         font-size: 2vw !important;
         margin: 0.5vw;
+    }
+    .programs h3 {
+        margin: 3vw 0;
+    }
+    .programs .list-dropdown-content a {
+        font-size: 1.9vmax;
     }
     .facebook,
     .instagram,
@@ -295,20 +309,28 @@
         /* margin-top: 15vw; */
         z-index: 99;
     }
+    .complaints-p {
+        direction: rtl;
+        font-size: 2.2vw;
+        width: 59vw;
+    }
     .ifram-div {
         grid-row: 2;
-        width: 100%;
+        width: 85%;
         // margin: 2vw 5vw 0 0;
+        margin: 0 auto;
         padding: 0;
     }
+    .location i {
+        line-height: 5vw;
+    }
+
     .ifram-div .ifram {
         margin: 0 0;
         width: 85vw;
         height: 55vw;
     }
     .footer-logo {
-        width: 30vw;
-        height: 20vh;
         margin: 1vw auto 2vw 2vw;
         display: block;
     }
@@ -337,17 +359,17 @@
     .instagram,
     .twitter {
         font-size: 6vw !important;
-        padding: 1.1vw;
+        padding: 2.1vw;
     }
     .complaints-section {
         width: 52vw;
         margin: 0 auto 0 2vw;
-        color: #e3b5d6;
+        color: white;
         font-size: 2.3vw;
         line-height: 4vh;
     }
     .complaints-section a {
-        color: #e3b5d6;
+        color: white;
     }
     .complaints-section a:hover,
     .fa2:hover,
@@ -360,12 +382,25 @@
         margin: 0 auto 0 auto;
     }
     .complaints-section a {
-        color: #e3b5d6;
+        color: white;
         font-size: 2.4vw;
     }
     .complaints-p {
+        color: white;
         text-align: center;
-        font-size: 2.5vw;
+        font-size: 2.7vw;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+    }
+    .complaints-a {
+        margin-bottom: 3vw;
+        padding: 2vw;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
     }
     .ifram-div .ifram {
         margin: 0 auto 0 auto;
@@ -373,8 +408,7 @@
         height: 55vw;
     }
     .footer-logo {
-        width: 30vw;
-        height: 15vh;
+        width: 37%;
         margin: 1vw auto 2vw auto;
         display: block;
     }
@@ -394,7 +428,7 @@
     .contact-info {
         margin: 0 auto 0 2vw;
         display: block;
-        font-size: 3vw;
+        font-size: 3.7vw;
         width: 52vw;
         margin: 2vw auto;
         text-align: center;
@@ -416,6 +450,51 @@
         margin: 0 auto 0 auto;
         font-size: 8vw !important;
     }
+    .programs .program-link {
+        background-color: #a2238e00;
+        color: #fff;
+        font-size: 4.3vmax;
+        margin: 1.5vmax 1vmax;
+        text-decoration: none;
+        width: fit-content;
+        cursor: pointer;
+    }
+    .list-dropdown-content {
+        background-color: #fff !important;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        border: solid #fda136 1px;
+        border-top: none;
+        border-radius: 3px;
+        bottom: 1;
+        // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        display: none;
+        height: auto !important;
+        line-height: 3vw;
+        margin: 0.5vw 0;
+        opacity: 1 !important;
+        padding: 1.5vw 1.5vw;
+        width: 100%;
+    }
+    .list-dropdown-content a {
+        z-index: 999 !important;
+        border: none !important;
+        border-right: 0.4vw solid #fda136 !important ;
+        color: #fda136 !important;
+        display: block;
+        width: 80%;
+        font-size: 3vw;
+        // letter-spacing: 1px;
+        line-height: 6vw;
+        letter-spacing: 0;
+        padding: 1.5vw 1.5vw;
+        margin: 0.4vw auto;
+        text-decoration: none;
+        text-align: center;
+        .a-sdc-2,
+        .a-sdc {
+            text-decoration: none;
+        }
+    }
 }
 @media (max-width: 1023px) and (min-width: 771px) {
     .complaints-p {
@@ -431,6 +510,11 @@
 @media (max-width: 590px) {
     .main-nav {
         top: 0vmax;
+    }
+    h5 {
+        color: white;
+        font-size: 3.5vmax;
+        line-height: 8vw;
     }
 
     .main-nav ul li {
@@ -451,26 +535,29 @@
     .aboutUs-section h3,
     .aboutUs-section h3:first-child,
     .aboutUs-part-2 h3 {
-        font-size: 3.5vmax;
+        font-size: 3.8vmax;
     }
 
     .aboutUs-section h4,
     .aboutUs-part-2 h4 {
         font-size: 3vmax;
-        line-height: 3.2vmax;
+        line-height: 4.2vmax;
+        letter-spacing: 0.08vw;
     }
 
     .aboutUs-part-2 a,
-    .aboutUs-section a {
+    .aboutUs-section a,
+    .programs a.program-button {
         border-radius: 5px;
         bottom: 1.5%;
         font-size: 2.5vmax;
-        left: 37.5%;
-        padding: 1vmax 1.5vmax;
+        left: 50%;
+        padding: 1.3vmax 1.5vmax;
         position: absolute;
         text-align: center;
         text-decoration: none;
-        width: 25%;
+        transform: translateX(-50%);
+        width: fit-content;
     }
 
     .programs {
@@ -479,7 +566,7 @@
         color: #fff;
         direction: rtl;
         font-size: 2.8vmax;
-        padding: 0 6vmax 0 10vmax;
+        padding: 0 2vmax 0 2vmax;
         position: relative;
         z-index: 0;
     }
@@ -492,35 +579,76 @@
 
     .programs .right {
         /* border: solid; */
-        margin-top: -10vmax;
+        margin-top: -3vmax;
         width: 100%;
     }
-
     .programs h3 {
         /* border: solid; */
-        font-size: 5vmax;
+        font-size: 4.4vmax;
+        width: 86vw;
+        margin: 9vw 0vw 4vw 0;
+        padding: 0;
     }
 
     .programs .right h3:nth-child(7) {
-        /* border: solid; */
         font-size: 4vmax;
     }
 
-    .programs ul li::before {
-        font-size: 5vmax;
+    .programs div {
+        height: 100%;
+        width: 86vw;
+        font-size: 3vmax;
     }
 
-    .programs a {
-        background-color: #a2238e;
-        /* border: solid; */
-        border-radius: 5px;
+    .programs div ul {
+        width: 87vw;
+        margin-right: 1.5vw;
+    }
+
+    .programs .program-link {
+        background-color: #a2238e00;
         color: #fff;
-        display: block;
         font-size: 3vmax;
-        margin: 1.5vmax 0;
-        padding: 1vmax 1.5vmax;
+        margin: 1.5vmax 1vmax;
         text-decoration: none;
-        width: fit-content;
+        width: 100%;
+        cursor: pointer;
+    }
+    .list-dropdown-content {
+        background-color: #fff !important;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        border: solid #fda136 1px;
+        border-top: none;
+        border-radius: 3px;
+        bottom: 1;
+        // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        display: none;
+        height: auto !important;
+        line-height: 3vw;
+        margin: 0.5vw 0;
+        opacity: 1 !important;
+        padding: 1.5vw 1.5vw;
+        width: 100%;
+    }
+    .list-dropdown-content a {
+        z-index: 999 !important;
+        border: none !important;
+        border-right: 0.4vw solid #fda136 !important ;
+        color: #fda136 !important;
+        display: block;
+        width: 80%;
+        font-size: 2vw;
+        // letter-spacing: 1px;
+        line-height: 6vw;
+        letter-spacing: 0;
+        padding: 1.5vw 1.5vw;
+        margin: 0.4vw auto;
+        text-decoration: none;
+        text-align: right;
+        .a-sdc-2,
+        .a-sdc {
+            text-decoration: none;
+        }
     }
 
     .footer {
@@ -530,18 +658,16 @@
         background-repeat: no-repeat;
         float: left;
         display: grid;
-        /* margin-top: 5vw; */
         grid-template-rows: 2fr;
         font-size: 2.2vw;
         position: relative;
-        /* margin-top: 15vw; */
         z-index: 99;
     }
     .ifram-div {
         grid-row: 2;
-        width: 100%;
-        // margin: 2vw 5vw 0 0;
+        width: 85%;
         padding: 0;
+        margin: auto;
     }
     .ifram-div .ifram {
         margin: 0 auto 0 auto;
@@ -549,15 +675,15 @@
         height: 55vw;
     }
     .footer-logo {
-        width: 40vw;
-        height: 15vh;
         margin: 1vw auto 0vw auto;
         display: block;
     }
     .contact-div {
+        font-family: "NizarCoconKurdish";
         width: 100%;
     }
     .contact-text {
+        font-family: "NizarCoconKurdish";
         margin: 0 auto;
         display: block;
         width: 40vw;
@@ -565,20 +691,21 @@
         margin-top: 2vh;
         text-align: center;
         line-height: 5vh;
-        color: rgb(233, 214, 227);
+        color: #fff;
     }
     .contact-info {
         margin: 0 auto 0 2vw;
+        font-family: "NizarCoconKurdish";
         display: block;
         font-size: 4vw;
         width: 52vw;
         margin: 0 auto;
         padding: 1% 0;
         text-align: center;
-        color: rgb(233, 214, 227);
+        color: #fff;
     }
     .fa2 {
-        color: rgb(226, 205, 220);
+        color: #fff;
         font-size: 4vw;
         margin: 0.5vw;
     }
@@ -591,12 +718,12 @@
     .complaints-section {
         width: 60vw;
         margin: 0 auto;
-        color: #e3b5d6;
+        color: #fff;
         font-size: 3vw;
         line-height: 6vh;
     }
     .complaints-section a {
-        color: #e3b5d6;
+        color: #fff;
         font-size: 3.5vw;
     }
     .complaints-a {
@@ -605,6 +732,19 @@
     }
     .complaints-p {
         font-size: 3.5vw;
+        width: 56vw;
+    }
+    .complaints-a {
+        color: #fff !important;
+        display: block;
+        text-align: center;
+        font-size: 3.9vw !important;
+        padding: 2vw 0 5vw;
+        // letter-spacing: 2px;
+    }
+    .complaints-p {
+        font-size: 3.9vw;
+        width: 58vw;
     }
     .complaints-section a:hover,
     .fa2:hover,
@@ -616,6 +756,15 @@
         width: 38vw;
         margin: 0 auto 0 auto;
         font-size: 7vw !important;
+    }
+    .location i {
+        line-height: 5vw;
+    }
+
+    .footer-logo {
+        width: 45%;
+        margin: 1vw auto 0vw auto;
+        display: block;
     }
 }
 @media (min-width: 500px) {
@@ -705,6 +854,10 @@
         // border: solid;
         padding: 4vmax 6vmax 5.5vmax 6vmax;
     }
+
+    .programs {
+        padding: 2vmax 6vmax 6vmax 6vmax;
+    }
 }
 @media (max-width: 500px) {
     .logo {
@@ -782,10 +935,49 @@
             bottom: 2%;
         }
     }
+
+    .programs {
+        padding: 2vmax 6vmax 7.5vmax 6vmax;
+
+        a.program-button {
+            bottom: 1%;
+        }
+    }
 }
 
 @media (max-width: 250px) {
     .touch {
         top: 82%;
+    }
+}
+@media (min-width: 771px) and (max-width: 1023px) {
+    .main-nav-mobile {
+        visibility: hidden;
+    }
+    .contact-info {
+        font-size: 1.9vw;
+    }
+    h5 {
+        color: white;
+        font-size: 2.3vmax;
+        padding: 0.5vw 0.5vw;
+        width: max-content;
+        display: block;
+    }
+    h5 {
+        color: white;
+        font-size: 2.4vmax !important;
+        padding: 0.5vw 0.5vw;
+        width: max-content;
+        display: block;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 590px) {
+    .programs .list-dropdown-content a {
+        font-size: 1.9vmax;
+        margin: 0.6vw 1vw;
+        text-align: right;
+        padding: 0 1vw;
     }
 }

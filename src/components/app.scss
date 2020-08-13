@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "NizarCoconKurdish";
+    font-family: footer;
     src: url("../assets/NizarCoconKurdishBold.otf") format("truetype");
 }
 
@@ -355,7 +355,7 @@ header {
         bottom: 5%;
         box-shadow: 3px 3px 5px darken(#000000bc, 2%);
         color: #fff;
-        left: 45%;
+        left: 50%;
         outline: none;
         padding: 1vmax 1.5vmax;
         position: absolute;
@@ -432,7 +432,7 @@ header {
 }
 .programs {
     overflow-y: hidden;
-
+    overflow-x: hidden;
     background-color: #fda136;
     color: #fff;
     direction: rtl;
@@ -441,66 +441,80 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     font-size: 1.7vmax;
-    padding: 2vmax 12vmax;
+    padding: 2vmax 6vmax 6vmax 6vmax;
     position: relative;
     z-index: 1;
 }
 
 .programs div {
     height: 100%;
-    width: 40%;
-    padding: 5vmax 0;
+    width: 43vw;
+    padding: 1vmax 0;
 }
 
-// .section-four .left {
-//     /* border: solid; */
-//     position: absolute;
-//     left: 15vmax;
-//     width: 30vmax;
-// }
-
-// .section-four .right {
-//     /* border: solid; */
-//     width: 30vmax;
-// }
-
+.programs div ul {
+    width: 28vw;
+    margin-right: 1.5vw;
+    // width: inherit;
+    // width: auto;
+}
 .programs h3 {
     color: #a2238e;
-    font-size: 3vmax;
+    // width: 4vw;
+    font-size: 2.5vmax;
     margin: 0 0 1vmax 0;
 }
 
-.programs ul li::before {
-    content: "\2022";
-    color: #a2238e;
-    font-size: 3vmax;
-    position: relative;
-    margin-left: 0.25vw;
-    top: 1vh;
-}
+// .programs ul li::before {
+//     content: "\2022";
+//     color: #a2238e;
+//     list-style: none;
+//     text-decoration: none;
+//     font-size: 2vmax;
+//     position: relative;
+//     margin-left: 0.25vw;
+//     top: 1vh;
+// }
 
-.programs .program-button {
-    background-color: #a2238e;
-    /* border: solid; */
+.programs a.program-button {
+    $purple: #a2238e;
+
+    background: lighten($purple, 3%);
+    border: 1px solid darken($purple, 4%);
     border-radius: 5px;
+    bottom: 3%;
+    box-shadow: 3px 3px 5px darken(#000000bc, 2%);
     color: #fff;
-    display: block;
-    margin: 1.5vmax;
+    left: 45%;
+    outline: none;
     padding: 1vmax 1.5vmax;
+    position: absolute;
+    text-align: center;
     text-decoration: none;
-    width: fit-content;
+    transition: all 150ms linear;
+    width: 11%;
+
+    &:hover {
+        background: darken($purple, 1.5%);
+        // border: 1px solid rgba(#000, 0.05);
+        box-shadow: 1px 1px 2px rgba(#000000, 0.2);
+        color: lighten($purple, 50%);
+        text-decoration: none;
+        text-shadow: -1px -1px 0 darken($purple, 9.5%);
+        transition: all 250ms linear;
+    }
 }
 
 .programs .program-link {
     background-color: #a2238e00;
     color: #fff;
     text-decoration: none;
-    // width: fit-content;
     cursor: pointer;
 }
-// .program-link:hover {
-//     // border: solid;
-// }
+.programs .program-link:hover {
+    // border: solid;
+    text-decoration: underline;
+}
 .footer {
     clear: both;
     background-image: url("../assets/footer-background.jpeg");
@@ -508,6 +522,8 @@ header {
     background-size: cover;
     width: 100%;
     padding: 4vh;
+    font: normal;
+    font-size: inherit;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -529,6 +545,10 @@ header {
 }
 .footer-logo {
     width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 4vw;
+    margin-top: 2vw;
 }
 .contact-text {
     display: block;
@@ -536,48 +556,81 @@ header {
     margin-top: 2vh;
     line-height: 1vh;
     padding: 2vw;
-    color: #eacee2;
-    /* text-align: center; */
-    font-size: 2.6vw;
+    color: #fff;
+    text-align: center;
+    font-size: 2.3vw;
     border-bottom: 0.05vw solid;
-    width: 18vw;
+    width: 20vw;
 }
 .contact-info {
-    padding: 0.5vw;
+    padding: 0.5vw 4.2vw;
     line-height: 35px;
     display: block;
     font-size: 1.5vw;
+
     width: 28vw;
-    color: #e3b5d6;
+    color: #fff;
 }
 .fa2 {
-    color: #e3b5d6;
+    color: #fff;
     font-size: 1.8vw;
     margin: 0.5vw;
 }
-.facebook,
-.instagram,
-.twitter {
-    font-size: 2.8vw !important;
-    padding: 0.5vw;
+.social {
+    margin-left: 4vw;
 }
+
 .complaints-section {
     width: 22vw;
-    color: #e3b5d6;
+    font-family: none;
+    color: #fff;
     font-size: 1.8vw;
     letter-spacing: 0.5px;
     line-height: 4vh;
 }
-.complaints-section a {
+.complaints-section .contact-info {
     /* border: solid; */
-    color: #e3b5d6;
+    color: #fff;
     padding: 0.5vw;
     font-size: 1.7vw;
+    margin: auto 0 auto 4vw;
 }
 
 .complaints-p {
     direction: rtl;
     font-size: 2.2vw;
+    width: 20vw;
+    // padding: 0 4vw 0 0 ;
+    // margin: 0 4vw 0 0;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.complaints-a {
+    color: #fff;
+    font-size: 2.2vw;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 3.6vw;
+    text-decoration: none;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+.complaints-section a {
+    color: #fff !important;
+    font-size: 3.5vw;
+}
+.facebook,
+.instagram,
+.twitter {
+    font-size: 2.8vw !important;
+    padding: 0.6vw;
+}
+.location i {
+    line-height: 2vw;
 }
 
 .complaints-section a:hover,
@@ -586,9 +639,77 @@ header {
     cursor: pointer;
     color: rgb(243, 236, 241);
 }
+.location i {
+    line-height: 2vw;
+}
 
 .aboutUs-section a:hover,
 .aboutUs-part-2 a:hover,
 .programs a:hover {
     cursor: pointer;
+}
+
+h5 {
+    color: white;
+    font-size: 1.7vmax;
+    padding: 0.5vw 0.5vw;
+    // width: 93vw;
+    display: block;
+}
+.contact-info .contact-info-email:hover,
+.complaints-a:hover {
+    cursor: pointer !important;
+    text-decoration: underline;
+}
+
+h5 i,
+.a-sdc-2 {
+    color: #a2238e;
+}
+h5:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+h5:checked {
+    box-shadow: 0px 26px 15px -13px #00000036;
+}
+.list-dropdown-content {
+    background-color: #fff !important;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border: solid #fda136 1px;
+    border-top: none;
+    border-radius: 3px;
+    bottom: 1;
+    // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: none;
+    height: auto !important;
+    line-height: 3vw;
+    margin: 0.5vw 0;
+    opacity: 1 !important;
+    padding: 0.2vw 0;
+    width: 76%;
+}
+.list-dropdown-content a {
+    z-index: 999 !important;
+    border: none !important;
+    border-right: 0.2vw solid #fda136 !important ;
+    color: #fda136 !important;
+    display: block;
+    width: 80%;
+    font-size: 1.5vw;
+    // letter-spacing: 1px;
+    letter-spacing: 0;
+    padding: 0 1vw;
+    margin: 0.3vw auto;
+    text-decoration: none;
+    text-align: right;
+    .a-sdc-2,
+    .a-sdc {
+        text-decoration: none;
+    }
+}
+
+.list-dropdown-content a:hover {
+    background-color: #fda136 !important;
+    color: #fff !important;
 }

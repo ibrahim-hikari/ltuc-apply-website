@@ -74,261 +74,389 @@
             }
         },
         "program": {
+            "id": "1",
             "firstProgram": {
-                "InternationalDiploma": "برامج الدبلوم الدولي",
-                "InternationalDiplomaSpecialties": [
-                    {
-                        "name": "إدارة الموارد البشرية",
-                        "link": "#"
-                    },
-                    {
-                        "name": "المحاسبة والإدارة المالية",
-                        "link": "#"
-                    },
-                    {
-                        "name": "إدارة الأعمال وأنظمة المكاتب",
-                        "link": "#"
-                    },
-                    {
-                        "name": "إدارة العمليات اللوجستية",
-                        "link": "#"
-                    },
-                    {
-                        "name": "إدارة الفنادق والفعاليات",
-                        "link": "#"
-                    },
-                    {
-                        "name": "إدارة الطعام والشراب",
-                        "link": "#"
-                    },
-                    {
-                        "name": "إدارة فنون الطهي",
-                        "link": "#"
-                    },
-                    {
-                        "name": "التصميم الداخلي",
-                        "link": "#"
-                    },
-                    {
-                        "name": "تصميم الأزياء",
-                        "link": "#"
-                    },
-                    {
-                        "name": "تصميم المنتجات الصناعية",
-                        "link": "#"
-                    },
-                    {
-                        "name": "هندسة الكهرباء والإلكترونيات",
-                        "link": "#"
-                    },
-                    {
-                        "name": "الهندسة الميكانيكية",
-                        "link": "#"
-                    },
-                    {
-                        "name": "هندسة صيانة المركبات المتقدمة",
-                        "link": "#"
-                    },
-                    {
-                        "name": "الهندسة المدنية",
-                        "link": "#"
-                    },
-                    {
-                        "name": "هندسة المساحة",
-                        "link": "#"
-                    },
-                   
-                    {
-                        "name":  "هندسة البرمجيات",
-                        "link": "#"
-                    }
-                ],
-                "href": {
-                    "header": "تواصل معنا",
-                    "link": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
-                }
-            },
-            "scandProgram": {
-                "TechnicalDiploma": "برامج الدبلوم الفني",
-                "TechnicalDiplomaSpecialties": [
-                    {
-                        "name": "إدارة فنادق",
-                        "link": "#"
-                    },
-                    {
-                        "name": "إدارة فنادق",
-                        "link": "#"
-                    },
-                    {
-                        "name": "فنون الطهي",
-                        "link": "#"
-                    },
-                    {
-                        "name": "التصميم الداخلي",
-                        "link": "#"
-                    },
-                    {
-                        "name": "الأزياء وتكنولوجيا الألبسة",
-                        "link": "#"
-                    },
-                    {
-                        "name": "الصيانة الكهروميكانيكية العامة",
-                        "link": "#"
-                    },
-                    {
-                        "name": "نظم التكييف والتبريد",
-                        "link": "#"
-                    },
-                    {
-                        "name":  "تكنولوجيا السيارات الهجينة",
-                        "link": "#"
-                    },
-                    {
-                        "name": "الهندسة المدنية",
-                        "link": "#"
-                    },
-                    {
-                        "name":   "فن وعلوم التجميل",
-                        "link": "#"
-                    }       
-                ],
-                "href": {
-                    "header": "تواصل معنا",
-                    "link": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
-                }
-            },
-            "thirdprogram": {
                 "bachelors": "برامج البكالوريوس",
                 "bachelorsSpecialties": [
                     {
-                        "name": "هندسة تكنولوجيا السيارات",
-                        "link": "#"
+                        "collageName": "كلية العلوم الطبية التطبيقية",
+                        "collageList": [
+                            {
+                                "name": "تقنيات صناعة الأسنان",
+                                "link": "#"
+                            }
+                        ]
                     },
                     {
-                        "name":  "صناعة الأفلام الرقمية",
-                        "link": "#"
+                        "collageName": "كلية العلوم المالية والإدراية",
+                        "collageList": [
+                            {
+                                "name": "التقنيات اللوجستية وسلسلة الإمداد",
+                                "link": "#"
+                            }
+                        ]
                     },
                     {
-                        "name":  "الواقع الإفتراضي والمعزز",
-                        "link": "#"
+                        "collageName": "كلية الفندقة والسياحة",
+                        "collageList": [
+                            {
+                                "name": "إدارة الفنادق والمطاعم والفعاليات",
+                                "link": "#"
+                            },
+                            {
+                                "name": "إدارة فنون الطهي",
+                                "link": "#"
+                            }
+                        ]
                     },
                     {
-                        "name": "فنون إنتاج الصوت",
-                        "link": "#"
+                        "collageName": "كلية الهندسة المدنية والانشاءات",
+                        "collageList": [
+                            {
+                                "name": "تصميم داخلي و ديكور",
+                                "link": "#"
+                            }
+                        ]
                     },
                     {
-                        "name": "تصميم الميديا الرقمية",
-                        "link": "#"
+                        "collageName": "كلية تكنولوجيا السيارات",
+                        "collageList": [
+                            {
+                                "name": "هندسة تكنولوجيا السيارات",
+                                "link": "#"
+                            }
+                        ]
                     },
                     {
-                        "name": "إدارة الفنادق والمطاعم والفعاليات",
-                        "link": "#"
-                    },
-                    {
-                        "name":"تقنيات صناعة الأسنان",
-                        "link": "#"
-                    },
-                    {
-                        "name": "التقنيات اللوجستية وسلسلة الإمداد",
-                        "link": "#"
+                        "collageName": "كلية وسائل الإعلام الإبداعية SAE",
+                        "collageList": [
+                            {
+                                "name": "فنون انتاج الصوت",
+                                "link": "#"
+                            },
+                            {
+                                "name": "صناعة الافلام الرقمية",
+                                "link": "#"
+                            },
+                            {
+                                "name": "تصميم الميديا الرقمية",
+                                "link": "#"
+                            },
+                            {
+                                "name": "الواقع الإفتراضي والمعزز",
+                                "link": "#"
+                            }
+                        ]
                     }
-                    
-                ],
-                "href": {
-                    "header": "تواصل معنا",
-                    "link": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
-                }
+                ]
+            },
+            "scandProgram": {
+                "id": "2",
+                "InternationalDiploma": "برامج الدبلوم الدولي",
+                "InternationalDiplomaSpecialties": [
+                    {
+                        "collageName": "كلية العلوم المالية والإدراية",
+                        "collageList": [
+                            {
+                                "name": "إدراة الموارد البشرية",
+                                "link": "#"
+                            },
+                            {
+                                "name": "المحاسبة والإدارة المالية",
+                                "link": "#"
+                            },
+                            {
+                                "name": "ادارة الأعمال وانظمة المكاتب",
+                                "link": "#"
+                            },
+                            {
+                                "name": "المبيعات والتسويق",
+                                "link": "#"
+                            },
+                            {
+                                "name": "ادارة العمليات اللوجستية",
+                                "link": "#"
+                            }
+                        ]
+                    },
+                    {
+                        "collageName": "كلية الفندقة والسياحة",
+                        "collageList": [
+                            {
+                                "name": "إدارة الفنادق والفعاليات",
+                                "link": "#"
+                            },
+                            {
+                                "name": "ادارة الطعام والشراب",
+                                "link": "#"
+                            },
+                            {
+                                "name": "إدارة فنون الطهي",
+                                "link": "#"
+                            }
+                        ]
+                    },
+                    {
+                        "collageName": "كلية التكنولوجيا الحديثة",
+                        "collageList": [
+                            {
+                                "name": "هندسة البرمجيات",
+                                "link": "#"
+                            }
+                        ]
+                    },
+                    {
+                        "collageName": "كلية الهندسة المدنية والانشاءات",
+                        "collageList": [
+                            {
+                                "name": "الهندسة المدنية",
+                                "link": "#"
+                            },
+                            {
+                                "name": "هندسة المساحة",
+                                "link": "#"
+                            }
+                        ]
+                    },
+                    {
+                        "collageName": "كلية تكنولوجيا السيارات",
+                        "collageList": [
+                            {
+                                "name": "هندسة المركبات المتقدمة",
+                                "link": "#"
+                            }
+                        ]
+                    },
+                    {
+                        "collageName": "كلية الهندسة الميكانيكية والكهربائية",
+                        "collageList": [
+                            {
+                                "name": "هندسة الكهرباء والالكترونيات",
+                                "link": "#"
+                            },
+                            {
+                                "name": "الهندسة الميكانيكية",
+                                "link": "#"
+                            }
+                        ]
+                    },
+                    {
+                        "collageName": "كلية الفنون التطبيقية",
+                        "collageList": [
+                            {
+                                "name": "التصميم الداخلي",
+                                "link": "#"
+                            },
+                            {
+                                "name": "تصميم الأزياء",
+                                "link": "#"
+                            },
+                            {
+                                "name": "تصميم المنتجات الصناعية",
+                                "link": "#"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "thirdProgram": {
+                "id": "3",
+                "middleDiploma": "الدبلوم الجامعي المتوسط",
+                "middleDiplomaSpecialties": [
+                    {
+                        "collageName": "كلية العلوم الطبية التطبيقية",
+                        "collageList": [
+                            {
+                                "name": "الصيدلة",
+                                "link": "#"
+                            },
+                            {
+                                "name": "فحص البصر وتجهيز النظارات الطبية",
+                                "link": "#"
+                            },
+                            {
+                                "name": "مختيرات الأسنان",
+                                "link": "#"
+                            }
+                        ]
+                    },
+                    {
+                        "collageName": "كلية الهندسة الميكانيكية والكهربائية",
+                        "collageList": [
+                            {
+                                "name": "الصيانة الكهروميكانيكية ",
+                                "link": "#"
+                            },
+                            {
+                                "name": "تكييف تبريد",
+                                "link": "#"
+                            }
+                        ]  
+                    },
+                    {
+                        "collageName": "كلية الهندسة المدنية والانشاءات",
+                        "collageList": [
+                            {
+                                "name": "هندسة العمارة والتصميم الداخلي",
+                                "link": "#"
+                            }
+                        ]  
+                    },
+                    {
+                        "collageName": "كلية الفنون وعلوم التجميل (لاڤال)",
+                        "collageList": [
+                            {
+                                "name": "فن وعلوم والتجميل",
+                                "link": "#"
+                            }
+                        ]  
+                    },
+                    {
+                        "collageName": "كلية وسائل الإعلام الإبداعية SAE",
+                        "collageList": [
+                            {
+                                "name": "فنون انتاج الصوت ",
+                                "link": "#"
+                            },
+                            {
+                                "name": "صناعة الإفلام الرقمية",
+                                "link": "#"
+                            },
+                            {
+                                "name": "تصميم الميديا الرقمية",
+                                "link": "#"
+                            },
+                            {
+                                "name": "الرسوم المتحركة",
+                                "link": "#"
+                            }
+                        ]  
+                    }
+                ]
             },
             "fourthProgram": {
-                "LocalDiploma": "برامج الدبلوم المحلي",
-                "LocalDiplomaSpecialties": [
+                "id":"4",
+                "TechnicalDiploma": "تخصصات الدبلوم الفني",
+                "TechnicalDiplomaSpecialties":  [
                     {
-                        "name": "الصيدلة",
-                        "link": "#"
+                        "collageName": "كلية الهندسة المدنية والانشاءات",
+                        "collageList": [
+                            {
+                                "name": "الهندسة المدنية",
+                                "link": "#"
+                            }
+                        ]
                     },
                     {
-                        "name":  "فحص البصر وتجهيز النظارات الطبية",
-                        "link": "#"
+                        "collageName": "كلية تكنولوجيا السيارات",
+                        "collageList": [
+                            {
+                                "name": "تكنولوجيا السيارات الهجينة",
+                                "link": "#"
+                            }
+                        ]
                     },
                     {
-                        "name":"مختبرات الأسنان",
-                        "link": "#"
+                        "collageName": "كلية الهندسة الميكانيكية والكهربائية",
+                        "collageList": [
+                            {
+                                "name": "الصيانة الكهروميكانيكية العامة",
+                                "link": "#"
+                            },
+                            {
+                                "name": "نظم التكييف والتبريد",
+                                "link": "#"
+                            }
+                        ]
                     },
                     {
-                        "name": "الصيانة الكهروميكانيكية",
-                        "link": "#"
+                        "collageName": "كلية الفندقة والسياحة",
+                        "collageList": [
+                            {
+                                "name": "ادارة الفنادق",
+                                "link": "#"
+                            },
+                            {
+                                "name": "فنون الطهي",
+                                "link": "#"
+                            }
+                        ]
                     },
                     {
-                        "name": "التكييف والتبريد",
-                        "link": "#"
+                        "collageName": "كلية الفنون التطبيقية",
+                        "collageList": [
+                            {
+                                "name": "التصميم الداخلي",
+                                "link": "#"
+                            },
+                            {
+                                "name": "الأزياء وتكنولوجيا الألبسة",
+                                "link": "#"
+                            }
+                        ]
                     },
                     {
-                        "name":"صيانة المركبات الكهربائية والهجينة",
-                        "link": "#"
+                        "collageName": "كلية الفنون وعلوم التجميل (لاڤال)",
+                        "collageList": [
+                            {
+                                "name": "فن و علوم و التجميل",
+                                "link": "#"
+                            }
+                        ]
                     },
                     {
-                        "name":"هندسة العمارة والتصميم الداخلي",
-                        "link": "#"
-                    },
-                    {
-                        "name":  "فن وعلوم التجميل",
-                        "link": "#"
-                    },
-                    {
-                        "name": "هندسة الصوت",
-                        "link": "#"
-                    },
-                    {
-                        "name":"صناعة الأفلام",
-                        "link": "#"
-                    },
-                    {
-                        "name":"الميديا الرقمية",
-                        "link": "#"
-                    },
-                    {
-                        "name":"الرسوم المتحركة",
-                        "link": "#"
-                    }    
-                ],
-                "href": {
-                    "header": "تواصل معنا",
-                    "link": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
-                }
-            },
-            "fifthProgram": {
-                "TrainingCourses": "دورات تدريبية متنوعة (أكثر من150 دورة) مكثّفة من 6 أسابيع إلى 8 شهور",
-                "href": {
-                    "header": "تواصل معنا",
-                    "link": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
-                }
+                        "collageName": "كلية وسائل الإعلام الابداعية SAE",
+                        "collageList": [
+                            {
+                                "name": "فنون انتاج الصوت",
+                                "link": "#"
+                            },
+                            {
+                                "name": "صناعة الأفلام الرقمية",
+                                "link": "#"
+                            },
+                            {
+                                "name": "تصميم الميديا الرقمية",
+                                "link": "#"
+                            },
+                            {
+                                "name": "الرسوم المتحركة",
+                                "link": "#"
+                            }
+                        ]
+                    }
+                ]
             }
         }
     },
-    "footer": {
-        "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3387.3187220247373!2d35.86663101449337!3d31.897936535593477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca7e4aee722d5%3A0x8693a9183825010b!2z2YPZhNmK2Kkg2YTZiNmF2YrZhtmI2LMg2KfZhNis2KfZhdi52YrYqSDYp9mE2KrZgtmG2YrYqSAtIChMdW1pbnVzIFRlY2huaWNhbCBVbml2ZXJzaXR5IENvbGxlZ2UgKExUVUM!5e0!3m2!1sen!2sjo!4v1591309880460!5m2!1sen!2sjo",
-        "logo": "../assets/footer-logo.jpeg",
-        "contactUs": {
-            "header": ":تواصل معنا",
-            "phone": {
-                "number": "+962 (6) 4000 700",
-                "directPhone": "tel:+962(6)4000700"
-            },
-            "info": {
-                "email": "info@ltuc.com",
-                "directEmail": "mailto:info@ltuc.com"
-            },
-            "location": "طريق المطار | صندوق البريد 183334 عمان 11118.الأردن ",
-            "facebook": "https://www.facebook.com/LTUC.JO/",
-            "instagram": "https://www.instagram.com/ltuc.jo/",
-            "twitter": "https://twitter.com/LTUCJO"
-        },
-        "complaints": {
-            "note": "لتوجيه اي ملاحظات يرجو التواصل على:",
-            "email": {
-                "email": "complaints@ltuc.com",
-                "href": "mailto:complaints@ltuc.com"
+            "footer": {
+                "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3387.3187220247373!2d35.86663101449337!3d31.897936535593477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca7e4aee722d5%3A0x8693a9183825010b!2z2YPZhNmK2Kkg2YTZiNmF2YrZhtmI2LMg2KfZhNis2KfZhdi52YrYqSDYp9mE2KrZgtmG2YrYqSAtIChMdW1pbnVzIFRlY2huaWNhbCBVbml2ZXJzaXR5IENvbGxlZ2UgKExUVUM!5e0!3m2!1sen!2sjo!4v1591309880460!5m2!1sen!2sjo",
+                "logo": "../assets/LTUC_Footer_Logo.png",
+                "contactUs": {
+                    "header": ":تواصل معنا",
+                    "phone": {
+                        "number": "+962 (6) 4000 700",
+                        "directPhone": "tel:+962(6)4000700"
+                    },
+                    "info": {
+                        "email": "info@ltuc.com",
+                        "directEmail": "mailto:info@ltuc.com"
+                    },
+                    "location": [
+                         "طريق المطار" ,
+                         "صندوق البريد 183334",
+                         "عمان 11118 الأردن"
+                    ] ,
+                    "facebook": "https://www.facebook.com/LTUC.JO/",
+                    "instagram": "https://www.instagram.com/ltuc.jo/",
+                    "twitter": "https://twitter.com/LTUCJO"
+                },
+                "complaints": {
+                    "note": "لتوجيه اي ملاحظات يرجو التواصل على:",
+                    "email": {
+                        "email": "complaints@ltuc.com",
+                        "href": "mailto:complaints@ltuc.com"
+                    }
+                }
             }
-        }
     }
-}

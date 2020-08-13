@@ -35,7 +35,7 @@ function Header() {
     useEffect(() => {
         $('.main-nav-mobile').hide();
         $('.sub-dropdown-content').hide();
-
+        $('.list-dropdown-content').hide();
     });
 
     const test = () => {
@@ -83,7 +83,6 @@ function Header() {
 
 
     }, []);
-
 
     return (
         <>
