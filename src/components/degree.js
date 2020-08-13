@@ -21,7 +21,7 @@ function Degree() {
                                 <ul className={strClass + context.mainData.program.firstProgram.id + i}>
                                     {item.collageList.map((element, index) => (
                                         <li key={index} className="a-sdc a-sdc-2 program-link">
-                                            <a download={element.name.replace(/ /g, '-') + '.pdf'} href={element.link}>{element.name}</a>
+                                            <a target='_blank' rel="noopener noreferrer" download={element.name.replace(/ /g, '-') + '.pdf'} href={element.link}>{element.name}</a>
                                         </li>
                                     ))}
                                 </ul>
@@ -39,7 +39,7 @@ function Degree() {
                                 <ul className={strClass + context.mainData.program.scandProgram.id + i}>
                                     {item.collageList.map((element, index) => (
                                         <li key={index} className="a-sdc program-link">
-                                            <a download={element.name.replace(/ /g, '-') + '.pdf'} href={element.link}>{element.name}</a>
+                                            <a target='_blank' rel="noopener noreferrer" download={element.name.replace(/ /g, '-') + '.pdf'} href={element.link}>{element.name}</a>
                                         </li>
                                     ))}
                                 </ul>
@@ -59,7 +59,7 @@ function Degree() {
                                 <ul className={strClass + context.mainData.program.thirdProgram.id + i}>
                                     {item.collageList.map((element, index) => (
                                         <li key={index} className="a-sdc program-link">
-                                            <a download={element.name.replace(/ /g, '-') + '.pdf'} href={element.link}>{element.name}</a>
+                                            <a target='_blank' rel="noopener noreferrer" download={element.name.replace(/ /g, '-') + '.pdf'} href={element.link}>{element.name}</a>
                                         </li>
                                     ))}
                                 </ul>
@@ -77,7 +77,7 @@ function Degree() {
                                 <ul className={strClass + context.mainData.program.fourthProgram.id + i}>
                                     {item.collageList.map((element, index) => (
                                         <li key={index} className="a-sdc program-link">
-                                            <a download={element.name.replace(/ /g, '-') + '.pdf'} href={element.link}>{element.name}</a>
+                                            <a target='_blank' rel="noopener noreferrer" download={element.name.replace(/ /g, '-') + '.pdf'} href={element.link}>{element.name}</a>
                                         </li>
                                     ))}
                                 </ul>
