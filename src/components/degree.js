@@ -6,7 +6,6 @@ import { ModelContext } from './context';
 function Degree() {
     const context = useContext(ModelContext);
     let strClass = 'list-dropdown-content list';
-    let count = 0;
 
     return (
         <>
@@ -17,12 +16,13 @@ function Degree() {
 
                     <ul>
                         {context.mainData.program.firstProgram.bachelorsSpecialties.map((item, i) => (
-                            // console.log('item' , item),
                             <div key={i}>
-                                <h5 onClick={() => $(`.list${context.mainData.program.firstProgram.id}${i}`).slideToggle(300)}><i className="fa fa-caret-down"></i>{item.collageName}</h5>
+                                <h5 onClick={() => $(`.list${context.mainData.program.firstProgram.id}${i}`).slideToggle(300)}>{item.collageName}</h5>
                                 <ul className={strClass + context.mainData.program.firstProgram.id + i}>
                                     {item.collageList.map((element, index) => (
-                                        <li key={index} className="a-sdc a-sdc-2"><a target='_blank' rel="noopener noreferrer" className="program-link" href={element.link}>{element.name}</a></li>
+                                        <li key={index} className="a-sdc a-sdc-2 program-link">
+                                            <a download={element.name.replace(/ /g, '-') + '.pdf'} href={element.link}>{element.name}</a>
+                                        </li>
                                     ))}
                                 </ul>
                             </div>
@@ -35,10 +35,12 @@ function Degree() {
                         {context.mainData.program.scandProgram.InternationalDiplomaSpecialties.map((item, i) => (
 
                             <div key={i}>
-                                <h5 onClick={() => $(`.list${context.mainData.program.scandProgram.id}${i}`).slideToggle(300)}><i className="fa fa-caret-down"></i>{item.collageName}</h5>
+                                <h5 onClick={() => $(`.list${context.mainData.program.scandProgram.id}${i}`).slideToggle(300)}>{item.collageName}</h5>
                                 <ul className={strClass + context.mainData.program.scandProgram.id + i}>
                                     {item.collageList.map((element, index) => (
-                                        <li key={index} className="a-sdc"><a target='_blank' rel="noopener noreferrer" className="program-link" href={element.link}>{element.name}</a></li>
+                                        <li key={index} className="a-sdc program-link">
+                                            <a download={element.name.replace(/ /g, '-') + '.pdf'} href={element.link}>{element.name}</a>
+                                        </li>
                                     ))}
                                 </ul>
                             </div>
@@ -53,10 +55,12 @@ function Degree() {
                         {context.mainData.program.thirdProgram.middleDiplomaSpecialties.map((item, i) => (
 
                             <div key={i}>
-                                <h5 onClick={() => $(`.list${context.mainData.program.thirdProgram.id}${i}`).slideToggle(300)}><i className="fa fa-caret-down"></i>{item.collageName}</h5>
+                                <h5 onClick={() => $(`.list${context.mainData.program.thirdProgram.id}${i}`).slideToggle(300)}>{item.collageName}</h5>
                                 <ul className={strClass + context.mainData.program.thirdProgram.id + i}>
                                     {item.collageList.map((element, index) => (
-                                        <li key={index} className="a-sdc"><a target='_blank' rel="noopener noreferrer" className="program-link" href={element.link}>{element.name}</a></li>
+                                        <li key={index} className="a-sdc program-link">
+                                            <a download={element.name.replace(/ /g, '-') + '.pdf'} href={element.link}>{element.name}</a>
+                                        </li>
                                     ))}
                                 </ul>
                             </div>
@@ -69,10 +73,12 @@ function Degree() {
                         {context.mainData.program.fourthProgram.TechnicalDiplomaSpecialties.map((item, i) => (
 
                             <div key={i}>
-                                <h5 onClick={() => $(`.list${context.mainData.program.fourthProgram.id}${i}`).slideToggle(300) }><i className="fa fa-caret-down"></i>{item.collageName}</h5>
+                                <h5 onClick={() => $(`.list${context.mainData.program.fourthProgram.id}${i}`).slideToggle(300)}>{item.collageName}</h5>
                                 <ul className={strClass + context.mainData.program.fourthProgram.id + i}>
                                     {item.collageList.map((element, index) => (
-                                        <li key={index} className="a-sdc"><a target='_blank' rel="noopener noreferrer" className="program-link" href={element.link}>{element.name}</a></li>
+                                        <li key={index} className="a-sdc program-link">
+                                            <a download={element.name.replace(/ /g, '-') + '.pdf'} href={element.link}>{element.name}</a>
+                                        </li>
                                     ))}
                                 </ul>
                             </div>
