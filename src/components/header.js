@@ -100,9 +100,9 @@ function Header() {
                         <li><a onClick={() => $('.main-nav-mobile').fadeOut(200)} href="#programs">{context.headerData.nav.programs}</a></li>
                         <li className="dropdown sub-dropdown"><button onClick={() => $('.sub-dropdown-content').fadeToggle(200)} className="dropbtn sub-dropdown-btn" type="scall">{context.headerData.nav.studentServicesHeader}<i className="fa fa-caret-down"></i></button></li>
                         <li className="sub-dropdown-content" >
-                            <a id='google-button' target='_blank' rel="noopener noreferrer" className="a-sdc" href="https://sisportal-100533.campusnexus.cloud/CMCPortal/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsisportal-100533.campusnexus.cloud%2fCMCPortal%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fCMCPortal%252fsecure%252fstaff%252fstaportal.aspx&wct=2020-05-07T13%3a03%3a17Z">{context.headerData.nav.studentServices.selfServicePortal}</a>
-                            <a id='google-button' target='_blank' rel="noopener noreferrer" className="a-sdc" href="https://online.ltuc.com/d2l/home">{context.headerData.nav.studentServices.desireToLearn}</a>
-                            <a id='google-button' target='_blank' rel="noopener noreferrer" className="a-sdc" href="https://employmenthub.ltuc.com">{context.headerData.nav.studentServices.EducationForEmployment}</a>
+                            <a target='_blank' rel="noopener noreferrer" className="a-sdc analytics-button" href="https://sisportal-100533.campusnexus.cloud/CMCPortal/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsisportal-100533.campusnexus.cloud%2fCMCPortal%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fCMCPortal%252fsecure%252fstaff%252fstaportal.aspx&wct=2020-05-07T13%3a03%3a17Z">{context.headerData.nav.studentServices.selfServicePortal}</a>
+                            <a target='_blank' rel="noopener noreferrer" className="a-sdc analytics-button" href="https://online.ltuc.com/d2l/home">{context.headerData.nav.studentServices.desireToLearn}</a>
+                            <a target='_blank' rel="noopener noreferrer" className="a-sdc analytics-button" href="https://employmenthub.ltuc.com">{context.headerData.nav.studentServices.EducationForEmployment}</a>
                         </li>
                         <li><a onClick={() => $('.main-nav-mobile').fadeOut(200)} className='click-close' href="#footer">{context.headerData.nav.contactUs.text}</a></li>
                         {/* <li className='arabic'><a href="#/" onClick={() => getData(context.lang)}>{context.lang === 'Arabic' ? 'العربية' : context.lang}&nbsp;<i className="fa fa-globe"></i></a></li> */}
@@ -116,9 +116,9 @@ function Header() {
                         <li className="dropdown">
                             <button className="dropbtn" type="scall"><i className="fa fa-caret-down"></i>{context.headerData.nav.studentServicesHeader}</button>
                             <div className="dropdown-content">
-                                <a id='google-button' target='_blank' rel="noopener noreferrer" href="https://sisportal-100533.campusnexus.cloud/CMCPortal/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsisportal-100533.campusnexus.cloud%2fCMCPortal%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fCMCPortal%252fsecure%252fstaff%252fstaportal.aspx&wct=2020-05-07T13%3a03%3a17Z">{context.headerData.nav.studentServices.selfServicePortal}</a>
-                                <a id='google-button' target='_blank' rel="noopener noreferrer" href="https://online.ltuc.com/d2l/home">{context.headerData.nav.studentServices.desireToLearn}</a>
-                                <a id='google-button' target='_blank' rel="noopener noreferrer" href="https://employmenthub.ltuc.com">{context.headerData.nav.studentServices.EducationForEmployment}</a>
+                                <a className='analytics-button' target='_blank' rel="noopener noreferrer" href="https://sisportal-100533.campusnexus.cloud/CMCPortal/?wa=wsignin1.0&wtrealm=https%3a%2f%2fsisportal-100533.campusnexus.cloud%2fCMCPortal%2f&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fCMCPortal%252fsecure%252fstaff%252fstaportal.aspx&wct=2020-05-07T13%3a03%3a17Z">{context.headerData.nav.studentServices.selfServicePortal}</a>
+                                <a className='analytics-button' target='_blank' rel="noopener noreferrer" href="https://online.ltuc.com/d2l/home">{context.headerData.nav.studentServices.desireToLearn}</a>
+                                <a className='analytics-button' target='_blank' rel="noopener noreferrer" href="https://employmenthub.ltuc.com">{context.headerData.nav.studentServices.EducationForEmployment}</a>
                             </div>
                         </li>
                         <li><a className='main-link' href="#footer">{context.headerData.nav.contactUs.text}</a></li>
@@ -145,7 +145,7 @@ function Header() {
                                 </div>
                                 <img src="../assets/Slide_1.png" alt="" />
                                 <span className='with-you'>إحنا معك</span>
-                                <a id='google-button' target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                                <a target='_blank' className="touch analytics-button" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
                         <div className="slide s2">
@@ -156,7 +156,7 @@ function Header() {
                                 </div>
                                 <img src="../assets/Slide_2.png" alt="" />
                                 <span className='with-you'>إحنا معك</span>
-                                <a id='google-button' target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                                <a target='_blank' className="touch analytics-button" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
                         <div className="slide s3">
@@ -167,7 +167,7 @@ function Header() {
                                 </div>
                                 <img src="../assets/Slide_3.png" alt="" />
                                 <span className='with-you'>إحنا معك</span>
-                                <a id='google-button' target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                                <a className="touch analytics-button" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
                         <div className="slide s4">
@@ -178,7 +178,7 @@ function Header() {
                                 </div>
                                 <img src="../assets/Slide_4.png" alt="" />
                                 <span className='with-you'>إحنا معك</span>
-                                <a id='google-button' target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                                <a target='_blank' className="touch analytics-button" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
                         <div className="slide s5">
@@ -189,7 +189,7 @@ function Header() {
                                 </div>
                                 <img src="../assets/Slide_5.png" alt="" />
                                 <span className='with-you'>إحنا معك</span>
-                                <a id='google-button' target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                                <a target='_blank' className="touch analytics-button" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
                         <div className="slide s6">
@@ -200,7 +200,7 @@ function Header() {
                                 </div>
                                 <img src="../assets/Slide_6.png" alt="" />
                                 <span className='with-you'>إحنا معك</span>
-                                <a id='google-button' target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                                <a target='_blank' className="touch analytics-button" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
 
@@ -215,7 +215,7 @@ function Header() {
                         <label htmlFor="r6" className="bar" id="6"></label>
                     </div>
                 </div>
-                <a id='google-button' target='_blank' rel="noopener noreferrer" className='chat' href="https://m.me/LTUC.JO"><i className='fas fa-comment'></i></a>
+                <a target='_blank' rel="noopener noreferrer" className='chat analytics-button' href="https://m.me/LTUC.JO"><i className='fas fa-comment'></i></a>
 
             </section>
         </>
