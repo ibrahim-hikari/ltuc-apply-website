@@ -10,6 +10,7 @@ function Degree() {
     return (
         <>
             <section id="programs" className="programs">
+                <h2 className='pick'>إختر إسم الكلية للإطلاع على التخصصات المتوفرة. وللإطلاع على الخطط الإسترشادية إختر التخصص المراد من القائمة.</h2>
                 <div className="left">
 
                     <h3 key={context.mainData.program.firstProgram.id}>{context.mainData.program.firstProgram.bachelors}</h3>
@@ -21,7 +22,7 @@ function Degree() {
                                 <ul className={strClass + context.mainData.program.firstProgram.id + i}>
                                     {item.collageList.map((element, index) => (
                                         <li key={index} className="a-sdc a-sdc-2 program-link">
-                                            <a target='_blank' rel="noopener noreferrer" download={element.name.replace(/ /g, '-') + '.pdf'} href={element.link}>{element.name}</a>
+                                            {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
                                         </li>
                                     ))}
                                 </ul>
@@ -39,7 +40,7 @@ function Degree() {
                                 <ul className={strClass + context.mainData.program.scandProgram.id + i}>
                                     {item.collageList.map((element, index) => (
                                         <li key={index} className="a-sdc program-link">
-                                            <a target='_blank' rel="noopener noreferrer" download={element.name.replace(/ /g, '-') + '.pdf'} href={element.link}>{element.name}</a>
+                                            {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
                                         </li>
                                     ))}
                                 </ul>
@@ -59,7 +60,7 @@ function Degree() {
                                 <ul className={strClass + context.mainData.program.thirdProgram.id + i}>
                                     {item.collageList.map((element, index) => (
                                         <li key={index} className="a-sdc program-link">
-                                            <a target='_blank' rel="noopener noreferrer" download={element.name.replace(/ /g, '-') + '.pdf'} href={element.link}>{element.name}</a>
+                                            {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
                                         </li>
                                     ))}
                                 </ul>
@@ -77,7 +78,7 @@ function Degree() {
                                 <ul className={strClass + context.mainData.program.fourthProgram.id + i}>
                                     {item.collageList.map((element, index) => (
                                         <li key={index} className="a-sdc program-link">
-                                            <a target='_blank' rel="noopener noreferrer" download={element.name.replace(/ /g, '-') + '.pdf'} href={element.link}>{element.name}</a>
+                                            {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
                                         </li>
                                     ))}
                                 </ul>
