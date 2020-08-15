@@ -22,7 +22,7 @@ function Degree() {
                                 <ul className={strClass + context.mainData.program.firstProgram.id + i}>
                                     {item.collageList.map((element, index) => (
                                         <li key={index} className="a-sdc a-sdc-2 program-link">
-                                            {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click analytics-button'>{element.name}</a>}
+                                            {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
                                         </li>
                                     ))}
                                 </ul>
@@ -40,7 +40,7 @@ function Degree() {
                                 <ul className={strClass + context.mainData.program.scandProgram.id + i}>
                                     {item.collageList.map((element, index) => (
                                         <li key={index} className="a-sdc program-link">
-                                            {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click analytics-button'>{element.name}</a>}
+                                            {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
                                         </li>
                                     ))}
                                 </ul>
@@ -60,7 +60,7 @@ function Degree() {
                                 <ul className={strClass + context.mainData.program.thirdProgram.id + i}>
                                     {item.collageList.map((element, index) => (
                                         <li key={index} className="a-sdc program-link">
-                                            {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click analytics-button'>{element.name}</a>}
+                                            {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
                                         </li>
                                     ))}
                                 </ul>
@@ -78,7 +78,7 @@ function Degree() {
                                 <ul className={strClass + context.mainData.program.fourthProgram.id + i}>
                                     {item.collageList.map((element, index) => (
                                         <li key={index} className="a-sdc program-link">
-                                            {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click analytics-button'>{element.name}</a>}
+                                            {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
                                         </li>
                                     ))}
                                 </ul>

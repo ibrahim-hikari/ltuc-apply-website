@@ -14,7 +14,7 @@
             },
             "contactUs": {
                 "text": "تواصل معنا",
-                "link": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+                "link": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=CAMPAIGN"
             }
         }
     },
@@ -40,7 +40,7 @@
             ],
             "aboutUsLink": {
                 "header": "تواصل معنا",
-                "link": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+                "link": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=CAMPAIGN"
             }
         },
         "aboutUsContant": {
@@ -70,7 +70,7 @@
             ],
             "aboutUsContantLink": {
                 "header": "تواصل معنا",
-                "link": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=JLTUCAPP"
+                "link": "https://fbrenderer-100533.campusnexus.cloud/#/renderer/6?LSCode=CAMPAIGN"
             }
         },
         "program": {

@@ -145,7 +145,7 @@ function Header() {
                                 </div>
                                 <img src="../assets/Slide_1.png" alt="" />
                                 <span className='with-you'>إحنا معك</span>
-                                <a target='_blank' className="touch analytics-button" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                                <a target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
                         <div className="slide s2">
@@ -156,7 +156,7 @@ function Header() {
                                 </div>
                                 <img src="../assets/Slide_2.png" alt="" />
                                 <span className='with-you'>إحنا معك</span>
-                                <a target='_blank' className="touch analytics-button" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                                <a target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
                         <div className="slide s3">
@@ -167,7 +167,7 @@ function Header() {
                                 </div>
                                 <img src="../assets/Slide_3.png" alt="" />
                                 <span className='with-you'>إحنا معك</span>
-                                <a className="touch analytics-button" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                                <a target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
                         <div className="slide s4">
@@ -178,7 +178,7 @@ function Header() {
                                 </div>
                                 <img src="../assets/Slide_4.png" alt="" />
                                 <span className='with-you'>إحنا معك</span>
-                                <a target='_blank' className="touch analytics-button" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                                <a target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
                         <div className="slide s5">
@@ -189,7 +189,7 @@ function Header() {
                                 </div>
                                 <img src="../assets/Slide_5.png" alt="" />
                                 <span className='with-you'>إحنا معك</span>
-                                <a target='_blank' className="touch analytics-button" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                                <a target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
                         <div className="slide s6">
@@ -200,7 +200,7 @@ function Header() {
                                 </div>
                                 <img src="../assets/Slide_6.png" alt="" />
                                 <span className='with-you'>إحنا معك</span>
-                                <a target='_blank' className="touch analytics-button" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
+                                <a target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
 
@@ -215,7 +215,7 @@ function Header() {
                         <label htmlFor="r6" className="bar" id="6"></label>
                     </div>
                 </div>
-                <a target='_blank' rel="noopener noreferrer" className='chat analytics-button' href="https://m.me/LTUC.JO"><i className='fas fa-comment'></i></a>
+                <a target='_blank' rel="noopener noreferrer" className='chat' href="https://m.me/LTUC.JO"><i className='fas fa-comment'></i></a>
 
             </section>
         </>
