@@ -5,7 +5,10 @@
         "nav": {
             "home": "الرئيسية",
             "aboutUs": "من نحن",
-            "programs": "البرامج",
+            "programs": [
+                "ادرس في عمان",
+                "ادرس في إربد"
+            ],
             "studentServicesHeader": "الخدمات الطلابية",
             "studentServices": {
                 "selfServicePortal": "بوابة الطالب",

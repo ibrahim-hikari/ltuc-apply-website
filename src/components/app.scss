@@ -444,20 +444,35 @@ header {
         }
     }
 }
+
 .programs {
     overflow-y: hidden;
     overflow-x: hidden;
     background-color: #fda136;
     color: #fff;
     direction: rtl;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
     font-size: 1.7vmax;
     padding: 0vmax 6vmax 6vmax 6vmax;
     position: relative;
     z-index: 1;
+
+    .amman {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .irbid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+        justify-content: space-around;
+        width: 100%;
+    }
 }
 
 .programs div {
