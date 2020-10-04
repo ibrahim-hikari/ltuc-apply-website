@@ -22,15 +22,13 @@ function Degree() {
         <>
             <section id="programs" className="programs">
                 <div className="left">
-                    <h3 key={context.mainData.program.firstProgram.id}>{context.mainData.program.firstProgram.bachelors}</h3>
+                    <h3>{context.mainData.program.scandProgram.InternationalDiploma}/{context.mainData.program.scandProgram.InternationalDiplomaSpecialties[0].collageName}</h3>
 
                     <ul>
-                        {context.mainData.program.firstProgram.bachelorsSpecialties.map((item, i) => (
-                            item.collageList.map((element, index) => (
-                                <li key={index} className="a-sdc a-sdc-2 program-link">
-                                    {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
-                                </li>
-                            ))
+                        {context.mainData.program.scandProgram.InternationalDiplomaSpecialties[0].collageList.map((item, idx) => (
+                            <li key={idx} className="a-sdc a-sdc-2 program-link">
+                                {item.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={item.link}>{item.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{item.name}</a>}
+                            </li>
                         ))}
                     </ul>
                 </div>
