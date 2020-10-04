@@ -228,16 +228,6 @@
         font-size: 2.1vw;
     }
 
-    .aboutUs-section h4,
-    .aboutUs-part-2 h4,
-    .programs h4 {
-        font-size: 2.2vw;
-    }
-    .aboutUs-section a,
-    .aboutUs-part-2 a,
-    .programs a {
-        font-size: 1.9vw;
-    }
     .aboutUs-section h3,
     .aboutUs-part-2 h3,
     .programs h3 {
@@ -450,13 +440,7 @@
         margin: 0 auto 0 auto;
         font-size: 8vw !important;
     }
-    .programs .program-link {
-        background-color: #a2238e00;
-        color: #fff;
-        font-size: 4.3vmax;
-        text-decoration: none;
-        cursor: pointer;
-    }
+
     // .list-dropdown-content {
     //     background-color: #fff !important;
     //     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -515,9 +499,6 @@
         line-height: 8vw;
     }
 
-    .main-nav ul li {
-        margin-left: 1%;
-    }
     .main-nav-mobile ul li .sub-dropdown-btn,
     .main-nav-mobile ul li {
         font-size: 4.8vw;
@@ -558,19 +539,18 @@
     }
 
     .programs {
-        overflow-y: hidden;
+        // overflow-y: hidden;
         background-color: #fda136;
         color: #fff;
         direction: rtl;
         font-size: 2.8vmax;
-        padding: 0 2vmax 0 2vmax;
         position: relative;
         z-index: 0;
     }
 
     .programs .left {
         /* border: solid; */
-        position: unset;
+        // position: unset;
         width: 100%;
     }
 
@@ -602,13 +582,6 @@
     // margin-right: 0.25vw;
     // }
 
-    .programs .program-link {
-        background-color: #a2238e00;
-        color: #fff;
-        font-size: 3vmax;
-        text-decoration: none;
-        cursor: pointer;
-    }
     .list-dropdown-content {
         // background-color: #fff !important;
         // box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -641,6 +614,16 @@
         }
     }
 
+    .left .program-link {
+        border: solid;
+        color: #fda136 !important;
+        font-size: 3vmax;
+        padding: 1% 5%;
+        text-decoration: none;
+        text-align: right;
+        width: 80%;
+    }
+
     .footer {
         background-image: url("../assets/footer-background.jpeg");
         background-size: cover;
@@ -653,6 +636,7 @@
         position: relative;
         z-index: 99;
     }
+
     .ifram-div {
         grid-row: 2;
         width: 85%;
@@ -845,8 +829,8 @@
         padding: 4vmax 6vmax 5.5vmax 6vmax;
     }
 
-    .programs {
-        padding: 2vmax 6vmax 6vmax 6vmax;
+    .programs .program-button {
+        right: 5%;
     }
 }
 @media (max-width: 500px) {

@@ -3,7 +3,6 @@ import React from 'react';
 
 import Header from './header.js';
 import Content from './main.js';
-import Footer from './footer.js';
 import ModelProvider from './context.js';
 
 import './app.scss';
@@ -15,7 +14,6 @@ export default function App() {
             <ModelProvider>
                 <Header/>
                 <Content/>
-                <Footer/>
             </ModelProvider>
         </>
     );
