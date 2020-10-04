@@ -22,12 +22,12 @@ function Header() {
                 </a>
                 <nav className="main-nav-mobile">
                     <ul>
-                        <li><a onClick={() => $('.main-nav-mobile').fadeOut(200)} href="#slideShow">{context.headerData.nav.home}</a></li>
+                        <li><a onClick={() => $('.main-nav-mobile').fadeOut(200)} href="http://www.ltuc.com/">{context.headerData.nav.home}</a></li>
                     </ul>
                 </nav>
                 <nav className="main-nav">
                     <ul>
-                        <li><a className='main-link' href="#slideShow">{context.headerData.nav.home}</a></li>
+                        <li><a className='main-link' href="http://www.ltuc.com/">{context.headerData.nav.home}</a></li>
                     </ul>
                 </nav>
             </header>
