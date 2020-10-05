@@ -74,8 +74,8 @@
             }
         },
         "program": {
-            "id": "1",
             "firstProgram": {
+                "id": "1",
                 "bachelors": "البكالوريوس",
                 "bachelorsSpecialties": [
                     {

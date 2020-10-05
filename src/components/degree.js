@@ -11,161 +11,154 @@ function Degree() {
         <>
             <section id="programs" className="programs">
                 <h2 className='pick'>إختر الحرم الجامعي أدناه، ثم إختر إسم الكلية للإطلاع على التخصصات المتوفرة فيها. وللإطلاع على الخطط الإسترشادية، إختر التخصص المراد من القائمة.</h2>
-                <div className='amman'>
-                    <div className="left">
 
-                        <h3 key={context.mainData.program.firstProgram.id}>{context.mainData.program.firstProgram.bachelors}</h3>
+                <div className='btn-container'>
+                    <button className='amman-btn campus-btn' onClick={() => { $('.amman-container').fadeIn(); $('.irbid-container').fadeOut(); $('.amman-btn').addClass('clicked'); $('.irbid-btn').removeClass('clicked'); }}>عمان</button>
+                    <button className='irbid-btn campus-btn' onClick={() => { $('.irbid-container').fadeIn(); $('.amman-container').fadeOut(); $('.irbid-btn').addClass('clicked'); $('.amman-btn').removeClass('clicked'); }}>إربد</button>
+                </div>
 
-                        <ul>
-                            {context.mainData.program.firstProgram.bachelorsSpecialties.map((item, i) => (
-                                <div key={i}>
-                                    <h5 onClick={() => $(`.list${context.mainData.program.firstProgram.id}${i}`).slideToggle(300)}>{item.collageName}</h5>
-                                    <ul className={strClass + context.mainData.program.firstProgram.id + i}>
-                                        {item.collageList.map((element, index) => (
-                                            <li key={index} className="a-sdc a-sdc-2 program-link">
-                                                {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
-                        </ul>
+                <div id='amman-container' className='amman-container'>
+                    <div className='amman'>
+                        <div className="left">
 
-                        <h3>{context.mainData.program.scandProgram.InternationalDiploma}</h3>
+                            <h3 key={context.mainData.program.amman.firstProgram.id}>{context.mainData.program.amman.firstProgram.bachelors}</h3>
 
-                        <ul>
-                            {context.mainData.program.scandProgram.InternationalDiplomaSpecialties.map((item, i) => (
+                            <ul>
+                                {context.mainData.program.amman.firstProgram.bachelorsSpecialties.map((item, i) => (
+                                    <div key={i}>
+                                        <h5 onClick={() => $(`.list${context.mainData.program.amman.firstProgram.id}${i}`).slideToggle(300)}>{item.collageName}</h5>
+                                        <ul className={strClass + context.mainData.program.amman.firstProgram.id + i}>
+                                            {item.collageList.map((element, index) => (
+                                                <li key={index} className="a-sdc a-sdc-2 program-link">
+                                                    {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ))}
+                            </ul>
 
-                                <div key={i}>
-                                    <h5 onClick={() => $(`.list${context.mainData.program.scandProgram.id}${i}`).slideToggle(300)}>{item.collageName}</h5>
-                                    <ul className={strClass + context.mainData.program.scandProgram.id + i}>
-                                        {item.collageList.map((element, index) => (
-                                            <li key={index} className="a-sdc program-link">
-                                                {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
-                        </ul>
-                    </div>
+                            <h3>{context.mainData.program.amman.scandProgram.InternationalDiploma}</h3>
 
-                    <div className="right">
-                        <h3>{context.mainData.program.thirdProgram.middleDiploma}</h3>
+                            <ul>
+                                {context.mainData.program.amman.scandProgram.InternationalDiplomaSpecialties.map((item, i) => (
 
-                        <ul>
-                            {context.mainData.program.thirdProgram.middleDiplomaSpecialties.map((item, i) => (
+                                    <div key={i}>
+                                        <h5 onClick={() => $(`.list${context.mainData.program.amman.scandProgram.id}${i}`).slideToggle(300)}>{item.collageName}</h5>
+                                        <ul className={strClass + context.mainData.program.amman.scandProgram.id + i}>
+                                            {item.collageList.map((element, index) => (
+                                                <li key={index} className="a-sdc program-link">
+                                                    {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ))}
+                            </ul>
+                        </div>
 
-                                <div key={i}>
-                                    <h5 onClick={() => $(`.list${context.mainData.program.thirdProgram.id}${i}`).slideToggle(300)}>{item.collageName}</h5>
-                                    <ul className={strClass + context.mainData.program.thirdProgram.id + i}>
-                                        {item.collageList.map((element, index) => (
-                                            <li key={index} className="a-sdc program-link">
-                                                {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
-                        </ul>
+                        <div className="right">
+                            <h3>{context.mainData.program.amman.thirdProgram.middleDiploma}</h3>
 
-                        <h3>{context.mainData.program.fourthProgram.TechnicalDiploma}</h3>
+                            <ul>
+                                {context.mainData.program.amman.thirdProgram.middleDiplomaSpecialties.map((item, i) => (
 
-                        <ul>
-                            {context.mainData.program.fourthProgram.TechnicalDiplomaSpecialties.map((item, i) => (
+                                    <div key={i}>
+                                        <h5 onClick={() => $(`.list${context.mainData.program.amman.thirdProgram.id}${i}`).slideToggle(300)}>{item.collageName}</h5>
+                                        <ul className={strClass + context.mainData.program.amman.thirdProgram.id + i}>
+                                            {item.collageList.map((element, index) => (
+                                                <li key={index} className="a-sdc program-link">
+                                                    {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ))}
+                            </ul>
 
-                                <div key={i}>
-                                    <h5 onClick={() => $(`.list${context.mainData.program.fourthProgram.id}${i}`).slideToggle(300)}>{item.collageName}</h5>
-                                    <ul className={strClass + context.mainData.program.fourthProgram.id + i}>
-                                        {item.collageList.map((element, index) => (
-                                            <li key={index} className="a-sdc program-link">
-                                                {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
-                        </ul>
+                            <h3>{context.mainData.program.amman.fourthProgram.TechnicalDiploma}</h3>
+
+                            <ul>
+                                {context.mainData.program.amman.fourthProgram.TechnicalDiplomaSpecialties.map((item, i) => (
+
+                                    <div key={i}>
+                                        <h5 onClick={() => $(`.list${context.mainData.program.amman.fourthProgram.id}${i}`).slideToggle(300)}>{item.collageName}</h5>
+                                        <ul className={strClass + context.mainData.program.amman.fourthProgram.id + i}>
+                                            {item.collageList.map((element, index) => (
+                                                <li key={index} className="a-sdc program-link">
+                                                    {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <div className='irbid'>
-                    <div className="left">
+                <div id='irbid-container' className='irbid-container'>
+                    <div className='irbid'>
+                        <div className="left">
 
-                        <h3 key={context.mainData.program.firstProgram.id}>{context.mainData.program.firstProgram.bachelors}</h3>
+                            <h3>{context.mainData.program.irbid.scandProgram.InternationalDiploma}</h3>
 
-                        <ul>
-                            {context.mainData.program.firstProgram.bachelorsSpecialties.map((item, i) => (
-                                <div key={i}>
-                                    <h5 onClick={() => $(`.list${context.mainData.program.firstProgram.id}${i}`).slideToggle(300)}>{item.collageName}</h5>
-                                    <ul className={strClass + context.mainData.program.firstProgram.id + i}>
-                                        {item.collageList.map((element, index) => (
-                                            <li key={index} className="a-sdc a-sdc-2 program-link">
-                                                {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
-                        </ul>
+                            <ul>
+                                {context.mainData.program.irbid.scandProgram.InternationalDiplomaSpecialties.map((item, i) => (
 
-                        <h3>{context.mainData.program.scandProgram.InternationalDiploma}</h3>
+                                    <div key={i}>
+                                        <h5 onClick={() => $(`.list${context.mainData.program.irbid.scandProgram.id}${i}`).slideToggle(300)}>{item.collageName}</h5>
+                                        <ul className={strClass + context.mainData.program.irbid.scandProgram.id + i}>
+                                            {item.collageList.map((element, index) => (
+                                                <li key={index} className="a-sdc program-link">
+                                                    {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ))}
+                            </ul>
+                        </div>
 
-                        <ul>
-                            {context.mainData.program.scandProgram.InternationalDiplomaSpecialties.map((item, i) => (
+                        <div className="right">
+                            <h3>{context.mainData.program.irbid.thirdProgram.middleDiploma}</h3>
 
-                                <div key={i}>
-                                    <h5 onClick={() => $(`.list${context.mainData.program.scandProgram.id}${i}`).slideToggle(300)}>{item.collageName}</h5>
-                                    <ul className={strClass + context.mainData.program.scandProgram.id + i}>
-                                        {item.collageList.map((element, index) => (
-                                            <li key={index} className="a-sdc program-link">
-                                                {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
-                        </ul>
+                            <ul>
+                                {context.mainData.program.irbid.thirdProgram.middleDiplomaSpecialties.map((item, i) => (
+
+                                    <div key={i}>
+                                        <h5 onClick={() => $(`.list${context.mainData.program.irbid.thirdProgram.id}${i}`).slideToggle(300)}>{item.collageName}</h5>
+                                        <ul className={strClass + context.mainData.program.irbid.thirdProgram.id + i}>
+                                            {item.collageList.map((element, index) => (
+                                                <li key={index} className="a-sdc program-link">
+                                                    {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ))}
+                            </ul>
+
+                            <h3>{context.mainData.program.irbid.fourthProgram.TechnicalDiploma}</h3>
+
+                            <ul>
+                                {context.mainData.program.irbid.fourthProgram.TechnicalDiplomaSpecialties.map((item, i) => (
+
+                                    <div key={i}>
+                                        <h5 onClick={() => $(`.list${context.mainData.program.irbid.fourthProgram.id}${i}`).slideToggle(300)}>{item.collageName}</h5>
+                                        <ul className={strClass + context.mainData.program.irbid.fourthProgram.id + i}>
+                                            {item.collageList.map((element, index) => (
+                                                <li key={index} className="a-sdc program-link">
+                                                    {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                ))}
+                            </ul>
+                        </div>
+
                     </div>
-
-                    <div className="right">
-                        <h3>{context.mainData.program.thirdProgram.middleDiploma}</h3>
-
-                        <ul>
-                            {context.mainData.program.thirdProgram.middleDiplomaSpecialties.map((item, i) => (
-
-                                <div key={i}>
-                                    <h5 onClick={() => $(`.list${context.mainData.program.thirdProgram.id}${i}`).slideToggle(300)}>{item.collageName}</h5>
-                                    <ul className={strClass + context.mainData.program.thirdProgram.id + i}>
-                                        {item.collageList.map((element, index) => (
-                                            <li key={index} className="a-sdc program-link">
-                                                {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
-                        </ul>
-
-                        <h3>{context.mainData.program.fourthProgram.TechnicalDiploma}</h3>
-
-                        <ul>
-                            {context.mainData.program.fourthProgram.TechnicalDiplomaSpecialties.map((item, i) => (
-
-                                <div key={i}>
-                                    <h5 onClick={() => $(`.list${context.mainData.program.fourthProgram.id}${i}`).slideToggle(300)}>{item.collageName}</h5>
-                                    <ul className={strClass + context.mainData.program.fourthProgram.id + i}>
-                                        {item.collageList.map((element, index) => (
-                                            <li key={index} className="a-sdc program-link">
-                                                {element.link !== '#' ? <a target='_blank' rel="noopener noreferrer" className='analytics-button' href={element.link}>{element.name}</a> : <a href='#/' onClick={e => e.preventDefault()} className='no-click'>{element.name}</a>}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            ))}
-                        </ul>
-                    </div>
-
                 </div>
                 <a target='_blank' rel="noopener noreferrer" className='program-button' href={context.mainData.aboutUsContant.aboutUsContantLink.link}>{context.mainData.aboutUsContant.aboutUsContantLink.header}</a>
 

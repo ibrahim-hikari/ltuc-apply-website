@@ -456,22 +456,80 @@ header {
     position: relative;
     z-index: 1;
 
-    .amman {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: 100%;
-        justify-content: space-around;
-        width: 100%;
+    .amman-container {
+        display: none;
+
+        .amman {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 100%;
+            justify-content: space-around;
+            width: 100%;
+        }
     }
 
-    .irbid {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: 100%;
-        justify-content: space-around;
-        width: 100%;
+    .irbid-container {
+        display: none;
+
+        .irbid {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 100%;
+            justify-content: space-around;
+            width: 100%;
+        }
+    }
+    .btn-container {
+        // border: solid;
+        text-align: center;
+
+        .campus-btn {
+            $purple: #a2238e;
+
+            background: lighten($purple, 3%);
+            border: 1px solid darken($purple, 4%);
+            box-shadow: 3px 3px 5px darken(#00000081, 2%);
+            color: #fff;
+            font-family: "NizarCoconKurdish";
+            font-size: 2.5vmax;
+            margin: 3% 0%;
+            outline: none;
+            // position: absolute;
+            text-align: center;
+            text-decoration: none;
+            transition: all 150ms linear;
+            width: 15%;
+
+            &:hover {
+                background: darken($purple, 1.5%);
+                // border: 1px solid rgba(#000, 0.05);
+                box-shadow: 1px 1px 2px rgba(#000000, 0.2);
+                color: lighten($purple, 50%);
+                text-decoration: none;
+                text-shadow: -1px -1px 0 darken($purple, 9.5%);
+                transition: all 250ms linear;
+            }
+
+            &.amman-btn {
+                border-radius: 0 5px 5px 0;
+            }
+
+            &.irbid-btn {
+                border-radius: 5px 0 0 5px;
+            }
+
+            &.clicked {
+                background: darken($purple, 15%);
+                // border: 1px solid rgba(#000, 0.05);
+                box-shadow: 1px 1px 2px rgba(#000000, 0.2);
+                color: lighten($purple, 50%);
+                text-decoration: none;
+                text-shadow: -1px -1px 0 darken($purple, 9.5%);
+                transition: all 250ms linear;
+            }
+        }
     }
 }
 
