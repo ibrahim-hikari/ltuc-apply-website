@@ -5,7 +5,10 @@
         "nav": {
             "home": "الرئيسية",
             "aboutUs": "من نحن",
-            "programs": "البرامج",
+            "programs": [
+                "ادرس في عمان",
+                "ادرس في إربد"
+            ],
             "studentServicesHeader": "الخدمات الطلابية",
             "studentServices": {
                 "selfServicePortal": "بوابة الطالب",
@@ -74,400 +77,536 @@
             }
         },
         "program": {
-            "firstProgram": {
-                "id": "1",
-                "bachelors": "البكالوريوس",
-                "bachelorsSpecialties": [
-                    {
-                        "collageName": "كلية العلوم الطبية التطبيقية",
-                        "collageList": [
-                            {
-                                "name": "تقنيات صناعة الأسنان",
-                                "link": "https://drive.google.com/file/d/1a_Fv-YfBFokvQmhfnicdEqNK1DlaCdn0/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية العلوم المالية والإدراية",
-                        "collageList": [
-                            {
-                                "name": "التقنيات اللوجستية وسلسلة الإمداد",
-                                "link": "https://drive.google.com/file/d/1OAdO5oL2FtamMF1mkNl8T6VxbvDeoMAM/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية الفندقة والسياحة",
-                        "collageList": [
-                            {
-                                "name": "إدارة الفنادق والمطاعم والفعاليات",
-                                "link": "https://drive.google.com/file/d/1GrABh5iL1pZIPx3FkxwHQtF1_saEVonk/view?usp=sharing"
-                            },
-                            {
-                                "name": "إدارة فنون الطهي",
-                                "link": "https://drive.google.com/file/d/1yGCFRgV75a1wBnra0RC437Hk8n2BAS2s/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية الفنون التطبيقية",
-                        "collageList": [
-                            {
-                                "name": "العمارة الداخلية والديكور",
-                                "link": "https://drive.google.com/file/d/1TIIvPWkD3qVy87ugvb12E1I8glzKiwGw/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية تكنولوجيا السيارات",
-                        "collageList": [
-                            {
-                                "name": "هندسة تكنولوجيا السيارات",
-                                "link": "https://drive.google.com/file/d/1p79lfUPc6AiRqNNmHx2LEbE-X0MMFxl6/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية وسائل الإعلام الإبداعية (SAE)",
-                        "collageList": [
-                            {
-                                "name": "فنون إنتاج الصوت",
-                                "link": "https://drive.google.com/file/d/1wpwOecbZqR_IvJgIlurPuLQ82xtO-ACg/view?usp=sharing"
-                            },
-                            {
-                                "name": "صناعة الأفلام الرقمية",
-                                "link": "https://drive.google.com/file/d/15wBHqY0cjpa8ECZz0AifaDvkzNsNI9gE/view?usp=sharing"
-                            },
-                            {
-                                "name": "تصميم الميديا الرقمية",
-                                "link": "https://drive.google.com/file/d/1IzwHh6bbk6ITXP_oC0Gmg1dF7joamJNd/view?usp=sharing"
-                            },
-                            {
-                                "name": "الواقع الإفتراضي والمعزز",
-                                "link": "https://drive.google.com/file/d/1HhBNRTX5OphkvqK3QhUdTyNZncN_BPrr/view?usp=sharing"
-                            }
-                        ]
-                    }
-                ]
+            "amman": {
+                "firstProgram": {
+                    "id": "1",
+                    "bachelors": "البكالوريوس",
+                    "bachelorsSpecialties": [
+                        {
+                            "collageName": "كلية العلوم الطبية التطبيقية",
+                            "collageList": [
+                                {
+                                    "name": "تقنيات صناعة الأسنان",
+                                    "link": "https://drive.google.com/file/d/1a_Fv-YfBFokvQmhfnicdEqNK1DlaCdn0/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية العلوم المالية والإدراية",
+                            "collageList": [
+                                {
+                                    "name": "التقنيات اللوجستية وسلسلة الإمداد",
+                                    "link": "https://drive.google.com/file/d/1OAdO5oL2FtamMF1mkNl8T6VxbvDeoMAM/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية الفندقة والسياحة",
+                            "collageList": [
+                                {
+                                    "name": "إدارة الفنادق والمطاعم والفعاليات",
+                                    "link": "https://drive.google.com/file/d/1GrABh5iL1pZIPx3FkxwHQtF1_saEVonk/view?usp=sharing"
+                                },
+                                {
+                                    "name": "إدارة فنون الطهي",
+                                    "link": "https://drive.google.com/file/d/1yGCFRgV75a1wBnra0RC437Hk8n2BAS2s/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية الفنون التطبيقية",
+                            "collageList": [
+                                {
+                                    "name": "العمارة الداخلية والديكور",
+                                    "link": "https://drive.google.com/file/d/1TIIvPWkD3qVy87ugvb12E1I8glzKiwGw/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية تكنولوجيا السيارات",
+                            "collageList": [
+                                {
+                                    "name": "هندسة تكنولوجيا السيارات",
+                                    "link": "https://drive.google.com/file/d/1p79lfUPc6AiRqNNmHx2LEbE-X0MMFxl6/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية وسائل الإعلام الإبداعية (SAE)",
+                            "collageList": [
+                                {
+                                    "name": "فنون إنتاج الصوت",
+                                    "link": "https://drive.google.com/file/d/1wpwOecbZqR_IvJgIlurPuLQ82xtO-ACg/view?usp=sharing"
+                                },
+                                {
+                                    "name": "صناعة الأفلام الرقمية",
+                                    "link": "https://drive.google.com/file/d/15wBHqY0cjpa8ECZz0AifaDvkzNsNI9gE/view?usp=sharing"
+                                },
+                                {
+                                    "name": "تصميم الميديا الرقمية",
+                                    "link": "https://drive.google.com/file/d/1IzwHh6bbk6ITXP_oC0Gmg1dF7joamJNd/view?usp=sharing"
+                                },
+                                {
+                                    "name": "الواقع الإفتراضي والمعزز",
+                                    "link": "https://drive.google.com/file/d/1HhBNRTX5OphkvqK3QhUdTyNZncN_BPrr/view?usp=sharing"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "scandProgram": {
+                    "id": "2",
+                    "InternationalDiploma": "الدبلوم الدولي",
+                    "InternationalDiplomaSpecialties": [
+                        {
+                            "collageName": "كلية العلوم المالية والإدراية",
+                            "collageList": [
+                                {
+                                    "name": "إدراة الموارد البشرية",
+                                    "link": "https://drive.google.com/file/d/14g2kVZaSu2UiH-mVo5xx0t3uCy9oQwha/view?usp=sharing"
+                                },
+                                {
+                                    "name": "المحاسبة والإدارة المالية",
+                                    "link": "https://drive.google.com/file/d/1ZyMfwyCG8GJnLWV2H173iBITDkQ_zHOn/view?usp=sharing"
+                                },
+                                {
+                                    "name": "إدارة الأعمال وأنظمة المكاتب",
+                                    "link": "https://drive.google.com/file/d/1Z0hysLczsfH6cWfYgbTEENmc8QqpnvNV/view?usp=sharing"
+                                },
+                                {
+                                    "name": "المبيعات والتسويق",
+                                    "link": "https://drive.google.com/file/d/1T2bTWXEUu-X2hqIwzQVoYjp-XFouJZ9h/view?usp=sharing"
+                                },
+                                {
+                                    "name": "إدارة العمليات اللوجستية",
+                                    "link": "https://drive.google.com/file/d/1buT9PJV7LfqR1JVZuLG_9UlhS6O61XAO/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية الفندقة والسياحة",
+                            "collageList": [
+                                {
+                                    "name": "إدارة الفنادق والفعاليات",
+                                    "link": "https://drive.google.com/file/d/1Qd7TripAGfBG5yOiPxKsAjzPf_1WV2lZ/view?usp=sharing"
+                                },
+                                {
+                                    "name": "إدارة الطعام والشراب",
+                                    "link": "https://drive.google.com/file/d/1jLmvvw42HnYEGbZCum41wKE6J7ab7q8I/view?usp=sharing"
+                                },
+                                {
+                                    "name": "إدارة فنون الطهي",
+                                    "link": "https://drive.google.com/file/d/1WccMh8H465eGOV389Su-pJ380v8yQr5V/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية عبدالعزيز الغرير للحوسبة المتقدمة (ASAC)",
+                            "collageList": [
+                                {
+                                    "name": "هندسة البرمجيات",
+                                    "link": "https://drive.google.com/file/d/1S5Iazl6EtVxv9D-bRGWSxxCkiMrO_SVB/view?usp=sharing"
+                                },
+                                {
+                                    "name": "الأمن السيبراني",
+                                    "link": "https://drive.google.com/file/d/1jeWubaC5QDRSEzVSCU4EW73y35TO-3x2/view?usp=sharing"
+                                },
+                                {
+                                    "name": "الذكاء الإصطناعي",
+                                    "link": "https://drive.google.com/file/d/1J7_97ynmVzFXEvVQFS4iNocRzU9LW_Hh/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية الهندسة المدنية والإنشاءات",
+                            "collageList": [
+                                {
+                                    "name": "الهندسة المدنية والبيئة العمرانية",
+                                    "link": "https://drive.google.com/file/d/1DQH-Z8IJaS8bsH8glpsnOa4mmW5_cc4O/view?usp=sharing"
+                                },
+                                {
+                                    "name": "هندسة المساحة",
+                                    "link": "https://drive.google.com/file/d/14vy-w_csHN4Evg77_SoR2Dt87B8Vozgo/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية الهندسة الميكانيكية والكهربائية",
+                            "collageList": [
+                                {
+                                    "name": "هندسة الكهرباء والإلكترونيات",
+                                    "link": "https://drive.google.com/file/d/1NIIgKcguw1vrUC9bz3u-BA6GZLGNIMXQ/view?usp=sharing"
+                                },
+                                {
+                                    "name": "الهندسة الميكانيكية",
+                                    "link": "https://drive.google.com/file/d/1lpClQ6r4P_IoKiWVTiL4tzVUcYuYcC2g/view?usp=sharing"
+                                },
+                                {
+                                    "name": "الهندسة الكيميائية/ صناعة المبلمرات",
+                                    "link": "https://drive.google.com/file/d/1PBYvioRYdFkf0vR1Ol7azW9sR8xToKS3/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية الفنون التطبيقية",
+                            "collageList": [
+                                {
+                                    "name": "التصميم الداخلي",
+                                    "link": "https://drive.google.com/file/d/1kqf7lzd9_Ul45Sn5NFdpPj0qYriGNLFL/view?usp=sharing"
+                                },
+                                {
+                                    "name": "تصميم الأزياء",
+                                    "link": "https://drive.google.com/file/d/1ENucaDqbK_kIBvmktvkzJI7zGupmrQf2/view?usp=sharing"
+                                },
+                                {
+                                    "name": "تصميم المنتجات الصناعية",
+                                    "link": "https://drive.google.com/file/d/1nwMD554xhw2SoGMIM-HO4d52wyV36kpl/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية العلوم الطبية التطبيقية",
+                            "collageList": [
+                                {
+                                    "name": "التمريض المشارك والرعاية الصحية",
+                                    "link": "https://drive.google.com/file/d/1L-SOFsOV-v7MsM6Pvx2-e07xjCC6XmmR/view?usp=sharing"
+                                },
+                                {
+                                    "name": "التكنولوجيا الحيوية (المختبرات)",
+                                    "link": "https://drive.google.com/file/d/1PdYEc2WQGL_Zumu-64AAjqSCoZw12DUc/view?usp=sharing"
+                                },
+                                {
+                                    "name": "الرعاية الإجتماعية للبالغين وكبار السن",
+                                    "link": "https://drive.google.com/file/d/16nlY14lysucOrF56rwesotWoAYQ7m9KA/view?usp=sharing"
+                                },
+                                {
+                                    "name": "تعليم ورعاية الطفولة المبكرة",
+                                    "link": "https://drive.google.com/file/d/1Rfg96uP0Cs-lOCx2Ofa7yZkUoZxvxcM7/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية وسائل الإعلام الإبداعية (SAE)",
+                            "collageList": [
+                                {
+                                    "name": "تصميم وبرمجة الألعاب",
+                                    "link": "https://drive.google.com/file/d/1AEhxEcudEO3fPFDOh5NvPq0F9sczPf3F/view?usp=sharing"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "thirdProgram": {
+                    "id": "3",
+                    "middleDiploma": "الدبلوم الجامعي المتوسط",
+                    "middleDiplomaSpecialties": [
+                        {
+                            "collageName": "كلية العلوم الطبية التطبيقية",
+                            "collageList": [
+                                {
+                                    "name": "الصيدلة",
+                                    "link": "https://drive.google.com/file/d/1ikEOiWrYDGR_IUmS2wPBnvV6mKeGS7jo/view?usp=sharing"
+                                },
+                                {
+                                    "name": "فحص البصر وتجهيز النظارات الطبية",
+                                    "link": "https://drive.google.com/file/d/1s7DsroHrJtgMGrRBfwN_4wIxfDaN7QLG/view?usp=sharing"
+                                },
+                                {
+                                    "name": "مختبرات الأسنان",
+                                    "link": "https://drive.google.com/file/d/1AXYX4aa3h6m5OfSijZ1OikvhpaOchJC7/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية الهندسة الميكانيكية والكهربائية",
+                            "collageList": [
+                                {
+                                    "name": "الصيانة الكهروميكانيكية ",
+                                    "link": "https://drive.google.com/file/d/1SiPvFxH-fonDyU6-j0Eq4zHDr_cD_UpX/view?usp=sharing"
+                                },
+                                {
+                                    "name": "التكييف والتبريد",
+                                    "link": "https://drive.google.com/file/d/1Ri1tU_-8dZszou6DDJqZWliWiNm7ck-u/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية الهندسة المدنية والإنشاءات",
+                            "collageList": [
+                                {
+                                    "name": "هندسة العمارة والتصميم الداخلي",
+                                    "link": "https://drive.google.com/file/d/1ZzxB5YL3DClKJLS0rZx2AXdHQRyE_YVO/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية تكنولوجيا السيارات",
+                            "collageList": [
+                                {
+                                    "name": "صيانة المركبات الكهربائية والهجينة",
+                                    "link": "https://drive.google.com/file/d/1KLrovfhTPKiZZyEk04YmTNlFgL2VAPLJ/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية الفنون وعلوم التجميل (لاڤال)",
+                            "collageList": [
+                                {
+                                    "name": "فن وعلوم التجميل",
+                                    "link": "https://drive.google.com/file/d/1k4j6htKBM6msoOhNaHbxZxbpYJbPhvoB/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية وسائل الإعلام الإبداعية (SAE)",
+                            "collageList": [
+                                {
+                                    "name": "فنون إنتاج الصوت ",
+                                    "link": "https://drive.google.com/file/d/1bND7bRW8-_Tqhu5pnpbh3KDvkbGrRlMT/view?usp=sharing"
+                                },
+                                {
+                                    "name": "صناعة الأفلام الرقمية",
+                                    "link": "https://drive.google.com/file/d/1gbdjNrdue439nqCzoO8v7142cHjwNJyr/view?usp=sharing"
+                                },
+                                {
+                                    "name": "تصميم الميديا الرقمية",
+                                    "link": "https://drive.google.com/file/d/1Wd4A3oFvO2z7Ddk1qFuV9BadoSAC97bc/view?usp=sharing"
+                                },
+                                {
+                                    "name": "فنون الرسوم المتحركة",
+                                    "link": "https://drive.google.com/file/d/10te70kb3Udf4aigsIqEVxRWb512ebi5n/view?usp=sharing"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "fourthProgram": {
+                    "id": "4",
+                    "TechnicalDiploma": "الدبلوم الفني",
+                    "TechnicalDiplomaSpecialties": [
+                        {
+                            "collageName": "كلية الهندسة المدنية والإنشاءات",
+                            "collageList": [
+                                {
+                                    "name": "الهندسة المدنية",
+                                    "link": "https://drive.google.com/file/d/1Ct_7PU1XHoZotsZ-Qblfvn6ToPQXjcvs/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية تكنولوجيا السيارات",
+                            "collageList": [
+                                {
+                                    "name": "تكنولوجيا السيارات الهجينة",
+                                    "link": "https://drive.google.com/file/d/1bNDLmz7WXDyJ2y2tpAWENAQwvzjxc1Ej/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية الهندسة الميكانيكية والكهربائية",
+                            "collageList": [
+                                {
+                                    "name": "الصيانة الكهروميكانيكية العامة",
+                                    "link": "https://drive.google.com/file/d/16d2cqzC_xiQPFEc4bPzKpmyJMi5uA1KS/view?usp=sharing"
+                                },
+                                {
+                                    "name": "نظم التكييف والتبريد",
+                                    "link": "https://drive.google.com/file/d/1XT4RFQehtDFX7amHRSw5KpdB-K4rqUE5/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية الفندقة والسياحة",
+                            "collageList": [
+                                {
+                                    "name": "إدارة الفنادق",
+                                    "link": "https://drive.google.com/file/d/1B-p98_5RZ8sn4bC_waB0e-xpOy52GKEI/view?usp=sharing"
+                                },
+                                {
+                                    "name": "فنون الطهي",
+                                    "link": "https://drive.google.com/file/d/1MAWlWBk9IVBT1Fx7vAHMmL5kLWPTjuzp/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية الفنون التطبيقية",
+                            "collageList": [
+                                {
+                                    "name": "التصميم الداخلي",
+                                    "link": "https://drive.google.com/file/d/1rDD2dPspERNoJ-fQtM0suBleM1IoKk9x/view?usp=sharing"
+                                },
+                                {
+                                    "name": "الأزياء وتكنولوجيا الألبسة",
+                                    "link": "https://drive.google.com/file/d/1ALvsDrxu-144qYS8R7P6fVfHTnau1SQe/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية الفنون وعلوم التجميل (لاڤال)",
+                            "collageList": [
+                                {
+                                    "name": "فن وعلوم التجميل",
+                                    "link": "https://drive.google.com/file/d/1IprEDgNOof_bwpthxZzIEirmh94ojLhL/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية وسائل الإعلام الإبداعية (SAE)",
+                            "collageList": [
+                                {
+                                    "name": "فنون إنتاج الصوت",
+                                    "link": "https://drive.google.com/file/d/1li8ACZfo_tXvbrqN8w8MhRtjarNJjtyh/view?usp=sharing"
+                                },
+                                {
+                                    "name": "صناعة الأفلام الرقمية",
+                                    "link": "https://drive.google.com/file/d/1_SDNLLq4ueVrntmRnL0nHDRsBKyPXEBq/view?usp=sharing"
+                                },
+                                {
+                                    "name": "تصميم الميديا الرقمية",
+                                    "link": "https://drive.google.com/file/d/1zA-WuqL7Y7xX8nLE55e9xWyhhfBGJpv9/view?usp=sharing"
+                                },
+                                {
+                                    "name": "فنون الرسوم المتحركة",
+                                    "link": "https://drive.google.com/file/d/1Zh2pob2Bfr2S9dJ1rnk-nGzY45iLbw0j/view?usp=sharing"
+                                }
+                            ]
+                        }
+                    ]
+                }
             },
-            "scandProgram": {
-                "id": "2",
-                "InternationalDiploma": "الدبلوم الدولي",
-                "InternationalDiplomaSpecialties": [
-                    {
-                        "collageName": "كلية العلوم المالية والإدراية",
-                        "collageList": [
-                            {
-                                "name": "إدراة الموارد البشرية",
-                                "link": "https://drive.google.com/file/d/14g2kVZaSu2UiH-mVo5xx0t3uCy9oQwha/view?usp=sharing"
-                            },
-                            {
-                                "name": "المحاسبة والإدارة المالية",
-                                "link": "https://drive.google.com/file/d/1ZyMfwyCG8GJnLWV2H173iBITDkQ_zHOn/view?usp=sharing"
-                            },
-                            {
-                                "name": "إدارة الأعمال وأنظمة المكاتب",
-                                "link": "https://drive.google.com/file/d/1Z0hysLczsfH6cWfYgbTEENmc8QqpnvNV/view?usp=sharing"
-                            },
-                            {
-                                "name": "المبيعات والتسويق",
-                                "link": "https://drive.google.com/file/d/1T2bTWXEUu-X2hqIwzQVoYjp-XFouJZ9h/view?usp=sharing"
-                            },
-                            {
-                                "name": "إدارة العمليات اللوجستية",
-                                "link": "https://drive.google.com/file/d/1buT9PJV7LfqR1JVZuLG_9UlhS6O61XAO/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية الفندقة والسياحة",
-                        "collageList": [
-                            {
-                                "name": "إدارة الفنادق والفعاليات",
-                                "link": "https://drive.google.com/file/d/1Qd7TripAGfBG5yOiPxKsAjzPf_1WV2lZ/view?usp=sharing"
-                            },
-                            {
-                                "name": "إدارة الطعام والشراب",
-                                "link": "https://drive.google.com/file/d/1jLmvvw42HnYEGbZCum41wKE6J7ab7q8I/view?usp=sharing"
-                            },
-                            {
-                                "name": "إدارة فنون الطهي",
-                                "link": "https://drive.google.com/file/d/1WccMh8H465eGOV389Su-pJ380v8yQr5V/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية عبدالعزيز الغرير للحوسبة المتقدمة (ASAC)",
-                        "collageList": [
-                            {
-                                "name": "هندسة البرمجيات",
-                                "link": "https://drive.google.com/file/d/1S5Iazl6EtVxv9D-bRGWSxxCkiMrO_SVB/view?usp=sharing"
-                            },
-                            {
-                                "name": "الأمن السيبراني",
-                                "link": "https://drive.google.com/file/d/1jeWubaC5QDRSEzVSCU4EW73y35TO-3x2/view?usp=sharing"
-                            },
-                            {
-                                "name": "الذكاء الإصطناعي",
-                                "link": "https://drive.google.com/file/d/1J7_97ynmVzFXEvVQFS4iNocRzU9LW_Hh/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية الهندسة المدنية والإنشاءات",
-                        "collageList": [
-                            {
-                                "name": "الهندسة المدنية والبيئة العمرانية",
-                                "link": "https://drive.google.com/file/d/1DQH-Z8IJaS8bsH8glpsnOa4mmW5_cc4O/view?usp=sharing"
-                            },
-                            {
-                                "name": "هندسة المساحة",
-                                "link": "https://drive.google.com/file/d/14vy-w_csHN4Evg77_SoR2Dt87B8Vozgo/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية الهندسة الميكانيكية والكهربائية",
-                        "collageList": [
-                            {
-                                "name": "هندسة الكهرباء والإلكترونيات",
-                                "link": "https://drive.google.com/file/d/1NIIgKcguw1vrUC9bz3u-BA6GZLGNIMXQ/view?usp=sharing"
-                            },
-                            {
-                                "name": "الهندسة الميكانيكية",
-                                "link": "https://drive.google.com/file/d/1lpClQ6r4P_IoKiWVTiL4tzVUcYuYcC2g/view?usp=sharing"
-                            },
-                            {
-                                "name": "الهندسة الكيميائية/ صناعة المبلمرات",
-                                "link": "https://drive.google.com/file/d/1PBYvioRYdFkf0vR1Ol7azW9sR8xToKS3/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية الفنون التطبيقية",
-                        "collageList": [
-                            {
-                                "name": "التصميم الداخلي",
-                                "link": "https://drive.google.com/file/d/1kqf7lzd9_Ul45Sn5NFdpPj0qYriGNLFL/view?usp=sharing"
-                            },
-                            {
-                                "name": "تصميم الأزياء",
-                                "link": "https://drive.google.com/file/d/1ENucaDqbK_kIBvmktvkzJI7zGupmrQf2/view?usp=sharing"
-                            },
-                            {
-                                "name": "تصميم المنتجات الصناعية",
-                                "link": "https://drive.google.com/file/d/1nwMD554xhw2SoGMIM-HO4d52wyV36kpl/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية العلوم الطبية التطبيقية",
-                        "collageList": [
-                            {
-                                "name": "التمريض المشارك والرعاية الصحية",
-                                "link": "https://drive.google.com/file/d/1L-SOFsOV-v7MsM6Pvx2-e07xjCC6XmmR/view?usp=sharing"
-                            },
-                            {
-                                "name": "التكنولوجيا الحيوية (المختبرات)",
-                                "link": "https://drive.google.com/file/d/1PdYEc2WQGL_Zumu-64AAjqSCoZw12DUc/view?usp=sharing"
-                            },
-                            {
-                                "name": "الرعاية الإجتماعية للبالغين وكبار السن",
-                                "link": "https://drive.google.com/file/d/16nlY14lysucOrF56rwesotWoAYQ7m9KA/view?usp=sharing"
-                            },
-                            {
-                                "name": "تعليم ورعاية الطفولة المبكرة",
-                                "link": "https://drive.google.com/file/d/1Rfg96uP0Cs-lOCx2Ofa7yZkUoZxvxcM7/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية وسائل الإعلام الإبداعية (SAE)",
-                        "collageList": [
-                            {
-                                "name": "تصميم وبرمجة الألعاب",
-                                "link": "https://drive.google.com/file/d/1AEhxEcudEO3fPFDOh5NvPq0F9sczPf3F/view?usp=sharing"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "thirdProgram": {
-                "id": "3",
-                "middleDiploma": "الدبلوم الجامعي المتوسط",
-                "middleDiplomaSpecialties": [
-                    {
-                        "collageName": "كلية العلوم الطبية التطبيقية",
-                        "collageList": [
-                            {
-                                "name": "الصيدلة",
-                                "link": "https://drive.google.com/file/d/1ikEOiWrYDGR_IUmS2wPBnvV6mKeGS7jo/view?usp=sharing"
-                            },
-                            {
-                                "name": "فحص البصر وتجهيز النظارات الطبية",
-                                "link": "https://drive.google.com/file/d/1s7DsroHrJtgMGrRBfwN_4wIxfDaN7QLG/view?usp=sharing"
-                            },
-                            {
-                                "name": "مختبرات الأسنان",
-                                "link": "https://drive.google.com/file/d/1AXYX4aa3h6m5OfSijZ1OikvhpaOchJC7/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية الهندسة الميكانيكية والكهربائية",
-                        "collageList": [
-                            {
-                                "name": "الصيانة الكهروميكانيكية ",
-                                "link": "https://drive.google.com/file/d/1SiPvFxH-fonDyU6-j0Eq4zHDr_cD_UpX/view?usp=sharing"
-                            },
-                            {
-                                "name": "التكييف والتبريد",
-                                "link": "https://drive.google.com/file/d/1Ri1tU_-8dZszou6DDJqZWliWiNm7ck-u/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية الهندسة المدنية والإنشاءات",
-                        "collageList": [
-                            {
-                                "name": "هندسة العمارة والتصميم الداخلي",
-                                "link": "https://drive.google.com/file/d/1ZzxB5YL3DClKJLS0rZx2AXdHQRyE_YVO/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية تكنولوجيا السيارات",
-                        "collageList": [
-                            {
-                                "name": "صيانة المركبات الكهربائية والهجينة",
-                                "link": "https://drive.google.com/file/d/1KLrovfhTPKiZZyEk04YmTNlFgL2VAPLJ/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية الفنون وعلوم التجميل (لاڤال)",
-                        "collageList": [
-                            {
-                                "name": "فن وعلوم التجميل",
-                                "link": "https://drive.google.com/file/d/1k4j6htKBM6msoOhNaHbxZxbpYJbPhvoB/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية وسائل الإعلام الإبداعية (SAE)",
-                        "collageList": [
-                            {
-                                "name": "فنون إنتاج الصوت ",
-                                "link": "https://drive.google.com/file/d/1bND7bRW8-_Tqhu5pnpbh3KDvkbGrRlMT/view?usp=sharing"
-                            },
-                            {
-                                "name": "صناعة الأفلام الرقمية",
-                                "link": "https://drive.google.com/file/d/1gbdjNrdue439nqCzoO8v7142cHjwNJyr/view?usp=sharing"
-                            },
-                            {
-                                "name": "تصميم الميديا الرقمية",
-                                "link": "https://drive.google.com/file/d/1Wd4A3oFvO2z7Ddk1qFuV9BadoSAC97bc/view?usp=sharing"
-                            },
-                            {
-                                "name": "فنون الرسوم المتحركة",
-                                "link": "https://drive.google.com/file/d/10te70kb3Udf4aigsIqEVxRWb512ebi5n/view?usp=sharing"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "fourthProgram": {
-                "id": "4",
-                "TechnicalDiploma": "الدبلوم الفني",
-                "TechnicalDiplomaSpecialties": [
-                    {
-                        "collageName": "كلية الهندسة المدنية والإنشاءات",
-                        "collageList": [
-                            {
-                                "name": "الهندسة المدنية",
-                                "link": "https://drive.google.com/file/d/1Ct_7PU1XHoZotsZ-Qblfvn6ToPQXjcvs/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية تكنولوجيا السيارات",
-                        "collageList": [
-                            {
-                                "name": "تكنولوجيا السيارات الهجينة",
-                                "link": "https://drive.google.com/file/d/1bNDLmz7WXDyJ2y2tpAWENAQwvzjxc1Ej/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية الهندسة الميكانيكية والكهربائية",
-                        "collageList": [
-                            {
-                                "name": "الصيانة الكهروميكانيكية العامة",
-                                "link": "https://drive.google.com/file/d/16d2cqzC_xiQPFEc4bPzKpmyJMi5uA1KS/view?usp=sharing"
-                            },
-                            {
-                                "name": "نظم التكييف والتبريد",
-                                "link": "https://drive.google.com/file/d/1XT4RFQehtDFX7amHRSw5KpdB-K4rqUE5/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية الفندقة والسياحة",
-                        "collageList": [
-                            {
-                                "name": "إدارة الفنادق",
-                                "link": "https://drive.google.com/file/d/1B-p98_5RZ8sn4bC_waB0e-xpOy52GKEI/view?usp=sharing"
-                            },
-                            {
-                                "name": "فنون الطهي",
-                                "link": "https://drive.google.com/file/d/1MAWlWBk9IVBT1Fx7vAHMmL5kLWPTjuzp/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية الفنون التطبيقية",
-                        "collageList": [
-                            {
-                                "name": "التصميم الداخلي",
-                                "link": "https://drive.google.com/file/d/1rDD2dPspERNoJ-fQtM0suBleM1IoKk9x/view?usp=sharing"
-                            },
-                            {
-                                "name": "الأزياء وتكنولوجيا الألبسة",
-                                "link": "https://drive.google.com/file/d/1ALvsDrxu-144qYS8R7P6fVfHTnau1SQe/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية الفنون وعلوم التجميل (لاڤال)",
-                        "collageList": [
-                            {
-                                "name": "فن وعلوم التجميل",
-                                "link": "https://drive.google.com/file/d/1IprEDgNOof_bwpthxZzIEirmh94ojLhL/view?usp=sharing"
-                            }
-                        ]
-                    },
-                    {
-                        "collageName": "كلية وسائل الإعلام الإبداعية (SAE)",
-                        "collageList": [
-                            {
-                                "name": "فنون إنتاج الصوت",
-                                "link": "https://drive.google.com/file/d/1li8ACZfo_tXvbrqN8w8MhRtjarNJjtyh/view?usp=sharing"
-                            },
-                            {
-                                "name": "صناعة الأفلام الرقمية",
-                                "link": "https://drive.google.com/file/d/1_SDNLLq4ueVrntmRnL0nHDRsBKyPXEBq/view?usp=sharing"
-                            },
-                            {
-                                "name": "تصميم الميديا الرقمية",
-                                "link": "https://drive.google.com/file/d/1zA-WuqL7Y7xX8nLE55e9xWyhhfBGJpv9/view?usp=sharing"
-                            },
-                            {
-                                "name": "فنون الرسوم المتحركة",
-                                "link": "https://drive.google.com/file/d/1Zh2pob2Bfr2S9dJ1rnk-nGzY45iLbw0j/view?usp=sharing"
-                            }
-                        ]
-                    }
-                ]
+            "irbid": {
+                "scandProgram": {
+                    "id": "2",
+                    "InternationalDiploma": "الدبلوم الدولي",
+                    "InternationalDiplomaSpecialties": [
+                        {
+                            "collageName": "كلية العلوم المالية والإدراية",
+                            "collageList": [
+                                {
+                                    "name": "إدراة الموارد البشرية",
+                                    "link": "https://drive.google.com/file/d/14g2kVZaSu2UiH-mVo5xx0t3uCy9oQwha/view?usp=sharing"
+                                },
+                                {
+                                    "name": "المحاسبة والإدارة المالية",
+                                    "link": "https://drive.google.com/file/d/1ZyMfwyCG8GJnLWV2H173iBITDkQ_zHOn/view?usp=sharing"
+                                },
+                                {
+                                    "name": "إدارة العمليات اللوجستية",
+                                    "link": "https://drive.google.com/file/d/1buT9PJV7LfqR1JVZuLG_9UlhS6O61XAO/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية الهندسة المدنية والإنشاءات",
+                            "collageList": [
+                                {
+                                    "name": "الهندسة المدنية والبيئة العمرانية",
+                                    "link": "https://drive.google.com/file/d/1DQH-Z8IJaS8bsH8glpsnOa4mmW5_cc4O/view?usp=sharing"
+                                },
+                                {
+                                    "name": "هندسة المساحة",
+                                    "link": "https://drive.google.com/file/d/14vy-w_csHN4Evg77_SoR2Dt87B8Vozgo/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية الهندسة الميكانيكية والكهربائية",
+                            "collageList": [
+                                {
+                                    "name": "هندسة الكهرباء والإلكترونيات",
+                                    "link": "https://drive.google.com/file/d/1NIIgKcguw1vrUC9bz3u-BA6GZLGNIMXQ/view?usp=sharing"
+                                },
+                                {
+                                    "name": "الهندسة الميكانيكية",
+                                    "link": "https://drive.google.com/file/d/1lpClQ6r4P_IoKiWVTiL4tzVUcYuYcC2g/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية الفنون التطبيقية",
+                            "collageList": [
+                                {
+                                    "name": "التصميم الداخلي",
+                                    "link": "https://drive.google.com/file/d/1kqf7lzd9_Ul45Sn5NFdpPj0qYriGNLFL/view?usp=sharing"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "thirdProgram": {
+                    "id": "3",
+                    "middleDiploma": "الدبلوم الجامعي المتوسط",
+                    "middleDiplomaSpecialties": [
+                        {
+                            "collageName": "كلية العلوم الطبية التطبيقية",
+                            "collageList": [
+                                {
+                                    "name": "الصيدلة",
+                                    "link": "https://drive.google.com/file/d/1ikEOiWrYDGR_IUmS2wPBnvV6mKeGS7jo/view?usp=sharing"
+                                },
+                                {
+                                    "name": "فحص البصر وتجهيز النظارات الطبية",
+                                    "link": "https://drive.google.com/file/d/1s7DsroHrJtgMGrRBfwN_4wIxfDaN7QLG/view?usp=sharing"
+                                },
+                                {
+                                    "name": "مختبرات الأسنان",
+                                    "link": "https://drive.google.com/file/d/1AXYX4aa3h6m5OfSijZ1OikvhpaOchJC7/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية الهندسة الميكانيكية والكهربائية",
+                            "collageList": [
+                                {
+                                    "name": "التكييف والتبريد",
+                                    "link": "https://drive.google.com/file/d/1Ri1tU_-8dZszou6DDJqZWliWiNm7ck-u/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية الهندسة المدنية والإنشاءات",
+                            "collageList": [
+                                {
+                                    "name": "هندسة العمارة والتصميم الداخلي",
+                                    "link": "https://drive.google.com/file/d/1ZzxB5YL3DClKJLS0rZx2AXdHQRyE_YVO/view?usp=sharing"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "fourthProgram": {
+                    "id": "4",
+                    "TechnicalDiploma": "الدبلوم الفني",
+                    "TechnicalDiplomaSpecialties": [
+                        {
+                            "collageName": "كلية الهندسة المدنية والإنشاءات",
+                            "collageList": [
+                                {
+                                    "name": "الهندسة المدنية",
+                                    "link": "https://drive.google.com/file/d/1Ct_7PU1XHoZotsZ-Qblfvn6ToPQXjcvs/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية الفنون التطبيقية",
+                            "collageList": [
+                                {
+                                    "name": "التصميم الداخلي",
+                                    "link": "https://drive.google.com/file/d/1rDD2dPspERNoJ-fQtM0suBleM1IoKk9x/view?usp=sharing"
+                                }
+                            ]
+                        },
+                        {
+                            "collageName": "كلية الهندسة الميكانيكية والكهربائية",
+                            "collageList": [
+                                {
+                                    "name": "الصيانة الكهروميكانيكية العامة",
+                                    "link": "https://drive.google.com/file/d/16d2cqzC_xiQPFEc4bPzKpmyJMi5uA1KS/view?usp=sharing"
+                                }
+                            ]
+                        }
+                    ]
+                }
             }
         }
     },

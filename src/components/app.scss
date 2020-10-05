@@ -56,7 +56,7 @@ header {
             height: 0.1vmax;
             right: 0;
             position: absolute;
-            width: 59vw;
+            width: 80vw;
         }
 
         .main-nav ul {
@@ -83,7 +83,7 @@ header {
             display: inline;
             font-size: 1vw;
             font-weight: bolder;
-            margin-left: 2%;
+            margin-left: 1%;
         }
 
         .main-nav ul li .main-link {
@@ -99,14 +99,14 @@ header {
                 content: "";
                 border-right: solid;
                 position: absolute;
-                left: -15%;
+                left: -5%;
                 bottom: 0;
                 height: 20px;
             }
         }
         .main-nav ul li:last-child .main-link {
             &::after {
-                right: -8%;
+                right: -5%;
             }
         }
 
@@ -114,7 +114,7 @@ header {
             cursor: pointer;
         }
         .dropdown {
-            // border: solid #ff0000 ;
+            border-right: solid #fda136 10px;
             color: #fda136;
             height: auto;
             position: relative;
@@ -170,6 +170,11 @@ header {
 
             &:hover > .dropdown-content {
                 display: block;
+            }
+
+            &::before {
+                content: "\25BE";
+                color: #ffffff;
             }
         }
     }
@@ -487,8 +492,9 @@ header {
 
         .campus-btn {
             $purple: #a2238e;
+            background: darken($purple, 15%);
 
-            background: lighten($purple, 3%);
+            // background: lighten($purple, 3%);
             border: 1px solid darken($purple, 4%);
             box-shadow: 3px 3px 5px darken(#00000081, 2%);
             color: #fff;
@@ -503,7 +509,9 @@ header {
             width: 15%;
 
             &:hover {
-                background: darken($purple, 1.5%);
+                background: lighten($purple, 3%);
+
+                // background: darken($purple, 1.5%);
                 // border: 1px solid rgba(#000, 0.05);
                 box-shadow: 1px 1px 2px rgba(#000000, 0.2);
                 color: lighten($purple, 50%);
@@ -521,7 +529,8 @@ header {
             }
 
             &.clicked {
-                background: darken($purple, 15%);
+                // background: darken($purple, 15%);
+                background: lighten($purple, 3%);
                 // border: 1px solid rgba(#000, 0.05);
                 box-shadow: 1px 1px 2px rgba(#000000, 0.2);
                 color: lighten($purple, 50%);
@@ -574,6 +583,7 @@ header {
     bottom: 3%;
     box-shadow: 3px 3px 5px darken(#00000081, 2%);
     color: #fff;
+    display: none;
     left: 50%;
     outline: none;
     padding: 1vmax 1.5vmax;

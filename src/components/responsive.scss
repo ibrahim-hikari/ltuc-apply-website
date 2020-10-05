@@ -566,6 +566,18 @@
         padding: 0 2vmax 0 2vmax;
         position: relative;
         z-index: 0;
+
+        .btn-container {
+            // border: solid;
+            text-align: center;
+
+            .campus-btn {
+                font-size: 3vmax;
+                margin: 10% 0% 5% 0%;
+                padding: 1%;
+                width: 30%;
+            }
+        }
     }
 
     .programs .left {

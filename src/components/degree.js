@@ -10,11 +10,11 @@ function Degree() {
     return (
         <>
             <section id="programs" className="programs">
-                <h2 className='pick'>إختر الحرم الجامعي أدناه، ثم إختر إسم الكلية للإطلاع على التخصصات المتوفرة فيها. وللإطلاع على الخطط الإسترشادية، إختر التخصص المراد من القائمة.</h2>
+                <h2 className='pick'>اختر الحرم الجامعي أدناه، ثم اختر إسم الكلية للإطلاع على التخصصات المتوفرة فيها. وللإطلاع على الخطط الإسترشادية، اختر التخصص المراد من القائمة.</h2>
 
                 <div className='btn-container'>
-                    <button className='amman-btn campus-btn' onClick={() => { $('.amman-container').fadeIn(); $('.irbid-container').fadeOut(); $('.amman-btn').addClass('clicked'); $('.irbid-btn').removeClass('clicked'); }}>عمان</button>
-                    <button className='irbid-btn campus-btn' onClick={() => { $('.irbid-container').fadeIn(); $('.amman-container').fadeOut(); $('.irbid-btn').addClass('clicked'); $('.amman-btn').removeClass('clicked'); }}>إربد</button>
+                    <button className='amman-btn campus-btn' onClick={() => { $('.amman-container').fadeIn(); $('.irbid-container').fadeOut(); $('.amman-btn').addClass('clicked'); $('.irbid-btn').removeClass('clicked'); $('.program-button').fadeIn(); }}>عمان</button>
+                    <button className='irbid-btn campus-btn' onClick={() => { $('.irbid-container').fadeIn(); $('.amman-container').fadeOut(); $('.irbid-btn').addClass('clicked'); $('.amman-btn').removeClass('clicked'); $('.program-button').fadeIn(); }}>إربد</button>
                 </div>
 
                 <div id='amman-container' className='amman-container'>
@@ -160,6 +160,7 @@ function Degree() {
 
                     </div>
                 </div>
+
                 <a target='_blank' rel="noopener noreferrer" className='program-button' href={context.mainData.aboutUsContant.aboutUsContantLink.link}>{context.mainData.aboutUsContant.aboutUsContantLink.header}</a>
 
             </section>
