@@ -638,7 +638,8 @@ header {
 
 .ifram-div .ifram {
     width: 100%;
-    height: 96%;
+    height: 50%;
+    margin: 1% 0%;
 }
 .contact-div {
     width: 30%;
@@ -662,13 +663,17 @@ header {
     border-bottom: 0.05vw solid;
     width: 20vw;
 }
+a.contact-info{
+    outline: none;
+}
 .contact-info {
-    padding: 0.5vw 4.2vw;
-    line-height: 35px;
+    // border: solid;
     display: block;
     font-size: 1.5vw;
-
-    width: 28vw;
+    line-height: 35px;
+    outline: none;
+    padding: 0.5vw 4.2vw;
+    width: fit-content;
     color: #fff;
 }
 .fa2 {
@@ -729,7 +734,8 @@ header {
     font-size: 2.8vw !important;
     padding: 0.6vw;
 }
-.location i {
+.location-amman i,
+.location-irbid i {
     line-height: 2vw;
 }
 
@@ -739,7 +745,8 @@ header {
     cursor: pointer;
     color: rgb(243, 236, 241);
 }
-.location i {
+.location-amman i,
+.location-irbid i {
     line-height: 2vw;
 }
 

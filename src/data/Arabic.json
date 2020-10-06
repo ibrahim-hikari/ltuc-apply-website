@@ -611,7 +611,10 @@
         }
     },
     "footer": {
-        "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3387.3187220247373!2d35.86663101449337!3d31.897936535593477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca7e4aee722d5%3A0x8693a9183825010b!2z2YPZhNmK2Kkg2YTZiNmF2YrZhtmI2LMg2KfZhNis2KfZhdi52YrYqSDYp9mE2KrZgtmG2YrYqSAtIChMdW1pbnVzIFRlY2huaWNhbCBVbml2ZXJzaXR5IENvbGxlZ2UgKExUVUM!5e0!3m2!1sen!2sjo!4v1591309880460!5m2!1sen!2sjo",
+        "iframe": [
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3387.3187220247373!2d35.86663101449337!3d31.897936535593477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca7e4aee722d5%3A0x8693a9183825010b!2z2YPZhNmK2Kkg2YTZiNmF2YrZhtmI2LMg2KfZhNis2KfZhdi52YrYqSDYp9mE2KrZgtmG2YrYqSAtIChMdW1pbnVzIFRlY2huaWNhbCBVbml2ZXJzaXR5IENvbGxlZ2UgKExUVUM!5e0!3m2!1sen!2sjo!4v1591309880460!5m2!1sen!2sjo",
+            "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3365.4063685584397!2d35.974265415174735!3d32.488566281060095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b8919980617ef%3A0x240b87e80fc791c5!2sAl%20Quds%20College!5e0!3m2!1sen!2sjo!4v1601980542228!5m2!1sen!2sjo"
+        ],
         "logo": "../assets/LTUC_Footer_Logo.png",
         "contactUs": {
             "header": ":تواصل معنا",
@@ -623,10 +626,15 @@
                 "email": "info@ltuc.com",
                 "directEmail": "mailto:info@ltuc.com"
             },
-            "location": [
+            "locationAmman": [
                 "طريق المطار",
                 "صندوق البريد 183334",
                 "عمان 11118 الأردن"
+            ],
+            "locationIrbid": [
+                "إربد، المنطقة التنموية",
+                "مقابل البوابة الجنوبية",
+                "لجامعة العلوم والتكنولوجيا"
             ],
             "facebook": "https://www.facebook.com/LTUC.JO/",
             "instagram": "https://www.instagram.com/ltuc.jo/",
