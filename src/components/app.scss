@@ -213,7 +213,6 @@ header {
 
 .programs a.program-button {
     $purple: #a2238e;
-
     background: lighten($purple, 3%);
     border: 1px solid darken($purple, 4%);
     border-radius: 5px;
@@ -244,6 +243,10 @@ header {
     color: #fff;
     text-decoration: none;
     cursor: pointer;
+
+    a{
+        outline: none;
+    }
 }
 .programs .program-link:hover {
     // border: solid;
