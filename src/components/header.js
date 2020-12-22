@@ -48,19 +48,19 @@ function Header() {
         var i = 0;
         // let colors = ['#154579', '#5E2F90', '#2E8178', '#E21F49', '#388BC5', '#A3258D'];
         let chatIcon = document.querySelector('.chat').children[0];
-        carousel();
+        // carousel();
         // console.log('chat', chatIcon.style.color);
 
         function carousel() {
             let slide = document.getElementsByClassName('s1');
             let dot = document.querySelector(`#r${i + 1}`);
-            slide[0].style.marginLeft = -i * (100 / 6) + '%';
+            slide[0].style.marginLeft = -i * (100 / 7) + '%';
             console.log('dot navigation', dot);
             dot.style.background = '#ffffff';
             // console.log('dot navigation', dot.style.background);
             // chatIcon.style.color = colors[i];
             i++;
-            if (i === 6) {
+            if (i === 7) {
                 i = 0;
             }
             setTimeout(carousel, 5000);
@@ -69,7 +69,7 @@ function Header() {
         $('.bar').on('click', function (e) {
             i = e.target.id - 1;
             let slide = document.getElementsByClassName('s1');
-            slide[0].style.marginLeft = -i * (100 / 6) + '%';
+            slide[0].style.marginLeft = -i * (100 / 7) + '%';
         });
 
         function calcVH() {
@@ -138,6 +138,7 @@ function Header() {
                         <input type="radio" name="r" id="r4" />
                         <input type="radio" name="r" id="r5" />
                         <input type="radio" name="r" id="r6" />
+                        <input type="radio" name="r" id="r7" />
 
                         <div className="slide s1">
                             <div className="card">
@@ -205,6 +206,16 @@ function Header() {
                                 <a target='_blank' className="touch" rel="noopener noreferrer" href={context.headerData.nav.contactUs.link}>{context.headerData.nav.contactUs.text}</a>
                             </div>
                         </div>
+                        <div className="slide s7">
+                            <div className="card">
+                                <div className='future'>
+                                    <span>لأنك</span>
+                                    <span>المستقبل</span>
+                                </div>
+                                <img src='../assets/text_7.jpg' alt='text' />
+                                <img src="../assets/Slide_7.jpg" alt="" />
+                            </div>
+                        </div>
 
                     </div>
 
@@ -215,6 +226,7 @@ function Header() {
                         <label htmlFor="r4" className="bar" id="4"></label>
                         <label htmlFor="r5" className="bar" id="5"></label>
                         <label htmlFor="r6" className="bar" id="6"></label>
+                        <label htmlFor="r7" className="bar" id="7"></label>
                     </div>
                 </div>
                 <a target='_blank' rel="noopener noreferrer" className='chat' href="https://m.me/LTUC.JO"><i className='fas fa-comment'></i></a>

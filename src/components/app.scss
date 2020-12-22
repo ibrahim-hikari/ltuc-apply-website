@@ -220,13 +220,13 @@ header {
     .slides {
         display: flex;
         height: 100%;
-        width: 600%;
+        width: 700%;
     }
 
     .slide {
         position: relative;
         transition: 0.6s;
-        width: calc(100% / 6);
+        width: calc(100% / 7);
 
         &.s1 {
             background-color: #154579;
@@ -244,6 +244,9 @@ header {
             background-color: #388bc5;
         }
         &.s6 {
+            background-color: #a3258d;
+        }
+        &.s7 {
             background-color: #a3258d;
         }
         .card {
@@ -663,7 +666,7 @@ header {
     border-bottom: 0.05vw solid;
     width: 20vw;
 }
-a.contact-info{
+a.contact-info {
     outline: none;
 }
 .contact-info {
