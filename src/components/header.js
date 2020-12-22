@@ -50,7 +50,7 @@ function Header() {
         var i = 0;
         // let colors = ['#154579', '#5E2F90', '#2E8178', '#E21F49', '#388BC5', '#A3258D'];
         let chatIcon = document.querySelector('.chat').children[0];
-        // carousel();
+        carousel();
         // console.log('chat', chatIcon.style.color);
 
         function carousel() {
