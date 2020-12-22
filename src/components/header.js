@@ -2,6 +2,8 @@
 import React, { useEffect, useContext } from 'react';
 import $ from 'jquery';
 import { ModelContext } from './context.js';
+import slide_7 from '../assets/Slide_7.jpg';
+import text_7 from '../assets/text_7.jpg';
 
 function Header() {
     const context = useContext(ModelContext);
@@ -208,12 +210,8 @@ function Header() {
                         </div>
                         <div className="slide s7">
                             <div className="card">
-                                <div className='future'>
-                                    <span>لأنك</span>
-                                    <span>المستقبل</span>
-                                </div>
-                                <img src='../assets/text_7.jpg' alt='text' />
-                                <img src="../assets/Slide_7.jpg" alt="" />
+                                <img className='text' src={text_7} alt="text 7" />
+                                <img className='logo' src={slide_7} alt="slide 7" />
                             </div>
                         </div>
 

@@ -848,6 +848,22 @@
         }
     }
 
+    .s7 {
+        .card {
+            img.logo {
+                top: 50%;
+                max-height: 80%;
+            }
+            img.text {
+                // border: solid;
+                left: 75%;
+                top: 50%;
+                width: 30%;
+                height: 50%;
+            }
+        }
+    }
+
     .navigation {
         // border: solid;
         bottom: 0%;
@@ -894,6 +910,20 @@
             top: 52%;
             transform: translate(-50%, -50%);
             max-width: 85%;
+        }
+
+        img.logo {
+            top: 70%;
+            height: 40%;
+            max-height: 80%;
+        }
+        img.text {
+            // border: solid;
+            left: 50%;
+            top: 30%;
+            width: 70%;
+            height: 35%;
+            
         }
 
         .with-you {
